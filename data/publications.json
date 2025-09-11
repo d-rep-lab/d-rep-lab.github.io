@@ -1,0 +1,43 @@
+{
+  "title": "Publications",
+  "bg_color": "#f3f4f6",
+  "items": [
+    {
+      "title": "Computational Design and Single-Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints",
+      "authors": [
+        "S. Sandra Bae*",
+        "Takanori Fujiwara*",
+        "Danielle Szafir",
+        "Ellen Yi-Luen Do",
+        "Michael L. Rivera"
+      ],
+      "note": "* Equal contribution",
+      "venue": "ACM SCF",
+      "year": 2025,
+      "link": "#",
+      "thumb": "./images/pubs/2025_freeform_interface.png",
+      "thumb_alt": "Computational pipeline"
+    },
+    {
+      "title": "A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software",
+      "authors": [
+        "Wandrille Duchemin*",
+        "Takanori Fujiwara*",
+        "Hollister W. Herhold",
+        "Elias Elmquist",
+        "David S. Thaler",
+        "William Harcourt-Smith",
+        "Emma Broman",
+        "Alexander Bock",
+        "Brian P. Abbott",
+        "Jacqueline K. Faherty"
+      ],
+      "note": "* Equal contribution",
+      "venue": "IEEE CG&A",
+      "year": 2025,
+      "link": "#",
+      "thumb": "./images/pubs/2025_cvol.png",
+      "thumb_alt": "Cosmic View of Life on Earth in 3D space"
+    }
+  ]
+}

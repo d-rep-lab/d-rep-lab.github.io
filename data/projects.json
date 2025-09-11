@@ -1,0 +1,26 @@
+{
+  "title": "Projects",
+  "bg_color": "#f8fafc",
+  "items": [
+    {
+      "title": "Interactive Dimensionality Reduction",
+      "description": "Developing tools for interpretable and interactive data exploration.",
+      "tags": [
+        "Visualization",
+        "Dimensionality Reduction",
+        "Machine Learning",
+        "Visual Analytics"
+      ]
+    },
+    {
+      "title": "3D Interfaces for Complex Data",
+      "description": "Designing immersive environments for scientific collaboration.",
+      "tags": [
+        "Physicalization",
+        "3D",
+        "XR",
+        "HCI"
+      ]
+    }
+  ]
+}

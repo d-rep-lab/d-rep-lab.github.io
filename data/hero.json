@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "subtitle": "",
+  "cta_text": "",
+  "bg": "./images/lab_background.png",
+  "overlay": 0.5,
+  "reel": [
+    {
+      "src": "./images/top/sensing_network.gif",
+      "alt": "Sensing Network Physicalization",
+      "title": "Sensing Network Physicalization",
+      "caption": "Concurrently considering form and interactions.",
+      "title_color": "#ffffff",
+      "caption_color": "#dddddd"
+    },
+    {
+      "src": "./images/top/cvol.gif",
+      "alt": "Cosmic View of Life on Earth",
+      "title": "Cosmic View of Life on Earth",
+      "caption": "Visualizing biological diversity in an planetarium scale."
+    }
+  ],
+  "interval_ms": 8000,
+  "loop": true
+}

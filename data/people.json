@@ -1,0 +1,5 @@
+"people": {
+  "title": "People",
+  "bg_color": "#ffffff",
+  "members_manifest": "./members/index.json"
+}

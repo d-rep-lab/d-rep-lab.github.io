@@ -311,6 +311,14 @@
   </script>
 
   <script>
+    const ASSET_VER = Date.now(); // or '2025-09-11a' for a manual bump
+    async function loadJSON(path) {
+      const url = path + (path.includes('?') ? '&' : '?') + 'v=' + ASSET_VER;
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) throw new Error('Failed to load ' + path);
+      return await res.json();
+    }
+
     // ---------- Backgrounds (no dark mode) ----------
     function applySectionBackgrounds() {
       document.querySelectorAll('.page-section').forEach(sec => {
@@ -327,6 +335,108 @@
         }
         const inner = sec.querySelector('.section-inner'); if (inner) inner.classList.add('relative');
       });
+    }
+
+    // Lazy loaders
+    const Loaded = { site: false, hero: false, about: false, news: false, people: false, projects: false, publications: false };
+
+    async function ensureSite() {
+      if (Loaded.site) return;
+      const site = await loadJSON('./data/site.json');
+      const titleBtn = document.getElementById('site-title');
+      titleBtn.textContent = site.title || 'D-REP Lab';
+      document.title = site.title || 'D-REP Lab';
+      document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ${site.title || 'D-REP Lab'}. All rights reserved.`;
+      document.getElementById('contact-link').href = site.contact_email ? `mailto:${site.contact_email}` : '#';
+      document.getElementById('twitter-link').href = site.twitter || '#';
+      document.getElementById('github-link').href = site.github || '#';
+      Loaded.site = true;
+    }
+
+    async function ensureHero() {
+      if (Loaded.hero) return;
+      const hero = await loadJSON('./data/hero.json');
+      document.getElementById('hero-title').textContent = hero.title || '';
+      document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
+      document.getElementById('hero-cta').textContent = hero.cta_text || 'Learn More';
+      setupHeroReel({ hero });
+      Loaded.hero = true;
+    }
+
+    async function ensureAbout() {
+      if (Loaded.about) return;
+      const about = await loadJSON('./data/about.json');
+      const aboutSec = document.getElementById('about');
+      aboutSec.setAttribute('data-bg-color', about.bg_color || '#f8fafc');
+      aboutSec.querySelector('.section-title').textContent = about.title || 'About';
+      document.getElementById('about-content').innerHTML = about.content_html || '';
+      Loaded.about = true;
+    }
+
+    async function ensureNews() {
+      if (Loaded.news) return;
+      const news = await loadJSON('./data/news.json');
+      const newsSec = document.getElementById('news');
+      newsSec.setAttribute('data-bg-color', news.bg_color || '#f9fafb');
+      newsSec.querySelector('.section-title').textContent = news.title || 'News';
+      const list = document.getElementById('news-list'); list.innerHTML = '';
+      (news.items || []).forEach(n => {
+        const li = document.createElement('li'); li.className = 'p-6 bg-white rounded-2xl shadow';
+        li.innerHTML = `<h3 class="text-xl font-medium">${n.title}</h3><p class="text-sm text-gray-600">${n.date || ''}</p>`;
+        list.appendChild(li);
+      });
+      Loaded.news = true;
+    }
+
+    async function ensurePeople() {
+      if (Loaded.people) return;
+      const people = await loadJSON('./data/people.json');
+      const sec = document.getElementById('people');
+      sec.setAttribute('data-bg-color', people.bg_color || '#ffffff');
+      sec.querySelector('.section-title').textContent = people.title || 'People';
+      const grid = document.getElementById('people-grid'); grid.innerHTML = '';
+      let members = [];
+      if (people.members_manifest) {
+        const m = await loadJSON(people.members_manifest);
+        for (const path of (m.members || [])) {
+          try { members.push(await loadJSON(path)); } catch { }
+        }
+      } else if (Array.isArray(people.members)) {
+        members = people.members;
+      }
+      members.forEach(m => grid.appendChild(buildPersonCard(m)));
+      Loaded.people = true;
+    }
+
+    async function ensureProjects() {
+      if (Loaded.projects) return;
+      const projects = await loadJSON('./data/projects.json');
+      const sec = document.getElementById('projects');
+      sec.setAttribute('data-bg-color', projects.bg_color || '#f8fafc');
+      sec.querySelector('.section-title').textContent = projects.title || 'Projects';
+      const all = (projects.items || []).map(p => ({ title: p.title || '', description: p.description || '', tags: Array.isArray(p.tags) ? p.tags : [] }));
+      setupProjectFilters(all);
+      Loaded.projects = true;
+    }
+
+    async function ensurePublications() {
+      if (Loaded.publications) return;
+      const pubs = await loadJSON('./data/publications.json');
+      const sec = document.getElementById('publications');
+      sec.setAttribute('data-bg-color', pubs.bg_color || '#f3f4f6');
+      sec.querySelector('.section-title').textContent = pubs.title || 'Publications';
+      const items = (pubs.items || []).map(p => ({
+        ...p,
+        authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []),
+        year: Number(p.year) || ''
+      }));
+      populatePubFilters(items);
+      filterAndRenderPubs(items);
+      document.getElementById('pub-search').addEventListener('input', () => filterAndRenderPubs(items));
+      document.getElementById('pub-year').addEventListener('change', () => filterAndRenderPubs(items));
+      document.getElementById('pub-venue').addEventListener('change', () => filterAndRenderPubs(items));
+      document.getElementById('pub-clear').addEventListener('click', () => { document.getElementById('pub-search').value = ''; document.getElementById('pub-year').value = ''; document.getElementById('pub-venue').value = ''; filterAndRenderPubs(items); });
+      Loaded.publications = true;
     }
 
     // ---------- Helpers ----------
@@ -389,9 +499,25 @@
       // const cta = document.getElementById('hero-cta'); if (cta) cta.addEventListener('click', () => showSection('about'));
     }
 
-    function showSection(id) {
+    async function showSection(id) {
+      // load site chrome once
+      await ensureSite();
+
+      // lazy-load the requested section
+      if (id === 'hero') await ensureHero();
+      if (id === 'about') await ensureAbout();
+      if (id === 'news') await ensureNews();
+      if (id === 'people') await ensurePeople();
+      if (id === 'projects') await ensureProjects();
+      if (id === 'publications') await ensurePublications();
+
+      // show/hide
       document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
       const t = document.getElementById(id); if (t) t.classList.remove('hidden');
+
+      // apply backgrounds (solid colors only; hero managed by reel)
+      applySectionBackgrounds();
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -552,83 +678,13 @@
     }
 
     // ---------- Boot ----------
-    async function boot() {
-      try {
-        const res = await fetch('./config.json', { cache: 'no-store' }); const cfg = await res.json();
-
-        // Site header + footer
-        const titleBtn = document.getElementById('site-title'); titleBtn.textContent = cfg.site?.title || 'D-REP Lab'; document.title = cfg.site?.title || 'D-REP Lab';
-        document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ${cfg.site?.title || 'D-REP Lab'}. All rights reserved.`;
-        document.getElementById('contact-link').href = cfg.site?.contact_email ? `mailto:${cfg.site.contact_email}` : '#';
-        document.getElementById('twitter-link').href = cfg.site?.twitter || '#'; document.getElementById('github-link').href = cfg.site?.github || '#';
-
-        // Hero
-        // const hero = cfg.hero || {}; const heroSec = document.getElementById('hero'); heroSec.setAttribute('data-bg', hero.bg || '');
-        // heroSec.setAttribute('data-overlay', hero.overlay ?? '');
-        // document.getElementById('hero-title').textContent = hero.title || '';
-        // document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
-        // const heroCta = document.getElementById('hero-cta'); heroCta.textContent = hero.cta_text || 'Learn More';
-        const hero = cfg.hero || {};
-        document.getElementById('hero-title').textContent = hero.title || '';
-        document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
-        // document.getElementById('hero-cta').textContent = hero.cta_text || 'Learn More';
-
-        // Build reel (falls back to single bg if no reel)
-        setupHeroReel(cfg);
-
-        // About
-        const about = cfg.sections?.about || {}; const aboutSec = document.getElementById('about');
-        aboutSec.setAttribute('data-bg-color', about.bg_color || '#f8fafc');
-        aboutSec.querySelector('.section-title').textContent = about.title || 'About'; document.getElementById('about-content').innerHTML = about.content_html || '';
-
-        // News
-        const news = cfg.sections?.news || {}; const newsSec = document.getElementById('news');
-        newsSec.setAttribute('data-bg-color', news.bg_color || '#f9fafb');
-        newsSec.querySelector('.section-title').textContent = news.title || 'News';
-        const newsList = document.getElementById('news-list'); newsList.innerHTML = ''; (news.items || []).forEach(n => { const li = document.createElement('li'); li.className = 'p-6 bg-white rounded-2xl shadow'; li.innerHTML = `<h3 class="text-xl font-medium">${n.title}</h3><p class="text-sm text-gray-600">${n.date || ''}</p>`; newsList.appendChild(li); });
-
-        // People
-        const people = cfg.sections?.people || {}; const peopleSec = document.getElementById('people');
-        peopleSec.setAttribute('data-bg-color', people.bg_color || '#ffffff');
-        peopleSec.querySelector('.section-title').textContent = people.title || 'People';
-        const peopleGrid = document.getElementById('people-grid'); peopleGrid.innerHTML = '';
-        let members = []; if (people.members_manifest) { const mres = await fetch(people.members_manifest, { cache: 'no-store' }); const manifest = await mres.json(); for (const path of (manifest.members || [])) { try { const r = await fetch(path, { cache: 'no-store' }); members.push(await r.json()); } catch (_) { } } } else if (Array.isArray(people.members)) { members = people.members; }
-        members.forEach(m => peopleGrid.appendChild(buildPersonCard(m)));
-
-        // Projects
-        const projects = cfg.sections?.projects || {}; const projSec = document.getElementById('projects');
-        projSec.setAttribute('data-bg-color', projects.bg_color || '#f8fafc');
-        projSec.querySelector('.section-title').textContent = projects.title || 'Projects';
-        const projAll = (projects.items || []).map(p => ({ title: p.title || '', description: p.description || '', tags: Array.isArray(p.tags) ? p.tags : [] })); setupProjectFilters(projAll);
-
-        // Publications
-        const pubs = cfg.sections?.publications || {}; const pubsSec = document.getElementById('publications');
-        pubsSec.setAttribute('data-bg-color', pubs.bg_color || '#f3f4f6');
-        pubsSec.querySelector('.section-title').textContent = pubs.title || 'Publications';
-        // const pubsItems = (pubs.items || []).map(p => ({ title: p.title || '', authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []), venue: p.venue || '', year: Number(p.year) || '', link: p.link || '' }));
-        const pubsItems = (pubs.items || []).map(p => ({
-          title: p.title || '',
-          authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []),
-          venue: p.venue || '',
-          year: Number(p.year) || '',
-          link: p.link || '',
-          thumb: p.thumb || '',
-          thumb_alt: p.thumb_alt || '',
-          note: p.note || ''
-        }));
-        populatePubFilters(pubsItems); filterAndRenderPubs(pubsItems);
-        document.getElementById('pub-search').addEventListener('input', () => filterAndRenderPubs(pubsItems));
-        document.getElementById('pub-year').addEventListener('change', () => filterAndRenderPubs(pubsItems));
-        document.getElementById('pub-venue').addEventListener('change', () => filterAndRenderPubs(pubsItems));
-        document.getElementById('pub-clear').addEventListener('click', () => { document.getElementById('pub-search').value = ''; document.getElementById('pub-year').value = ''; document.getElementById('pub-venue').value = ''; filterAndRenderPubs(pubsItems); });
-
-        // Finalize
-        applySectionBackgrounds(); setupNav(); showSection('hero');
-      } catch (e) {
-        console.error('Failed to load config.json', e);
-        setupNav(); applySectionBackgrounds(); showSection('hero');
-      }
-    }
+    (async function boot() {
+      setupNav();
+      await ensureSite();
+      await ensureHero();
+      applySectionBackgrounds();
+      showSection('hero');
+    })();
 
     boot();
   </script>
