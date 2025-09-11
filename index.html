@@ -358,7 +358,7 @@
       const hero = await loadJSON('./data/hero.json');
       document.getElementById('hero-title').textContent = hero.title || '';
       document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
-      document.getElementById('hero-cta').textContent = hero.cta_text || 'Learn More';
+      // document.getElementById('hero-cta').textContent = hero.cta_text || 'Learn More';
       setupHeroReel({ hero });
       Loaded.hero = true;
     }
@@ -685,8 +685,6 @@
       applySectionBackgrounds();
       showSection('hero');
     })();
-
-    boot();
   </script>
 </body>
 
