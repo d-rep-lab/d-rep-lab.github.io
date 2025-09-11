@@ -1,22 +1,619 @@
 <!DOCTYPE html>
-<html>
-<title>D-REP Lab</title>
+<html lang="en">
 
 <head>
-  <meta charset=utf-8>
-  <meta name="description" content="D-REP Lab: Data Representation Laboratory">
-  <meta name="keywords"
-    content="University of Arizona,Sandra Bae,Takanori Fujiwara,visualization,physicalization,visual analytics,dimensionality reduction">
-  <meta name="author" content="Sandra Bae and Takanori Fujiwara">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link href="./css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D-REP Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div id="profile">
-    <div id="profile-name">D-REP Lab (WIP)</div>
-  </div>
+<body class="bg-gray-50 text-gray-900 w-full m-0 p-0">
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50 w-full">
+    <div class="max-w-6xl mx-auto py-4 flex justify-between items-center px-6">
+      <button id="site-title" class="text-2xl font-bold cursor-pointer select-none" title="Go to top">D-REP Lab</button>
+      <nav id="main-nav" class="space-x-2 hidden sm:flex"></nav>
+      <div class="flex items-center gap-3">
+        <button id="menu-btn"
+          class="sm:hidden inline-flex items-center justify-center rounded-xl px-3 py-2 border border-gray-300">Menu</button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="sm:hidden px-6 pb-4 hidden"></div>
+  </header>
+
+  <!-- Hero (image) -->
+  <!-- <section id="hero"
+    class="page-section w-full relative overflow-hidden  min-h-[calc(100vh-74px-68px)] flex items-center justify-center"
+    data-bg="./images/lab_background.png" data-overlay="0.5">
+    <div class="section-inner max-w-6xl mx-auto px-6 text-center">
+      <h1 id="hero-title" class="text-4xl md:text-6xl font-bold mb-4"></h1>
+      <p id="hero-subtitle" class="text-lg md:text-2xl mb-6"></p>
+      <button id="hero-cta"
+        class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-2xl shadow hover:bg-gray-100 transition"></button>
+    </div>
+  </section> -->
+
+  <section id="hero"
+    class="page-section flex-1 relative overflow-hidden flex items-center justify-center min-h-[calc(100vh-74px-68px)]"
+    data-overlay="0.5">
+    <!-- Reel container -->
+    <div id="hero-reel" class="absolute inset-0 -z-10">
+      <!-- slides injected here -->
+    </div>
+
+    <!-- Optional dark overlay for text readability -->
+    <!-- <div id="hero-overlay" class="pointer-events-none absolute inset-0 -z-10 bg-black opacity-50"></div> -->
+    <!-- Content -->
+    <div class="section-inner relative max-w-6xl mx-auto px-6 text-center">
+      <h1 id="hero-title" class="text-4xl md:text-6xl font-bold mb-4"></h1>
+      <p id="hero-subtitle" class="text-lg md:text-2xl mb-6"></p>
+      <!-- <button id="hero-cta"
+        class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-2xl shadow hover:bg-gray-100 transition">Learn
+        More</button> -->
+      <div class="w-[100%] max-w-none">
+        <!-- <div class="bg-black/10 rounded-xl p-6"> -->
+        <h3 id="hero-slide-title" class="text-4xl md:text-5xl font-bold mb-4 leading-snug drop-shadow-lg">
+        </h3>
+        <p id="hero-slide-caption" class="text-lg md:text-2xl leading-relaxed drop-shadow-lg">
+        </p>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- <div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+      <h3 id="hero-slide-title" class="text-4xl md:text-5xl font-bold mb-4 max-w-4xl leading-snug drop-shadow-lg">
+      </h3>
+      <p id="hero-slide-caption" class="text-lg md:text-2xl max-w-3xl leading-relaxed drop-shadow-lg">
+      </p>
+    </div> -->
+
+    <!-- Controls -->
+    <button id="hero-prev" aria-label="Previous slide"
+      class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/70 px-3 py-2 text-sm hover:bg-white shadow">
+    </button>
+    <button id="hero-next" aria-label="Next slide"
+      class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/70 px-3 py-2 text-sm hover:bg-white shadow">
+    </button>
+
+    <!-- Dots -->
+    <div id="hero-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2"></div>
+  </section>
+
+  <!-- About (solid color) -->
+  <section id="about" class="page-section w-full relative overflow-hidden py-12" data-bg-color="#f8fafc">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-4"></h2>
+      <p id="about-content" class="text-lg leading-relaxed"></p>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="page-section hidden w-full relative overflow-hidden py-12" data-bg-color="#f9fafb">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-4"></h2>
+      <ul id="news-list" class="grid md:grid-cols-2 gap-6"></ul>
+    </div>
+  </section>
+
+  <!-- People -->
+  <section id="people" class="page-section hidden w-full relative overflow-hidden py-12" data-bg-color="#ffffff">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-4"></h2>
+      <div id="people-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Projects (filters + colored tags) -->
+  <section id="projects" class="page-section hidden w-full relative overflow-hidden py-12" data-bg-color="#f8fafc">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-6"></h2>
+      <div class="mb-6 grid gap-3 md:grid-cols-4">
+        <input id="proj-search" type="text" placeholder="Search projects"
+          class="w-full rounded-xl border border-gray-300 px-3 py-2" />
+        <div id="proj-tags" class="md:col-span-3 flex flex-wrap gap-2"></div>
+      </div>
+      <div id="projects-grid" class="grid md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Publications (search/year/venue filters) -->
+  <section id="publications" class="page-section hidden w-full relative overflow-hidden py-12" data-bg-color="#f3f4f6">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-6"></h2>
+      <div class="mb-6 grid gap-3 md:grid-cols-4">
+        <input id="pub-search" type="text" placeholder="Search title/authors"
+          class="w-full rounded-xl border border-gray-300 px-3 py-2" />
+        <select id="pub-year" class="w-full rounded-xl border border-gray-300 px-3 py-2"></select>
+        <select id="pub-venue" class="w-full rounded-xl border border-gray-300 px-3 py-2"></select>
+        <button id="pub-clear" class="rounded-xl border border-gray-300 px-3 py-2 hover:bg-gray-100">Clear</button>
+      </div>
+      <ul id="pubs-list" class="space-y-3"></ul>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-200 py-6 w-full">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm px-6">
+      <p id="footer-copy">© 2025 D-REP Lab. All rights reserved.</p>
+      <div class="space-x-4 mt-2 md:mt-0">
+        <a id="contact-link" href="#" class="hover:underline">Contact</a>
+        <a id="twitter-link" href="#" target="_blank" class="hover:underline">Twitter</a>
+        <a id="github-link" href="#" target="_blank" class="hover:underline">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Hero Reel ----------
+    function createSlide(img, idx) {
+      const el = document.createElement('img');
+      el.src = img.src;
+      el.alt = img.alt || '';
+      el.decoding = 'async';
+      el.loading = 'lazy';
+      el.className =
+        'hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700';
+      el.style.zIndex = idx; // stable stacking order
+      return el;
+    }
+
+    function setupHeroReel(cfg) {
+      const reel = (cfg.hero && Array.isArray(cfg.hero.reel)) ? cfg.hero.reel : null;
+      const overlayAlpha = parseFloat(cfg.hero?.overlay ?? '0') || 0;
+      // const overlay = document.getElementById('hero-overlay');
+      // overlay.style.opacity = overlayAlpha;
+
+      // If no reel provided, fall back to single background (your previous behavior)
+      if (!reel || reel.length === 0) {
+        const heroSec = document.getElementById('hero');
+        const single = cfg.hero?.bg || '';
+        if (single) {
+          const bg = document.createElement('div');
+          bg.className = 'absolute inset-0 -z-10 bg-center bg-cover';
+          bg.style.backgroundImage = `url('${single}')`;
+          heroSec.prepend(bg);
+        }
+        return null;
+      }
+
+      const container = document.getElementById('hero-reel');
+      container.innerHTML = '';
+      const slides = reel.map((img, i) => createSlide(img, i));
+      slides.forEach(s => container.appendChild(s));
+
+      // dots
+      const dotsWrap = document.getElementById('hero-dots');
+      dotsWrap.innerHTML = '';
+      const dots = slides.map((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white ring-1 ring-black/10';
+        b.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dotsWrap.appendChild(b);
+        return b;
+      });
+
+      // state
+      let i = 0;
+      let timer = null;
+      const interval = Number(cfg.hero?.interval_ms || 10000);
+
+      // function render() {
+      //   slides.forEach((s, idx) => {
+      //     s.style.opacity = (idx === i) ? '1' : '0';
+      //   });
+      //   dots.forEach((d, idx) => {
+      //     d.className = 'w-2.5 h-2.5 rounded-full ring-1 ring-black/10 ' + (idx === i ? 'bg-white' : 'bg-white/60 hover:bg-white');
+      //   });
+      // }
+      function render() {
+        slides.forEach((s, idx) => {
+          s.style.opacity = (idx === i) ? '1' : '0';
+        });
+        dots.forEach((d, idx) => {
+          d.className = 'w-2.5 h-2.5 rounded-full ring-1 ring-black/10 ' +
+            (idx === i ? 'bg-white' : 'bg-white/60 hover:bg-white');
+        });
+
+        // update caption/title
+        const slide = reel[i];
+        const titleEl = document.getElementById('hero-slide-title');
+        const capEl = document.getElementById('hero-slide-caption');
+
+        titleEl.textContent = slide.title || '';
+        capEl.textContent = slide.caption || '';
+
+        titleEl.style.color = slide.title_color || '#ffffff';
+        capEl.style.color = slide.caption_color || '#e5e5e5';
+      }
+
+      function goTo(n) {
+        if (cfg.hero?.loop === false) {
+          // stop at ends if loop disabled
+          if (n < 0) n = 0;
+          if (n >= slides.length) n = slides.length - 1;
+        } else {
+          // default: wrap around
+          n = (n + slides.length) % slides.length;
+        }
+        i = n;
+        render();
+      }
+      function next() { goTo(i + 1); }
+      function prev() { goTo(i - 1); }
+
+      // autoplay
+      function start() {
+        stop();
+        timer = setInterval(next, interval);
+      }
+      function stop() {
+        if (timer) { clearInterval(timer); timer = null; }
+      }
+
+      // wire controls
+      document.getElementById('hero-next').onclick = next;
+      document.getElementById('hero-prev').onclick = prev;
+      dots.forEach((d, idx) => d.addEventListener('click', () => goTo(idx)));
+
+      // pause on hover/focus
+      const hero = document.getElementById('hero');
+      hero.addEventListener('mouseenter', stop);
+      hero.addEventListener('mouseleave', start);
+      hero.addEventListener('focusin', stop);
+      hero.addEventListener('focusout', start);
+
+      // keyboard
+      hero.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+      });
+      hero.setAttribute('tabindex', '0'); // to receive key events
+
+      // touch swipe
+      let touchX = null;
+      hero.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+      hero.addEventListener('touchend', (e) => {
+        if (touchX == null) return;
+        const dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+        touchX = null;
+      });
+
+      // page visibility: pause when tab not visible
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stop(); else start();
+      });
+
+      // start
+      render();
+      start();
+
+      return { start, stop, next, prev, goTo };
+    }
+  </script>
+
+  <script>
+    // ---------- Backgrounds (no dark mode) ----------
+    function applySectionBackgrounds() {
+      document.querySelectorAll('.page-section').forEach(sec => {
+        sec.querySelectorAll('.bg-layer,.overlay-layer').forEach(n => n.remove());
+        if (sec.id === 'hero') {
+          const url = sec.getAttribute('data-bg');
+          const alpha = parseFloat(sec.getAttribute('data-overlay') || '0');
+          if (url) { const bg = document.createElement('div'); bg.className = 'bg-layer absolute inset-0 -z-10 bg-center bg-cover'; bg.style.backgroundImage = `url('${url}')`; sec.prepend(bg); }
+          if (!Number.isNaN(alpha) && alpha > 0) { const overlay = document.createElement('div'); overlay.className = 'overlay-layer absolute inset-0 -z-10 bg-black'; overlay.style.opacity = alpha; sec.prepend(overlay); }
+        } else {
+          const color = sec.getAttribute('data-bg-color') || 'transparent';
+          sec.style.backgroundImage = 'none';
+          sec.style.backgroundColor = color;
+        }
+        const inner = sec.querySelector('.section-inner'); if (inner) inner.classList.add('relative');
+      });
+    }
+
+    // ---------- Helpers ----------
+    function initialsFromName(name) { return (name || '').trim().split(/\s+/).filter(Boolean).slice(0, 2).map(s => s[0].toUpperCase()).join('') || '?'; }
+
+    function buildPersonCard({ name, role, photo, link }) {
+      const outer = document.createElement('div');
+      outer.className = 'p-6 bg-gray-50 rounded-2xl shadow text-center';
+
+      const imgWrap = document.createElement('div');
+      imgWrap.className = 'relative w-24 h-24 mx-auto mb-2';
+      const img = document.createElement('img');
+      img.className = 'w-24 h-24 object-cover rounded-full mx-auto';
+      img.alt = name;
+      img.loading = 'lazy';
+      if (photo) img.src = photo;
+
+      const fallback = document.createElement('div');
+      fallback.className = 'hidden absolute inset-0 bg-gray-300 text-gray-700 rounded-full items-center justify-center font-bold';
+      fallback.textContent = initialsFromName(name);
+      img.onerror = () => { img.style.display = 'none'; fallback.style.display = 'flex'; };
+
+      imgWrap.appendChild(img);
+      imgWrap.appendChild(fallback);
+
+      // name (link if present)
+      let nameEl;
+      if (link) {
+        nameEl = document.createElement('a');
+        nameEl.href = link;
+        nameEl.target = '_blank';
+        nameEl.rel = 'noopener noreferrer';
+        nameEl.className = 'text-lg font-medium text-blue-600 hover:underline';
+        nameEl.textContent = name || 'Unknown';
+      } else {
+        nameEl = document.createElement('h3');
+        nameEl.className = 'text-lg font-medium';
+        nameEl.textContent = name || 'Unknown';
+      }
+
+      const p = document.createElement('p');
+      p.className = 'text-sm text-gray-600';
+      p.textContent = role || '';
+
+      outer.appendChild(imgWrap);
+      outer.appendChild(nameEl);
+      outer.appendChild(p);
+
+      return outer;
+    }
+
+
+    function setupNav() {
+      const nav = document.getElementById('main-nav'); const mobile = document.getElementById('mobile-nav'); nav.innerHTML = ''; mobile.innerHTML = '';
+      const items = ['hero', 'about', 'news', 'people', 'projects', 'publications'];
+      const makeBtn = (id) => { const b = document.createElement('button'); b.className = 'px-3 py-2 rounded-xl border border-transparent hover:border-gray-300'; b.textContent = id.charAt(0).toUpperCase() + id.slice(1); b.addEventListener('click', () => { showSection(id); if (!mobile.classList.contains('hidden')) mobile.classList.add('hidden'); }); return b; };
+      items.slice(1).forEach(id => { nav.appendChild(makeBtn(id)); const mb = makeBtn(id); mb.className += ' block w-full text-left mt-2'; mobile.appendChild(mb); });
+      document.getElementById('menu-btn').addEventListener('click', () => { mobile.classList.toggle('hidden'); });
+      const title = document.getElementById('site-title'); title.addEventListener('click', () => showSection('hero')); title.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showSection('hero'); } }); title.setAttribute('tabindex', '0');
+      // const cta = document.getElementById('hero-cta'); if (cta) cta.addEventListener('click', () => showSection('about'));
+    }
+
+    function showSection(id) {
+      document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
+      const t = document.getElementById(id); if (t) t.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ---------- Publications ----------
+    // function buildPubItem(p) {
+    //   const li = document.createElement('li'); li.className = 'p-4 bg-white rounded-xl shadow';
+    //   const authors = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || ''); const title = p.link ? `<a href="${p.link}" target="_blank" class="underline decoration-dotted">${p.title}</a>` : p.title;
+    //   li.innerHTML = `<div class="text-sm text-gray-600 mb-1">${p.year || ''} • ${p.venue || ''}</div><div class="font-medium">${title}</div><div class="text-sm text-gray-700">${authors}</div>`; return li;
+    // }
+    function buildPubItem(p) {
+      const li = document.createElement('li');
+      li.className = 'p-4 bg-white rounded-xl shadow hover:shadow-md transition';
+
+      const row = document.createElement('div');
+      row.className = 'flex items-start gap-4';
+
+      if (p.thumb) {
+        const img = document.createElement('img');
+        img.src = p.thumb;
+        img.alt = p.thumb_alt || p.title || 'Publication thumbnail';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.className = 'w-24 h-24 object-cover rounded-md flex-shrink-0';
+        img.onerror = () => { img.remove(); };
+        row.appendChild(img);
+      }
+
+      const content = document.createElement('div');
+      content.className = 'min-w-0';
+
+      const meta = document.createElement('div');
+      meta.className = 'text-sm text-gray-600 mb-1';
+      meta.textContent = `${p.year || ''}${p.year && p.venue ? ' • ' : ''}${p.venue || ''}`;
+
+      const titleEl = document.createElement(p.link ? 'a' : 'div');
+      titleEl.className = 'font-medium break-words';
+      titleEl.textContent = p.title || '';
+      if (p.link) { titleEl.href = p.link; titleEl.target = '_blank'; titleEl.className += ' underline decoration-dotted'; }
+
+      const authorsStr = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '');
+      const authors = document.createElement('div');
+      authors.className = 'text-sm text-gray-700';
+      authors.textContent = authorsStr;
+
+      content.appendChild(meta);
+      content.appendChild(titleEl);
+      content.appendChild(authors);
+
+      // ---- Note (optional)
+      if (p.note) {
+        const note = document.createElement('div');
+        note.className = 'text-xs text-gray-500 mt-1 italic';
+        note.textContent = p.note;
+        content.appendChild(note);
+      }
+
+      row.appendChild(content);
+      li.appendChild(row);
+      return li;
+    }
+
+    function populatePubFilters(items) {
+      const years = Array.from(new Set(items.map(p => p.year).filter(Boolean))).sort((a, b) => b - a);
+      const venues = Array.from(new Set(items.map(p => p.venue).filter(Boolean))).sort();
+      const yearSel = document.getElementById('pub-year'); const venueSel = document.getElementById('pub-venue');
+      yearSel.innerHTML = '<option value=\"\">All years</option>' + years.map(y => `<option value="${y}">${y}</option>`).join('');
+      venueSel.innerHTML = '<option value=\"\">All venues</option>' + venues.map(v => `<option value="${v}">${v}</option>`).join('');
+    }
+    function filterAndRenderPubs(all) {
+      const q = document.getElementById('pub-search').value.trim().toLowerCase();
+      const y = document.getElementById('pub-year').value;
+      const v = document.getElementById('pub-venue').value.toLowerCase();
+      const list = document.getElementById('pubs-list');
+      const filtered = all.filter(p => {
+        const byYear = !y || String(p.year) === y;
+        const byVenue = !v || (p.venue || '').toLowerCase() === v;
+        const hay = [p.title, Array.isArray(p.authors) ? p.authors.join(' ') : p.authors].join(' ').toLowerCase();
+        const bySearch = !q || hay.includes(q);
+        return byYear && byVenue && bySearch;
+      });
+      list.innerHTML = '';
+      if (!filtered.length) { const empty = document.createElement('div'); empty.className = 'text-sm text-gray-600'; empty.textContent = 'No publications match the current filters.'; list.appendChild(empty); } else { filtered.forEach(p => list.appendChild(buildPubItem(p))); }
+    }
+
+    // ---------- Tag colors + Project filters ----------
+    function tagColorClasses(tag, selected) {
+      const t = (tag || '').toLowerCase();
+      let base = 'border-gray-300 text-gray-800 hover:bg-gray-100';
+      let sel = 'bg-blue-600 text-white border-blue-600';
+      if (/^(ml|ai|machine learning)$/.test(t)) { sel = 'bg-blue-600 text-white border-blue-600'; base = 'border-blue-300 text-blue-800'; }
+      else if (/viz|visual/.test(t)) { sel = 'bg-violet-600 text-white border-violet-600'; base = 'border-violet-300 text-violet-800'; }
+      else if (/^hci/.test(t)) { sel = 'bg-amber-600 text-white border-amber-600'; base = 'border-amber-300 text-amber-800'; }
+      else if (/^xai|explain/.test(t)) { sel = 'bg-fuchsia-600 text-white border-fuchsia-600'; base = 'border-fuchsia-300 text-fuchsia-800'; }
+      else if (/\b(3d|vr)\b/.test(t)) { sel = 'bg-emerald-600 text-white border-emerald-600'; base = 'border-emerald-300 text-emerald-800'; }
+      else if (/social/.test(t)) { sel = 'bg-rose-600 text-white border-rose-600'; base = 'border-rose-300 text-rose-800'; }
+      return selected ? sel : base;
+    }
+
+    function buildTagPill(tag, selected) {
+      const btn = document.createElement('button'); btn.type = 'button'; btn.dataset.tag = tag;
+      btn.className = `px-3 py-1 rounded-full border text-sm ${tagColorClasses(tag, selected)}`; btn.textContent = tag; return btn;
+    }
+
+    function buildProjectCard(p) {
+      const card = document.createElement('div'); card.className = 'p-6 bg-white rounded-2xl shadow';
+      const tagHtml = (p.tags || []).map(t => `<button type="button" class="project-tag inline-block px-2 py-0.5 text-xs rounded-full border mr-2 mb-2 ${tagColorClasses(t, false)}" data-tag="${t}">${t}</button>`).join('');
+      card.innerHTML = `<h3 class="text-xl font-medium mb-2">${p.title}</h3><p class="text-gray-700 mb-3">${p.description || ''}</p><div class="flex flex-wrap">${tagHtml}</div>`; return card;
+    }
+
+    function setupProjectFilters(all) {
+      const wrap = document.getElementById('proj-tags'); wrap.innerHTML = '';
+      const tagSet = new Set(); all.forEach(p => (p.tags || []).forEach(t => tagSet.add(t)));
+      const tagList = Array.from(tagSet).sort((a, b) => a.localeCompare(b));
+      const selected = new Set();
+
+      function updatePillStyles() {
+        wrap.querySelectorAll('button[data-tag]').forEach(pill => {
+          const tag = pill.dataset.tag; const isSel = selected.has(tag);
+          pill.className = `px-3 py-1 rounded-full border text-sm ${tagColorClasses(tag, isSel)}`; pill.textContent = tag;
+        });
+      }
+
+      tagList.forEach(tag => {
+        const pill = buildTagPill(tag, false);
+        pill.addEventListener('click', () => { if (selected.has(tag)) selected.delete(tag); else selected.add(tag); updatePillStyles(); filterAndRenderProjects(all, selected); });
+        wrap.appendChild(pill);
+      });
+
+      const search = document.getElementById('proj-search');
+      search.addEventListener('input', () => filterAndRenderProjects(all, selected));
+
+      function attachTagClicks() {
+        document.querySelectorAll('.project-tag').forEach(el => {
+          el.addEventListener('click', () => { const t = el.dataset.tag; if (selected.has(t)) selected.delete(t); else selected.add(t); updatePillStyles(); filterAndRenderProjects(all, selected); });
+        });
+      }
+
+      function filterAndRenderProjects(allItems, sel) {
+        const q = document.getElementById('proj-search').value.trim().toLowerCase();
+        const grid = document.getElementById('projects-grid');
+        const active = Array.from(sel || []);
+        const filtered = allItems.filter(p => {
+          const bySearch = !q || (p.title + ' ' + (p.description || '')).toLowerCase().includes(q);
+          const byTags = !active.length || (p.tags || []).some(t => active.includes(t));
+          return bySearch && byTags;
+        });
+        grid.innerHTML = '';
+        if (!filtered.length) {
+          const empty = document.createElement('div'); empty.className = 'text-sm text-gray-600'; empty.textContent = 'No projects match the current filters.'; grid.appendChild(empty);
+        } else {
+          filtered.forEach(p => grid.appendChild(buildProjectCard(p)));
+        }
+        attachTagClicks();
+      }
+
+      window.filterAndRenderProjects = filterAndRenderProjects;
+      filterAndRenderProjects(all, selected);
+    }
+
+    // ---------- Boot ----------
+    async function boot() {
+      try {
+        const res = await fetch('./config.json', { cache: 'no-store' }); const cfg = await res.json();
+
+        // Site header + footer
+        const titleBtn = document.getElementById('site-title'); titleBtn.textContent = cfg.site?.title || 'D-REP Lab'; document.title = cfg.site?.title || 'D-REP Lab';
+        document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ${cfg.site?.title || 'D-REP Lab'}. All rights reserved.`;
+        document.getElementById('contact-link').href = cfg.site?.contact_email ? `mailto:${cfg.site.contact_email}` : '#';
+        document.getElementById('twitter-link').href = cfg.site?.twitter || '#'; document.getElementById('github-link').href = cfg.site?.github || '#';
+
+        // Hero
+        // const hero = cfg.hero || {}; const heroSec = document.getElementById('hero'); heroSec.setAttribute('data-bg', hero.bg || '');
+        // heroSec.setAttribute('data-overlay', hero.overlay ?? '');
+        // document.getElementById('hero-title').textContent = hero.title || '';
+        // document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
+        // const heroCta = document.getElementById('hero-cta'); heroCta.textContent = hero.cta_text || 'Learn More';
+        const hero = cfg.hero || {};
+        document.getElementById('hero-title').textContent = hero.title || '';
+        document.getElementById('hero-subtitle').textContent = hero.subtitle || '';
+        // document.getElementById('hero-cta').textContent = hero.cta_text || 'Learn More';
+
+        // Build reel (falls back to single bg if no reel)
+        setupHeroReel(cfg);
+
+        // About
+        const about = cfg.sections?.about || {}; const aboutSec = document.getElementById('about');
+        aboutSec.setAttribute('data-bg-color', about.bg_color || '#f8fafc');
+        aboutSec.querySelector('.section-title').textContent = about.title || 'About'; document.getElementById('about-content').innerHTML = about.content_html || '';
+
+        // News
+        const news = cfg.sections?.news || {}; const newsSec = document.getElementById('news');
+        newsSec.setAttribute('data-bg-color', news.bg_color || '#f9fafb');
+        newsSec.querySelector('.section-title').textContent = news.title || 'News';
+        const newsList = document.getElementById('news-list'); newsList.innerHTML = ''; (news.items || []).forEach(n => { const li = document.createElement('li'); li.className = 'p-6 bg-white rounded-2xl shadow'; li.innerHTML = `<h3 class="text-xl font-medium">${n.title}</h3><p class="text-sm text-gray-600">${n.date || ''}</p>`; newsList.appendChild(li); });
+
+        // People
+        const people = cfg.sections?.people || {}; const peopleSec = document.getElementById('people');
+        peopleSec.setAttribute('data-bg-color', people.bg_color || '#ffffff');
+        peopleSec.querySelector('.section-title').textContent = people.title || 'People';
+        const peopleGrid = document.getElementById('people-grid'); peopleGrid.innerHTML = '';
+        let members = []; if (people.members_manifest) { const mres = await fetch(people.members_manifest, { cache: 'no-store' }); const manifest = await mres.json(); for (const path of (manifest.members || [])) { try { const r = await fetch(path, { cache: 'no-store' }); members.push(await r.json()); } catch (_) { } } } else if (Array.isArray(people.members)) { members = people.members; }
+        members.forEach(m => peopleGrid.appendChild(buildPersonCard(m)));
+
+        // Projects
+        const projects = cfg.sections?.projects || {}; const projSec = document.getElementById('projects');
+        projSec.setAttribute('data-bg-color', projects.bg_color || '#f8fafc');
+        projSec.querySelector('.section-title').textContent = projects.title || 'Projects';
+        const projAll = (projects.items || []).map(p => ({ title: p.title || '', description: p.description || '', tags: Array.isArray(p.tags) ? p.tags : [] })); setupProjectFilters(projAll);
+
+        // Publications
+        const pubs = cfg.sections?.publications || {}; const pubsSec = document.getElementById('publications');
+        pubsSec.setAttribute('data-bg-color', pubs.bg_color || '#f3f4f6');
+        pubsSec.querySelector('.section-title').textContent = pubs.title || 'Publications';
+        // const pubsItems = (pubs.items || []).map(p => ({ title: p.title || '', authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []), venue: p.venue || '', year: Number(p.year) || '', link: p.link || '' }));
+        const pubsItems = (pubs.items || []).map(p => ({
+          title: p.title || '',
+          authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []),
+          venue: p.venue || '',
+          year: Number(p.year) || '',
+          link: p.link || '',
+          thumb: p.thumb || '',
+          thumb_alt: p.thumb_alt || '',
+          note: p.note || ''
+        }));
+        populatePubFilters(pubsItems); filterAndRenderPubs(pubsItems);
+        document.getElementById('pub-search').addEventListener('input', () => filterAndRenderPubs(pubsItems));
+        document.getElementById('pub-year').addEventListener('change', () => filterAndRenderPubs(pubsItems));
+        document.getElementById('pub-venue').addEventListener('change', () => filterAndRenderPubs(pubsItems));
+        document.getElementById('pub-clear').addEventListener('click', () => { document.getElementById('pub-search').value = ''; document.getElementById('pub-year').value = ''; document.getElementById('pub-venue').value = ''; filterAndRenderPubs(pubsItems); });
+
+        // Finalize
+        applySectionBackgrounds(); setupNav(); showSection('hero');
+      } catch (e) {
+        console.error('Failed to load config.json', e);
+        setupNav(); applySectionBackgrounds(); showSection('hero');
+      }
+    }
+
+    boot();
+  </script>
 </body>
 
 </html>
