@@ -145,6 +145,8 @@
 
   <script>
     // ---------- Hero Reel ----------
+    function isGif(src = '') { return /\.gif($|\?)/i.test(src); }
+
     function createSlide(img, idx) {
       const el = document.createElement('img');
       el.src = img.src;
@@ -153,9 +155,25 @@
       el.loading = 'lazy';
       el.className =
         'hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700';
-      el.style.zIndex = idx; // stable stacking order
+      el.style.zIndex = idx;
+      // mark GIFs for quick checks
+      if (isGif(img.src)) el.dataset.isGif = '1';
       return el;
     }
+
+    // Restart a GIF by swapping its src (cache-bust) or cloning
+    function restartGif(imgEl) {
+      if (!imgEl || !imgEl.dataset.isGif) return;
+      // Approach 1: cache-bust the same URL
+      const url = new URL(imgEl.src, window.location.href);
+      url.searchParams.set('t', Date.now().toString());
+      imgEl.src = url.toString();
+
+      // Alternative Approach (clone replaces the node):
+      // const clone = imgEl.cloneNode(true);
+      // imgEl.replaceWith(clone);
+    }
+
 
     function setupHeroReel(cfg) {
       const reel = (cfg.hero && Array.isArray(cfg.hero.reel)) ? cfg.hero.reel : null;
