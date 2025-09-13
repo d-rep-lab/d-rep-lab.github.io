@@ -534,7 +534,7 @@
       if (L.includes('code')) {
         return '<svg viewBox="0 0 16 16" class="w-4 h-4" aria-hidden="true"><path fill="currentColor" d="M8 .2a8 8 0 0 0-2.53 15.6c.4.07.55-.17.55-.38v-1.33c-2.24.49-2.71-1.08-2.71-1.08-.37-.95-.9-1.2-.9-1.2-.74-.5.06-.49.06-.49.82.06 1.25.85 1.25.85.73 1.24 1.92.88 2.39.67.07-.53.29-.88.52-1.08-1.79-.2-3.68-.9-3.68-4a3.1 3.1 0 0 1 .83-2.15 2.86 2.86 0 0 1 .08-2.12s.68-.22 2.23.82a7.63 7.63 0 0 1 4.06 0c1.55-1.04 2.23-.82 2.23-.82.3.7.27 1.49.08 2.12.52.57.83 1.3.83 2.15 0 3.11-1.9 3.79-3.7 3.99.3.26.56.78.56 1.58v2.34c0 .21.14.46.55.38A8 8 0 0 0 8 .2z"/></svg>';
       }
-      if (L.includes('arxiv')) {
+      if (L.includes('arxiv') || L.includes('preprint')) {
         return '<svg viewBox="0 0 24 24" class="w-4 h-4" aria-hidden="true"><path fill="currentColor" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"/></svg>';
       }
       if (L.includes('doi') || L.includes('paper')) {
@@ -567,6 +567,19 @@
       return wrap;
     }
 
+    function renderAwardBadge(text) {
+      if (!text) return null;
+      const span = document.createElement('span');
+      span.className = 'inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-200';
+      span.setAttribute('aria-label', 'award');
+      span.innerHTML = `
+    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 2a7 7 0 1 1 0 14a7 7 0 0 1 0-14Zm-2.5 18l2.5-1.5L14.5 20l.5-3l2.5-1.5l-3-.5l-1.5-2.5l-1.5 2.5l-3 .5l2.5 1.5l.5 3Z"/>
+    </svg>
+    <span>${text}</span>`;
+      return span;
+    }
+
     function buildPubItem(p) {
       const li = document.createElement('li');
       li.className = 'p-4 bg-white rounded-xl shadow hover:shadow-md transition';
@@ -580,8 +593,8 @@
         img.alt = p.thumb_alt || p.title || 'Publication thumbnail';
         img.loading = 'lazy';
         img.decoding = 'async';
+        // uniform width; proportional height
         img.className = 'w-48 h-auto object-contain rounded-md flex-shrink-0';
-        // img.className = 'w-48 h-24 object-cover rounded-md flex-shrink-0';
         img.onerror = () => { img.remove(); };
         row.appendChild(img);
       }
@@ -589,24 +602,35 @@
       const content = document.createElement('div');
       content.className = 'min-w-0';
 
+      // year • venue
       const meta = document.createElement('div');
-      meta.className = 'text-sm text-gray-600 mb-1';
+      meta.className = 'text-sm text-gray-600';
       meta.textContent = `${p.year || ''}${p.year && p.venue ? ' • ' : ''}${p.venue || ''}`;
 
+      // TOP LINE: meta + (optional) award badge
+      const topline = document.createElement('div');
+      topline.className = 'flex flex-wrap items-center gap-2 mb-1';
+      topline.appendChild(meta);
+      const awardEl = renderAwardBadge(p.award);
+      if (awardEl) topline.appendChild(awardEl);
+
+      // title (linked if p.link present)
       const titleEl = document.createElement(p.link ? 'a' : 'div');
       titleEl.className = 'font-medium break-words';
       titleEl.textContent = p.title || '';
       if (p.link) { titleEl.href = p.link; titleEl.target = '_blank'; titleEl.className += ' underline decoration-dotted'; }
 
+      // authors
       const authorsStr = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '');
       const authors = document.createElement('div');
       authors.className = 'text-sm text-gray-700';
       authors.textContent = authorsStr;
 
-      content.appendChild(meta);
+      content.appendChild(topline);
       content.appendChild(titleEl);
       content.appendChild(authors);
 
+      // optional note (e.g., equal contribution)
       if (p.note) {
         const note = document.createElement('div');
         note.className = 'text-xs text-gray-500 mt-1 italic';
@@ -614,7 +638,7 @@
         content.appendChild(note);
       }
 
-      // NEW: links row
+      // links row (uses your existing helper)
       const linksEl = renderPubLinks(p.links);
       if (linksEl) content.appendChild(linksEl);
 

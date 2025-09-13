@@ -17,10 +17,13 @@
       "venue": "arXiv",
       "year": 2025,
       "note": "* equally contributed",
-      "thumb": "./images/pubs/2025_orpavis.png",
       "links": [
         {
           "label": "arXiv",
+          "url": "https://arxiv.org/abs/2509.03164"
+        },
+        {
+          "label": "DOI",
           "url": "https://doi.org/10.48550/arXiv.2509.03164"
         }
       ]
@@ -34,10 +37,9 @@
         "Ellen Yi-Luen Do",
         "Michael L. Rivera"
       ],
-      "venue": "ACM SCF",
+      "venue": "Proceedings of ACM SCF (forthcoming)",
       "year": 2025,
-      "note": "* equally contributed. Forthcoming.",
-      "thumb": "./images/pubs/2025_freeform_interface.png",
+      "note": "* equally contributed",
       "links": [
         {
           "label": "Video",
@@ -59,17 +61,12 @@
         "Brian P. Abbott",
         "Jacqueline K. Faherty"
       ],
-      "venue": "IEEE Computer Graphics and Applications",
+      "venue": "IEEE Computer Graphics and Applications (forthcoming)",
       "year": 2025,
-      "note": "* equally contributed. Early Access.",
-      "thumb": "./images/pubs/2025_cvol.png",
+      "note": "* equally contributed",
       "links": [
         {
-          "label": "Paper (IEEE Xplore, open access)",
-          "url": "https://doi.org/10.1109/MCG.2025.3591713"
-        },
-        {
-          "label": "Project page",
+          "label": "Project",
           "url": "https://www.amnh.org/research/hayden-planetarium/science-visualization/cosmic-view-of-life-on-earth"
         },
         {
@@ -95,10 +92,8 @@
         "Jorji Nonaka",
         "Takanori Fujiwara"
       ],
-      "venue": "IEEE VIS",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics (VIS 2025 SI), forthcoming",
       "year": 2025,
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
-      "thumb": "./images/pubs/2025_tulca.png",
       "links": [
         {
           "label": "arXiv",
@@ -117,10 +112,8 @@
         "Takanori Fujiwara",
         "Jaemin Jo"
       ],
-      "venue": "IEEE VIS",
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics (VIS 2025 SI), forthcoming",
       "year": 2025,
-      "thumb": "./images/pubs/2025_ghostumap2.png",
       "links": [
         {
           "label": "arXiv",
@@ -143,10 +136,8 @@
         "Lonni Besançon",
         "Katerina Vrotsou"
       ],
-      "venue": "IEEE VIS",
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics (VIS 2025 SI), forthcoming",
       "year": 2025,
-      "thumb": "./images/pubs/2025_revisid.png",
       "links": [
         {
           "label": "OSF Preprint",
@@ -166,10 +157,9 @@
       ],
       "venue": "IEEE Transactions on Visualization and Computer Graphics",
       "year": 2025,
-      "thumb": "./images/pubs/2024_networkcv.png",
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
+          "label": "IEEE Xplore",
           "url": "https://ieeexplore.ieee.org/document/10587089"
         },
         {
@@ -191,18 +181,12 @@
         "Ryo Suzuki",
         "Huamin Qu"
       ],
-      "venue": "ACM UIST",
+      "venue": "Proceedings of ACM UIST (forthcoming)",
       "year": 2025,
-      "note": "Forthcoming",
-      "thumb": "./images/pubs/2025_insitutale.png",
       "links": [
         {
           "label": "arXiv",
-          "url": "https://doi.org/10.48550/arXiv.2507.21411"
-        },
-        {
-          "label": "Video",
-          "url": "https://youtu.be/YI6SIZWQYUk?si=dz8HvHcN1YKZaXII"
+          "url": ""
         }
       ]
     },
@@ -219,12 +203,11 @@
         "Kwan-Liu Ma",
         "Jinwook Seo"
       ],
-      "venue": "EuroVis (short paper)",
+      "venue": "EuroVis Short",
       "year": 2025,
-      "thumb": "./images/pubs/2025_relaiable_dr_guide.png",
       "links": [
         {
-          "label": "Paper (Eurographics DL, open access)",
+          "label": "Eurographics DL",
           "url": "https://diglib.eg.org/handle/10.2312/evs20251088"
         }
       ]
@@ -237,14 +220,13 @@
         "Chin Tseng*",
         "Danielle A. Szafir"
       ],
-      "venue": "ACM CHI",
+      "venue": "Proceedings of ACM CHI",
       "year": 2025,
       "note": "* equally contributed",
-      "thumb": "./images/pubs/2025_vcs_perception.png",
       "links": [
         {
-          "label": "Paper (ACM DL, open access)",
-          "url": "https://doi.org/10.1145/3706598.3713976"
+          "label": "ACM DL",
+          "url": ""
         },
         {
           "label": "Project",
@@ -252,7 +234,7 @@
         },
         {
           "label": "Code",
-          "url": "https://github.com/takanori-fujiwara/multiclass-scatterplot-features"
+          "url": ""
         }
       ]
     },
@@ -269,13 +251,12 @@
         "Kwan-Liu Ma",
         "Jinwook Seo"
       ],
-      "venue": "ACM CHI",
+      "venue": "Proceedings of ACM CHI",
       "year": 2025,
-      "thumb": "./images/pubs/2025_relaiable_dr_survey.png",
       "links": [
         {
-          "label": "Paper (ACM DL, open access)",
-          "url": "https://doi.org/10.1145/3706598.3713551"
+          "label": "ACM DL",
+          "url": ""
         },
         {
           "label": "Online Browser",
@@ -293,16 +274,15 @@
         "Takanori Fujiwara",
         "Huamin Qu"
       ],
-      "venue": "ACM CHI",
+      "venue": "Proceedings of ACM CHI",
       "year": 2025,
-      "thumb": "./images/pubs/2025_tangiblenet.png",
       "links": [
         {
-          "label": "Paper (ACM DL, open access)",
-          "url": "https://doi.org/10.1145/3706598.3714265"
+          "label": "ACM DL",
+          "url": ""
         },
         {
-          "label": "Video",
+          "label": "Demo Video",
           "url": "https://iframe.videodelivery.net/"
         }
       ]
@@ -316,14 +296,20 @@
         "Naohisa Sakamoto",
         "Jorji Nonaka"
       ],
-      "venue": "IEEE PacificVis (short paper)",
-      "note": "Presented at the Visualization Meets AI Workshop",
+      "venue": "IEEE PacificVis (VMV-AI Workshop), short paper",
       "year": 2025,
-      "thumb": "./images/pubs/2025_multidr_ulca.png",
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
-          "url": "https://doi.org/10.1109/PacificVis64226.2025.00048"
+          "label": "IEEE Xplore",
+          "url": ""
+        },
+        {
+          "label": "Paper",
+          "url": "https://drive.google.com/"
+        },
+        {
+          "label": "Demo Video",
+          "url": "https://drive.google.com/"
         }
       ]
     },
@@ -339,11 +325,10 @@
       ],
       "venue": "Journal of Visualization",
       "year": 2024,
-      "thumb": "./images/pubs/2024_adv_attack_ml4vis.png",
       "links": [
         {
-          "label": "Paper (Springer Nature Link, open access)",
-          "url": "https://doi.org/10.1007/s12650-024-01029-2"
+          "label": "Springer",
+          "url": "https://doi.org/10.1007/s12650-024-01055-8"
         },
         {
           "label": "arXiv",
@@ -366,21 +351,20 @@
         "Takanori Fujiwara",
         "Jaemin Jo"
       ],
-      "venue": "IEEE VIS (short paper)",
+      "venue": "IEEE VIS—Short Papers",
       "year": 2024,
-      "thumb": "./images/pubs/2024_ghostumap.png",
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
-          "url": "https://doi.org/10.1109/VIS55277.2024.00040"
+          "label": "IEEE Xplore",
+          "url": ""
         },
         {
-          "label": "arXiv",
-          "url": "https://arxiv.org/abs/2306.14807"
+          "label": "Paper",
+          "url": "https://drive.google.com/"
         },
         {
           "label": "Supp. Materials",
-          "url": "https://drive.google.com/file/d/1AH2sG6u-56105O-zDLcU20Dhv_dvn2Qq/view?usp=drive_link"
+          "url": "https://drive.google.com/"
         },
         {
           "label": "Code",
@@ -398,14 +382,11 @@
         "Michael L. Rivera",
         "Danielle A. Szafir"
       ],
-      "venue": "IEEE VIS",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics (VIS 2023 SI). Best Paper Honorable Mention",
       "year": 2023,
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics.",
-      "award": "Best Paper Honorable Mention",
-      "thumb": "./images/pubs/2023_sensing_network.png",
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
+          "label": "IEEE Xplore",
           "url": "https://ieeexplore.ieee.org/document/10385641"
         },
         {
@@ -431,10 +412,9 @@
       "venue": "PLOS ONE",
       "year": 2023,
       "note": "* equally contributed",
-      "thumb": "./images/pubs/2023_cmca.png",
       "links": [
         {
-          "label": "Paper (PLOS ONE, open access)",
+          "label": "PLOS ONE",
           "url": "https://doi.org/10.1371/journal.pone.0287488"
         },
         {
@@ -452,40 +432,6 @@
       ]
     },
     {
-      "title": "Visualizations Using Neural Networks",
-      "authors": [
-        "Takanori Fujiwara"
-      ],
-      "venue": "Journal of The Japan Society for Simulation Technology",
-      "note": "Invited article. In Japanese.",
-      "year": 2023,
-      "thumb": "./images/pubs/2023_vis_nn.png",
-      "links": []
-    },
-    {
-      "title": "Reflections on the Developments of Visual Analytics Systems for the K Computer System Log Data",
-      "authors": [
-        "Jorji Nonaka",
-        "Keijiro Fujita",
-        "Takanori Fujiwara",
-        "Naohisa Sakamoto",
-        "Keiji Yamamoto",
-        "Masaaki Terai",
-        "Toshiyuki Tsukamoto",
-        "Fumiyoshi Shoji"
-      ],
-      "venue": "VisGap",
-      "note": "Invited article. In Japanese.",
-      "year": 2023,
-      "thumb": "./images/pubs/2023_gap_supercomputerlog.png",
-      "links": [
-        {
-          "label": "Paper (open access)",
-          "url": "https://doi.org/10.2312/visgap.20231116"
-        }
-      ]
-    },
-    {
       "title": "Feature Learning for Nonlinear Dimensionality Reduction toward Maximal Extraction of Hidden Patterns",
       "authors": [
         "Takanori Fujiwara",
@@ -495,10 +441,9 @@
       ],
       "venue": "IEEE PacificVis",
       "year": 2023,
-      "thumb": "./images/pubs/2023_fealm.png",
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
+          "label": "IEEE Xplore",
           "url": "https://ieeexplore.ieee.org/document/10108735"
         },
         {
@@ -516,59 +461,6 @@
       ]
     },
     {
-      "title": "Visual Analytics of Neuron Vulnerability to Adversarial Attacks on Convolutional Neural Networks",
-      "authors": [
-        "Yiran Li",
-        "Junpeng Wang",
-        "Takanori Fujiwara",
-        "Kwan-Liu Ma"
-      ],
-      "venue": "ACM Transactions on Interactive Intelligent Systems,",
-      "year": 2023,
-      "thumb": "./images/pubs/2023_adv_cnn.png",
-      "links": [
-        {
-          "label": "Paper (ACM DL, open access)",
-          "url": "https://doi.org/10.1145/3587470"
-        },
-        {
-          "label": "arXiv",
-          "url": "https://arxiv.org/abs/2303.02814"
-        },
-        {
-          "label": "Supp. Materials",
-          "url": "https://drive.google.com/file/d/1wySjGbrfO66Ohsyk3uRD8NkOeMBoCaK6/view?usp=sharing"
-        }
-      ]
-    },
-    {
-      "title": "A Predictive Visual Analytics System for Studying Neurodegenerative Disease Based on DTI Fiber Tracts",
-      "authors": [
-        "Chaoqing Xu",
-        "Tyson Neuroth",
-        "Takanori Fujiwara",
-        "Ronghua Liang",
-        "Kwan-Liu Ma"
-      ],
-      "venue": "IEEE Transactions on Visualization and Computer Graphics,",
-      "year": 2023,
-      "thumb": "./images/pubs/2022_brain_fiber.png",
-      "links": [
-        {
-          "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/9665344"
-        },
-        {
-          "label": "arXiv",
-          "url": "https://arxiv.org/abs/2010.07047"
-        },
-        {
-          "label": "Video",
-          "url": "https://takanori-fujiwara.github.io/s/ml-brain-fiber/"
-        }
-      ]
-    },
-    {
       "title": "Network Comparison with Interpretable Contrastive Network Representation Learning",
       "authors": [
         "Takanori Fujiwara",
@@ -579,10 +471,9 @@
       ],
       "venue": "Journal of Data Science, Statistics, and Visualisation",
       "year": 2022,
-      "thumb": "./images/pubs/2022_icnrl.png",
       "links": [
         {
-          "label": "Paper (open access)",
+          "label": "Journal",
           "url": "https://jdssv.org/index.php/jdssv/article/view/122"
         },
         {
@@ -590,7 +481,7 @@
           "url": "https://arxiv.org/abs/2007.07346"
         },
         {
-          "label": "Data & Analysis Details",
+          "label": "Data & Details",
           "url": "https://takanori-fujiwara.github.io/s/cnrl/"
         },
         {
@@ -607,10 +498,8 @@
         "Jian Zhao",
         "Kwan-Liu Ma"
       ],
-      "venue": "IEEE VIS",
-      "note:": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics (VIS 2021 SI)",
       "year": 2021,
-      "thumb": "./images/pubs/2021_ulca.png",
       "links": [
         {
           "label": "IEEE Xplore",
@@ -631,7 +520,7 @@
       ]
     },
     {
-      "title": "A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction",
+      "title": "A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction (MulTiDR)",
       "authors": [
         "Takanori Fujiwara",
         "Shilpika",
@@ -640,13 +529,11 @@
         "Keiji Yamamoto",
         "Kwan-Liu Ma"
       ],
-      "venue": "IEEE VIS",
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
-      "year": 2020,
-      "thumb": "./images/pubs/2020_multidr.png",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2021,
       "links": [
         {
-          "label": "Paper (IEEE Xplore)",
+          "label": "IEEE Xplore",
           "url": "https://ieeexplore.ieee.org/document/9204914"
         },
         {
