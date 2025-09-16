@@ -647,16 +647,22 @@
       const authors = document.createElement('div');
       authors.className = 'text-sm text-gray-700 flex flex-wrap gap-1';
 
+      // build each author span, append a comma if not last
       (p.authors || []).forEach((a, i) => {
         const span = document.createElement('span');
-        if (isHighlighted(a)) {
-          // highlight style (tweak as you like)
+        if (isHighlighted && isHighlighted(a)) {
           span.className = 'font-semibold text-blue-700';
         }
-        span.textContent = a;
+        // add comma inside the span unless it's the last author
+        span.textContent = i < p.authors.length - 1 ? `${a},` : a;
         authors.appendChild(span);
-        if (i < p.authors.length - 1) authors.appendChild(document.createTextNode(', '));
+
+        // add a trailing space after each span (so comma and next name don’t stick together)
+        if (i < p.authors.length - 1) {
+          authors.appendChild(document.createTextNode(' '));
+        }
       });
+
 
       content.appendChild(topline);
       content.appendChild(titleEl);
