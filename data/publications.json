@@ -1,6 +1,11 @@
 {
   "title": "Publications",
   "bg_color": "#f3f4f6",
+  "highlight_authors": [
+    "Takanori Fujiwara",
+    "S. Sandra Bae",
+    "Sandra Bae"
+  ],
   "items": [
     {
       "title": "OPRA-Vis: Visual Analytics System to Assist Organization-Public Relationship Assessment with Large Language Models",

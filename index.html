@@ -311,6 +311,7 @@
   </script>
 
   <script>
+    let GLOBAL_HIGHLIGHT_AUTHORS = [];
     const ASSET_VER = Date.now(); // or '2025-09-11a' for a manual bump
     async function loadJSON(path) {
       const url = path + (path.includes('?') ? '&' : '?') + 'v=' + ASSET_VER;
@@ -422,6 +423,8 @@
     async function ensurePublications() {
       if (Loaded.publications) return;
       const pubs = await loadJSON('./data/publications.json');
+      GLOBAL_HIGHLIGHT_AUTHORS = Array.isArray(pubs.highlight_authors) ? pubs.highlight_authors : [];
+
       const sec = document.getElementById('publications');
       sec.setAttribute('data-bg-color', pubs.bg_color || '#f3f4f6');
       sec.querySelector('.section-title').textContent = pubs.title || 'Publications';
@@ -435,7 +438,12 @@
       document.getElementById('pub-search').addEventListener('input', () => filterAndRenderPubs(items));
       document.getElementById('pub-year').addEventListener('change', () => filterAndRenderPubs(items));
       document.getElementById('pub-venue').addEventListener('change', () => filterAndRenderPubs(items));
-      document.getElementById('pub-clear').addEventListener('click', () => { document.getElementById('pub-search').value = ''; document.getElementById('pub-year').value = ''; document.getElementById('pub-venue').value = ''; filterAndRenderPubs(items); });
+      document.getElementById('pub-clear').addEventListener('click', () => {
+        document.getElementById('pub-search').value = '';
+        document.getElementById('pub-year').value = '';
+        document.getElementById('pub-venue').value = '';
+        filterAndRenderPubs(items);
+      });
       Loaded.publications = true;
     }
 
@@ -621,10 +629,34 @@
       if (p.link) { titleEl.href = p.link; titleEl.target = '_blank'; titleEl.className += ' underline decoration-dotted'; }
 
       // authors
-      const authorsStr = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '');
+      // const authorsStr = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '');
+      // const authors = document.createElement('div');
+      // authors.className = 'text-sm text-gray-700';
+      // authors.textContent = authorsStr;
+
+      function normalizeAuthorName(a) {
+        // strip common footnote marks like "*", "†"
+        return (a || "").replace(/[*†‡]+/g, "").trim();
+      }
+      function isHighlighted(name) {
+        const n = normalizeAuthorName(name).toLowerCase();
+        return GLOBAL_HIGHLIGHT_AUTHORS.some(h => normalizeAuthorName(h).toLowerCase() === n);
+      }
+
+
       const authors = document.createElement('div');
-      authors.className = 'text-sm text-gray-700';
-      authors.textContent = authorsStr;
+      authors.className = 'text-sm text-gray-700 flex flex-wrap gap-1';
+
+      (p.authors || []).forEach((a, i) => {
+        const span = document.createElement('span');
+        if (isHighlighted(a)) {
+          // highlight style (tweak as you like)
+          span.className = 'font-semibold text-blue-700';
+        }
+        span.textContent = a;
+        authors.appendChild(span);
+        if (i < p.authors.length - 1) authors.appendChild(document.createTextNode(', '));
+      });
 
       content.appendChild(topline);
       content.appendChild(titleEl);
@@ -667,7 +699,14 @@
         return byYear && byVenue && bySearch;
       });
       list.innerHTML = '';
-      if (!filtered.length) { const empty = document.createElement('div'); empty.className = 'text-sm text-gray-600'; empty.textContent = 'No publications match the current filters.'; list.appendChild(empty); } else { filtered.forEach(p => list.appendChild(buildPubItem(p))); }
+      if (!filtered.length) {
+        const empty = document.createElement('div');
+        empty.className = 'text-sm text-gray-600';
+        empty.textContent = 'No publications match the current filters.';
+        list.appendChild(empty);
+      } else {
+        filtered.forEach(p => list.appendChild(buildPubItem(p)));
+      }
     }
 
     // ---------- Tag colors + Project filters ----------
