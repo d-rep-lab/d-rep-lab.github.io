@@ -608,17 +608,17 @@
         "Kwan-Liu Ma"
       ],
       "venue": "IEEE VIS",
-      "note:": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "year": 2021,
       "thumb": "./images/pubs/2021_ulca.png",
       "links": [
         {
-          "label": "IEEE Xplore",
+          "label": "Paper (IEEE Xplore)",
           "url": "https://ieeexplore.ieee.org/document/9714333"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2108.02171"
+          "url": "https://arxiv.org/abs/2106.15481"
         },
         {
           "label": "Supp. Materials",
@@ -629,6 +629,68 @@
           "url": "https://github.com/takanori-fujiwara/ulca"
         }
       ]
+    },
+    {
+      "title": "A Visual Analytics System for Water Distribution System Optimization",
+      "authors": [
+        "Yiran Li",
+        "Erin Musabandesu",
+        "Takanori Fujiwara",
+        "Frank J. Loge",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VIS—Short Papers",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_wds.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://ieeexplore.ieee.org/document/9633550"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2108.12540"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Approach for the Diagnosis of Heterogeneous and Multidimensional Machine Maintenance Data",
+      "authors": [
+        "Xiaoyu Zhang",
+        "Takanori Fujiwara",
+        "Senthil Chandrasegaran",
+        "Michael P. Brundage",
+        "Thurston Sexton",
+        "Alden Dima",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_maintenance.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://ieeexplore.ieee.org/document/9412569"
+        },
+        {
+          "label": "Video",
+          "url": "https://drive.google.com/file/d/1_ZtRAYdalEFrnCMnHzL3_1RMpQvRFv2y/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Method for Time-Series Log Data Using Multiple Dimensionality Reduction",
+      "authors": [
+        "Keijiro Fujita",
+        "Naohisa Sakamoto",
+        "Takanori Fujiwara",
+        "Jorji Nonaka",
+        "Toshiyuki Tsukamoto"
+      ],
+      "venue": "Proc. AsiaSim",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_asiasim.png",
+      "links": []
     },
     {
       "title": "A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction",
@@ -647,15 +709,540 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/9204914"
+          "url": "https://ieeexplore.ieee.org/document/9216630"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2008.01645"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/FUja2xm9UIA"
+        },
+        {
+          "label": "Supp. Materials",
+          "url": "https://takanori-fujiwara.github.io/s/multidr/index.html"
         },
         {
           "label": "Code",
           "url": "https://github.com/takanori-fujiwara/multidr"
         },
         {
-          "label": "Project Page",
-          "url": "https://takanori-fujiwara.github.io/s/multidr/"
+          "label": "Talk",
+          "url": "https://www.youtube.com/watch?v=zV4gChjroY0"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Framework for Contrastive Network Analysis",
+      "authors": [
+        "Takanori Fujiwara",
+        "Jian Zhao",
+        "Francine Chen",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VIS (VAST)",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_contrana.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://ieeexplore.ieee.org/document/9308624"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2008.00151"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/tIQms2vBs1Y"
+        },
+        {
+          "label": "Supp. Materials",
+          "url": "https://takanori-fujiwara.github.io/s/contrana/index.html"
+        },
+        {
+          "label": "Talk",
+          "url": "https://youtu.be/hLHMiQpFFbw"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics System for Multi-model Comparison on Clinical Data Predictions",
+      "authors": [
+        "Yiran Li",
+        "Takanori Fujiwara",
+        "Yong K. Choi",
+        "Katherine K. Kim",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "Visual Informaticss",
+      "note": "Presented at PacificVis 2020 Visualization Meets AI Workshop",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_model_comp.png",
+      "links": [
+        {
+          "label": "Paper (ScienceDirect, open access)",
+          "url": "https://doi.org/10.1016/j.visinf.2020.04.005"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2002.10998"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=KBZYcwEo43Q"
+        }
+      ]
+    },
+    {
+      "title": "Comparative Visual Analytics for Assessing Medical Records with Sequence Embedding",
+      "authors": [
+        "Rongchen Guo",
+        "Takanori Fujiwara",
+        "Yiran Li",
+        "Kelly M. Lima",
+        "Soman Sen",
+        "Nam K. Tran",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "Visual Informaticss",
+      "note": "Presented at PacificVis 2020 Visualization Meets AI Workshop",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_sim_patients.png",
+      "links": [
+        {
+          "label": "Paper (ScienceDirect, open access)",
+          "url": "https://doi.org/10.1016/j.visinf.2020.04.001"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2002.08356"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=Ng89PDPcQpc"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Framework for Reviewing Streaming Performance Data",
+      "authors": [
+        "Suraj P. Kesavan",
+        "Takanori Fujiwara",
+        "Jianping Kelvin Li",
+        "Caitlin Ross",
+        "Misbah Mubarak",
+        "Christopher D. Carothers",
+        "Robert B. Ross",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_streaming_hpc.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/PacificVis48177.2020.9280"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2001.09399"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/pxthZSJ1jqs"
+        },
+        {
+          "label": "Code",
+          "url": "https://jarusified.github.io/2020-streaming.html"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Framework for Analyzing Parallel and Distributed Computing Applications",
+      "authors": [
+        "Jianping Kelvin Li",
+        "Takanori Fujiwara",
+        "Suraj P. Kesavan",
+        "Caitlin Ross",
+        "Misbah Mubarak",
+        "Christopher D. Carothers",
+        "Robert B. Ross",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VDS",
+      "year": 2019,
+      "thumb": "./images/pubs/2019_pdes.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/VDS48975.2019.8973380"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/1_pv-5lSIV99GhdyJxMXViCeURbxs4nk7/view"
+        },
+        {
+          "label": "Talk",
+          "url": "https://vimeo.com/378344811"
+        }
+      ]
+    },
+    {
+      "title": "Supporting Analysis of Dimensionality Reduction Results with Contrastive Learning",
+      "authors": [
+        "Takanori Fujiwara",
+        "Oh-Hyun Kwon",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2019,
+      "thumb": "./images/pubs/2019_cpca.png",
+      "award": "Best Paper Honorable Mention",
+      "links": [
+        {
+          "label": "IEEE Xplore",
+          "url": "https://doi.org/10.1109/TVCG.2019.2934251"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.1905.03911"
+        },
+        {
+          "label": "Supp. Materials",
+          "url": "https://takanori-fujiwara.github.io/s/dr-cl/index.html"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/takanori-fujiwara/ccpca"
+        },
+        {
+          "label": "Talk",
+          "url": "https://vimeo.com/368441312"
+        }
+      ]
+    },
+    {
+      "title": "An Incremental Dimensionality Reduction Method for Visualizing Streaming Multidimensional Data",
+      "authors": [
+        "Takanori Fujiwara",
+        "Jia-Kai Chou",
+        "Shilpika",
+        "Panpan Xu",
+        "Liu Ren",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2019,
+      "thumb": "./images/pubs/2019_ipca.png",
+      "links": [
+        {
+          "label": "IEEE Xplore",
+          "url": "https://doi.org/10.1109/TVCG.2019.2934433"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.1905.04000"
+        },
+        {
+          "label": "Supp. Materials",
+          "url": "https://takanori-fujiwara.github.io/s/inc-dr/index.html"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/takanori-fujiwara/streaming-vis-pca"
+        },
+        {
+          "label": "Talk",
+          "url": "https://vimeo.com/371267332"
+        }
+      ]
+    },
+    {
+      "title": "Concise Provenance of Interactive Network Analysis",
+      "authors": [
+        "Takanori Fujiwara",
+        "Tarik Crnovrsanin",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "Visual Informatics",
+      "year": 2018,
+      "thumb": "./images/pubs/2018_visinf.png",
+      "links": [
+        {
+          "label": "Paper (ScienceDirect, open access)",
+          "url": "https://doi.org/10.1016/j.visinf.2018.12.002"
+        },
+        {
+          "label": "Supp. Materials",
+          "url": "https://takanori-fujiwara.github.io/s/prov-vis/index.html"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/u_kq2-pd8u0"
+        }
+      ]
+    },
+    {
+      "title": "An Organic Visual Metaphor for Public Understanding of Conditional Co-occurrences",
+      "authors": [
+        "Keshav Dasu",
+        "Takanori Fujiwara",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VIS (SciVis, short paper)",
+      "year": 2018,
+      "thumb": "./images/pubs/2018_scivis.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://ieeexplore.ieee.org/document/8823624"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/open?id=1n1lgnzjuVEGMRT4Q8496WhHtoGa7THmp"
+        },
+        {
+          "label": "Video",
+          "url": "https://drive.google.com/open?id=1B7mBwMgmU2Q9wVZoun2dBlULKAoXoDBj"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/takanori-fujiwara/organic-visual-metaphor"
+        },
+        {
+          "label": "Talk",
+          "url": "https://vimeo.com/315221094"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics System for Optimizing the Performance of Large-scale Networks in Supercomputing Systems",
+      "authors": [
+        "Takanori Fujiwara",
+        "Jianping Kelvin Li",
+        "Misbah Mubarak",
+        "Caitlin Ross",
+        "Christopher D. Carothers",
+        "Robert B. Ross",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "Visual Informatics",
+      "note": "Presented at PacificVAST 2018",
+      "year": 2018,
+      "thumb": "./images/pubs/2018_pacificvast.png",
+      "links": [
+        {
+          "label": "Paper (ScienceDirect, open access)",
+          "url": "https://doi.org/10.1016/j.visinf.2018.04.010"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics System for Optimizing Communications in Massively Parallel Applications",
+      "authors": [
+        "Takanori Fujiwara",
+        "Preeti Malakar",
+        "Khairi Reda",
+        "Venkatram Vishwanath",
+        "Michael E. Papka",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VIS (VAST)",
+      "year": 2017,
+      "thumb": "./images/pubs/2017_vast.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://ieeexplore.ieee.org/document/8585646"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/open?id=0B59ss1whXM4kNlF0Y25wMEZMckk"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=RzXfxXjAoYk"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/takanori-fujiwara/visuco"
+        },
+        {
+          "label": "Dataset",
+          "url": "https://github.com/takanori-fujiwara/par-comm-data"
+        },
+        {
+          "label": "Talk",
+          "url": "https://vimeo.com/238502779"
+        }
+      ]
+    },
+    {
+      "title": "Threatening Event, National Identity and Network Dynamics of Motivated Information Processing: Exploring Japanese Twitter during the Rise of Territorial Disputes, April through October 2012",
+      "authors": [
+        "Gento Kato",
+        "Takanori Fujiwara",
+        "Christian Collet",
+        "Tetsuro Kobayashi",
+        "Takafumi Suzuki"
+      ],
+      "venue": "APSA Annual Meeting",
+      "year": 2017,
+      "thumb": "./images/pubs/2017_apsa.png",
+      "links": [
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/open?id=0B59ss1whXM4kLXlUSTlvQTVwbGs"
+        }
+      ]
+    },
+    {
+      "title": "A Gesture System for Graph Visualization in Virtual Reality Environments",
+      "authors": [
+        "Yi-Jheng Huang",
+        "Takanori Fujiwara",
+        "Yun-Xuan Lin",
+        "Wen-Chieh Lin",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis (short paper)",
+      "year": 2017,
+      "thumb": "./images/pubs/2017_pacificvis_short.jpg",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/PACIFICVIS.2017.8031577"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/0B59ss1whXM4kMEJtQXpsdVIxMm8/view"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=kIgRXx6Z1-E"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics System for Brain Functional Connectivity Comparison across Individuals, Groups, and Time Points",
+      "authors": [
+        "Takanori Fujiwara",
+        "Jia-Kai Chou",
+        "Andrew M. McCullough",
+        "Charan Ranganath",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis",
+      "year": 2017,
+      "thumb": "./images/pubs/2017_pacificvis.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/PACIFICVIS.2017.8031601"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/0B59ss1whXM4kZWFlQk82Y1FNZ0k/view"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=0mIdl7bi1DI"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/takanori-fujiwara/vibrain"
+        }
+      ]
+    },
+    {
+      "title": "Multi-Agent-Based Simulation of Knowledge Propagation in Organizations",
+      "authors": [
+        "Gaku Hashimoto",
+        "Takanori Fujiwara",
+        "Masaaki Suzuki",
+        "Hiroshi Okuda",
+        "Junji Ise",
+        "Masanori Shioya"
+      ],
+      "venue": "Electronics and Communications in Japan",
+      "year": 2015,
+      "thumb": "./images/pubs/2015_ecj.png",
+      "links": [
+        {
+          "label": "Paper (Wiley OL)",
+          "url": "https://doi.org/10.1002/ecj.11685"
+        }
+      ]
+    },
+    {
+      "title": "A Fractal-based 2D Expansion Method for Multi-scale Volume Data Visualization",
+      "authors": [
+        "Takanori Fujiwara",
+        "Masaki Iwamaru",
+        "Manabu Tange",
+        "Satoshi Someya",
+        "Koji Okamoto"
+      ],
+      "venue": "Journal of Visualization",
+      "year": 2011,
+      "thumb": "./images/pubs/2011_jov.png",
+      "links": [
+        {
+          "label": "Paper (Springer Nature Link)",
+          "url": "https://doi.org/10.1007/s12650-011-0084-z"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/0B59ss1whXM4kR21WbDMtYTdOc28/view"
+        }
+      ]
+    },
+    {
+      "title": "Fractal Map: Fractal-Based 2D Expansion Method for Multi-Scale High-Dimensional Data Visualization",
+      "authors": [
+        "Takanori Fujiwara",
+        "Ryo Matsushita",
+        "Masaki Iwamaru",
+        "Manabu Tange",
+        "Satoshi Someya",
+        "Koji Okamoto"
+      ],
+      "venue": "ISVC",
+      "year": 2010,
+      "thumb": "./images/pubs/2010_isvc.png",
+      "links": [
+        {
+          "label": "Paper (Springer Nature Link)",
+          "url": "https://doi.org/10.1007/978-3-642-17289-2_30"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/0B59ss1whXM4kZm90T1FiZTJVNlE/view"
+        }
+      ]
+    },
+    {
+      "title": "Learning About Disease Associations in Taiwan",
+      "authors": [
+        "Keshav Dasu",
+        "Suyun Bae",
+        "Takanori Fujiwara",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis Visual Storytelling Contest",
+      "year": 2018,
+      "award": "Honorable Mention",
+      "thumb": "./images/pubs/2018_pacificvis_storytelling.png",
+      "links": [
+        {
+          "label": "Demo Site",
+          "url": "https://k-dasu.github.io/"
+        },
+        {
+          "label": "Abstract (Google Drive)",
+          "url": "https://drive.google.com/open?id=1U8pyDcLeERLtBOoo6kAtMTCnKQkvB0nZ"
         }
       ]
     }
