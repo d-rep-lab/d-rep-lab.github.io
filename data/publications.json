@@ -41,7 +41,7 @@
       "links": [
         {
           "label": "Video",
-          "url": "https://youtu.be/5AlPJQngqv4"
+          "url": "https://youtu.be/at5puV1MHUo?si=asOLS72rP1dc6IvJ"
         }
       ]
     },
@@ -170,7 +170,7 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/10587089"
+          "url": "https://doi.org/10.1109/TVCG.2024.3423728"
         },
         {
           "label": "arXiv",
@@ -225,7 +225,32 @@
       "links": [
         {
           "label": "Paper (Eurographics DL, open access)",
-          "url": "https://diglib.eg.org/handle/10.2312/evs20251088"
+          "url": "https://doi.org/10.2312/evs.20251087"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2506.14820"
+        }
+      ]
+    },
+    {
+      "title": "Reliable Visual Analytics with Dimensionality Reduction: Quality Evaluation and Interpretation of Projections",
+      "authors": [
+        "Hyeon Jeon",
+        "Takanori Fujiwara",
+        "Rafael M. Martins"
+      ],
+      "venue": "EuroVis Tutorial",
+      "year": 2025,
+      "thumb": "./images/pubs/2025_dr_assessment.png",
+      "links": [
+        {
+          "label": "Abstract (Eurographics DL, open access)",
+          "url": "https://doi.org/10.2312/evt.20251118"
+        },
+        {
+          "label": "Slides, etc.",
+          "url": "https://hyeonword.com/dr-tutorial/"
         }
       ]
     },
@@ -279,7 +304,7 @@
         },
         {
           "label": "Online Browser",
-          "url": "https://dr-reliability.github.io"
+          "url": "https://dr-reliability.github.io/demo/"
         }
       ]
     },
@@ -302,8 +327,8 @@
           "url": "https://doi.org/10.1145/3706598.3714265"
         },
         {
-          "label": "Video",
-          "url": "https://iframe.videodelivery.net/"
+          "label": "Video, Talk (can be found in the Supplemental Material section)",
+          "url": "https://doi.org/10.1145/3706598.3714265"
         }
       ]
     },
@@ -347,7 +372,7 @@
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2210.03854"
+          "url": "https://doi.org/10.48550/arXiv.2409.02485"
         },
         {
           "label": "Supp. Materials",
@@ -355,7 +380,7 @@
         },
         {
           "label": "Code",
-          "url": "https://github.com/takanori-fujiwara/adv-attack-on-vis"
+          "url": "https://github.com/takanori-fujiwara/attack-ml4vis"
         }
       ]
     },
@@ -375,8 +400,8 @@
           "url": "https://doi.org/10.1109/VIS55277.2024.00040"
         },
         {
-          "label": "arXiv",
-          "url": "https://arxiv.org/abs/2306.14807"
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/1ArvWAC3O_okeOHatyYjiQV5IO5SwqYxJ/view"
         },
         {
           "label": "Supp. Materials",
@@ -406,11 +431,11 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/10385641"
+          "url": "https://doi.org/10.1109/TVCG.2023.3327198"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2305.06313"
+          "url": "https://doi.org/10.48550/arXiv.2308.04714"
         },
         {
           "label": "Project",
@@ -435,19 +460,27 @@
       "links": [
         {
           "label": "Paper (PLOS ONE, open access)",
-          "url": "https://doi.org/10.1371/journal.pone.0287488"
+          "url": "https://doi.org/10.1371/journal.pone.0287180"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2107.02249"
+          "url": "https://doi.org/10.48550/arXiv.2007.04540"
         },
         {
           "label": "Supp. Materials",
-          "url": "https://takanori-fujiwara.github.io/s/cmca/"
+          "url": "https://takanori-fujiwara.github.io/s/cmca/index.html"
         },
         {
           "label": "Code",
           "url": "https://github.com/takanori-fujiwara/cmca"
+        },
+        {
+          "label": "Poster at PolMeth XXXVII",
+          "url": "https://drive.google.com/file/d/1fwD8Mh5CpTB2itl9xWJlEyIgk_QofHMG/view?usp=sharing"
+        },
+        {
+          "label": "Slides (invited by University of Essex POPE Research Group)",
+          "url": "https://drive.google.com/file/d/1Drlt_U1SkVt-dk8QCXd8dpNfoHFXFPfH/view?usp=sharing"
         }
       ]
     },
@@ -475,7 +508,6 @@
         "Fumiyoshi Shoji"
       ],
       "venue": "VisGap",
-      "note": "Invited article. In Japanese.",
       "year": 2023,
       "thumb": "./images/pubs/2023_gap_supercomputerlog.png",
       "links": [
@@ -499,11 +531,15 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/10108735"
+          "url": "https://doi.org/10.1109/PacificVis56936.2023.00021"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2209.09515"
+          "url": "https://doi.org/10.48550/arXiv.2206.13891"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/9erdhohOAe8"
         },
         {
           "label": "Supp. Materials",
@@ -583,11 +619,11 @@
       "links": [
         {
           "label": "Paper (open access)",
-          "url": "https://jdssv.org/index.php/jdssv/article/view/122"
+          "url": "https://doi.org/10.52933/jdssv.v2i5.56"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2007.07346"
+          "url": "https://doi.org/10.48550/arXiv.2005.12419"
         },
         {
           "label": "Data & Analysis Details",
@@ -614,11 +650,11 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/9714333"
+          "url": "https://doi.org/10.1109/TVCG.2021.3114807"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2106.15481"
+          "url": "https://doi.org/10.48550/arXiv.2106.15481"
         },
         {
           "label": "Supp. Materials",
@@ -645,11 +681,15 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/9633550"
+          "url": "https://doi.org/10.1109/VIS49827.2021.9623272"
         },
         {
           "label": "arXiv",
-          "url": "https://arxiv.org/abs/2108.12540"
+          "url": "https://doi.org/10.48550/arXiv.2108.12540"
+        },
+        {
+          "label": "Video",
+          "url": "https://drive.google.com/file/d/1KV6OamwOtY2qnoGqjqfobhsjvRAqYqSO"
         }
       ]
     },
@@ -670,7 +710,11 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/9412569"
+          "url": "https://doi.org/10.1109/PacificVis52677.2021.00033"
+        },
+        {
+          "label": "Paper (Google Drive)",
+          "url": "https://drive.google.com/file/d/1QITkLG_lMU26JNCP2wpaHpF08E21v7Ml/view?usp=sharing"
         },
         {
           "label": "Video",
@@ -946,7 +990,7 @@
           "url": "https://doi.org/10.48550/arXiv.1905.04000"
         },
         {
-          "label": "Supp. Materials",
+          "label": "Video, Supp. Materials",
           "url": "https://takanori-fujiwara.github.io/s/inc-dr/index.html"
         },
         {
@@ -997,7 +1041,7 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/8823624"
+          "url": "https://doi.org/10.1109/SciVis.2018.8823624"
         },
         {
           "label": "Paper (Google Drive)",
@@ -1014,6 +1058,29 @@
         {
           "label": "Talk",
           "url": "https://vimeo.com/315221094"
+        }
+      ]
+    },
+    {
+      "title": "Learning About Disease Associations in Taiwan",
+      "authors": [
+        "Keshav Dasu",
+        "Suyun Bae",
+        "Takanori Fujiwara",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis Visual Storytelling Contest",
+      "year": 2018,
+      "award": "Honorable Mention",
+      "thumb": "./images/pubs/2018_pacificvis_storytelling.png",
+      "links": [
+        {
+          "label": "Demo Site",
+          "url": "https://k-dasu.github.io/"
+        },
+        {
+          "label": "Abstract (Google Drive)",
+          "url": "https://drive.google.com/open?id=1U8pyDcLeERLtBOoo6kAtMTCnKQkvB0nZ"
         }
       ]
     },
@@ -1055,7 +1122,7 @@
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
-          "url": "https://ieeexplore.ieee.org/document/8585646"
+          "url": "https://doi.org/10.1109/VAST.2017.8585646"
         },
         {
           "label": "Paper (Google Drive)",
@@ -1220,29 +1287,6 @@
         {
           "label": "Paper (Google Drive)",
           "url": "https://drive.google.com/file/d/0B59ss1whXM4kZm90T1FiZTJVNlE/view"
-        }
-      ]
-    },
-    {
-      "title": "Learning About Disease Associations in Taiwan",
-      "authors": [
-        "Keshav Dasu",
-        "Suyun Bae",
-        "Takanori Fujiwara",
-        "Kwan-Liu Ma"
-      ],
-      "venue": "IEEE PacificVis Visual Storytelling Contest",
-      "year": 2018,
-      "award": "Honorable Mention",
-      "thumb": "./images/pubs/2018_pacificvis_storytelling.png",
-      "links": [
-        {
-          "label": "Demo Site",
-          "url": "https://k-dasu.github.io/"
-        },
-        {
-          "label": "Abstract (Google Drive)",
-          "url": "https://drive.google.com/open?id=1U8pyDcLeERLtBOoo6kAtMTCnKQkvB0nZ"
         }
       ]
     }
