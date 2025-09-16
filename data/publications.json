@@ -69,7 +69,7 @@
           "url": "https://doi.org/10.1109/MCG.2025.3591713"
         },
         {
-          "label": "Project page",
+          "label": "Project Page",
           "url": "https://www.amnh.org/research/hayden-planetarium/science-visualization/cosmic-view-of-life-on-earth"
         },
         {
@@ -151,6 +151,26 @@
         {
           "label": "OSF Preprint",
           "url": "https://osf.io/preprints/osf/n5dxe_v1"
+        }
+      ]
+    },
+    {
+      "title": "Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks",
+      "authors": [
+        "S. Sandra Bae",
+        "Kyle Cave",
+        "Carsten Görg",
+        "Paul Rosen",
+        "Danielle Albers Szafir",
+        "Cindy Xiong Bearfield"
+      ],
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2025,
+      "thumb": "./images/pubs/2025_visual_perception.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2025.3541571"
         }
       ]
     },
@@ -251,6 +271,55 @@
         {
           "label": "Slides, etc.",
           "url": "https://hyeonword.com/dr-tutorial/"
+        }
+      ]
+    },
+    {
+      "title": "GenTact Toolbox: A Computational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Whole-Body Artificial Skins",
+      "authors": [
+        "Carson Kohlbrenner",
+        "Caleb Escobedo",
+        "S. Sandra Bae",
+        "Alex Dickhans",
+        "Alessandro Roncone"
+      ],
+      "venue": "IEEE ICRA",
+      "year": 2025,
+      "thumb": "./images/pubs/2025_gentact.jpg",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/ICRA55743.2025.11128675"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2412.00711"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/HIRO-group/GenTact"
+        }
+      ]
+    },
+    {
+      "title": "Enabling Recycling of Multi-Material 3D Printed Objects through Computational Design and Disassembly by Dissolution",
+      "authors": [
+        "Xin Wen",
+        "S. Sandra Bae",
+        "Michael L. Rivera"
+      ],
+      "venue": "ACM CHI",
+      "year": 2025,
+      "award": "Best Paper Award",
+      "thumb": "./images/pubs/2025_dissolved_process.gif",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://doi.org/10.1145/3706598.3714080"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=akN1_7oDHr8&ab_channel=UtilityResearchLab"
         }
       ]
     },
@@ -381,6 +450,31 @@
         {
           "label": "Code",
           "url": "https://github.com/takanori-fujiwara/attack-ml4vis"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Annotations for Sonifications and Physicalizations",
+      "authors": [
+        "Rhys Sorenson-Graff",
+        "S. Sandra Bae",
+        "Jordan Wirfs-Brock"
+      ],
+      "venue": "IEEE VIS (short paper)",
+      "year": 2024,
+      "thumb": "./images/pubs/2024_annotation.jpg",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/VIS55277.2024.00063"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2408.04574"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/eAGwGnYYQ7s"
         }
       ]
     },
@@ -605,6 +699,110 @@
       ]
     },
     {
+      "title": "Cultivating Visualization Literacy for Children Through Curiosity and Play",
+      "authors": [
+        "S. Sandra Bae",
+        "Rishi Vanukuru",
+        "Ruhan Yang",
+        "Peter Gyory",
+        "Ran Zhou",
+        "Ellen Do",
+        "Danielle Albers Szafir"
+      ],
+      "venue": "IEEE VIS",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_eager.jpg",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2022.3209442"
+        },
+        {
+          "label": "Paper (author-version PDF)",
+          "url": "https://sandrabae.github.io/materials/vis23_diy.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/diy-vis-literacy.html"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/Hmd4P8BhA1k"
+        },
+        {
+          "label": "Instructable",
+          "url": "https://www.instructables.com/Data-Is-Yours-Toolkit-Assembly-Instructions/"
+        },
+        {
+          "label": "Talk",
+          "url": "https://www.youtube.com/watch?t=2219&v=jTerh__vSMA&feature=youtu.be"
+        }
+      ]
+    },
+    {
+      "title": "Making Data Tangible: A Cross-disciplinary Design Space for Data Physicalization",
+      "authors": [
+        "S. Sandra Bae",
+        "Clement Zheng",
+        "Mary Etta West",
+        "Samuel Huron",
+        "Ellen Do",
+        "Danielle Albers Szafir"
+      ],
+      "venue": "ACM CHI",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_dataphys.jpg",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://doi.org/10.1145/3491102.3501939"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2202.10520"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/data-phys-design.html"
+        },
+        {
+          "label": "Web Gallery",
+          "url": "https://sandrabae.github.io/dataphys-gallery/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Maximizing Dust Devil Follow-Up Observations on Mars Using Cubesats and On-board Scheduling",
+      "authors": [
+        "Robyn Woollands",
+        "Federico Rossi",
+        "Tiago Stegun Vaquero",
+        "Marc Sanchez Net",
+        "S. Sandra Bae",
+        "Valentin Bickel",
+        "Joshua Vander Hook"
+      ],
+      "venue": "The Journal of the Astronautical Sciences",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_dust_devil.jpg",
+      "links": [
+        {
+          "label": "Paper (Springer Nature Link, open access)",
+          "url": "https://doi.org/10.1007/s40295-022-00317-z"
+        },
+        {
+          "label": "Paper (author-version PDF)",
+          "url": "https://sandrabae.github.io/materials/aas-gnc_mosaic_mars.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/dust-devil.html"
+        }
+      ]
+    },
+    {
       "title": "Network Comparison with Interpretable Contrastive Network Representation Learning",
       "authors": [
         "Takanori Fujiwara",
@@ -723,6 +921,30 @@
       ]
     },
     {
+      "title": "User Interfaces for Smart Cities",
+      "authors": [
+        "Torin Hopkins",
+        "S. Sandra Bae",
+        "Julia Uhr",
+        "Clement Zheng",
+        "Amy Banic",
+        "Ellen Do"
+      ],
+      "venue": "Handbook of Smart Cities",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_life_cloud.png",
+      "links": [
+        {
+          "label": "Paper (Springer Nature Link)",
+          "url": "https://doi.org/10.1007/978-3-030-15145-4_94-1"
+        },
+        {
+          "label": "Paper (author-version PDF)",
+          "url": "https://sandrabae.github.io/materials/springer_smartcity.pdf"
+        }
+      ]
+    },
+    {
       "title": "A Visual Analytics Method for Time-Series Log Data Using Multiple Dimensionality Reduction",
       "authors": [
         "Keijiro Fujita",
@@ -735,6 +957,64 @@
       "year": 2021,
       "thumb": "./images/pubs/2021_asiasim.png",
       "links": []
+    },
+    {
+      "title": "Touching Information with DIY Paper Charts & AR Markers",
+      "authors": [
+        "S. Sandra Bae",
+        "Ruhan Yang",
+        "Peter Gyory",
+        "Julia Uhr",
+        "Danielle Albers Szafir",
+        "Ellen Do"
+      ],
+      "venue": "ACM IDC (extended-abstract)",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_idc.jpg",
+      "links": [
+        {
+          "label": "Extended-Abstract (ACM DL, public access)",
+          "url": "https://doi.org/10.1145/3459990.3465191"
+        },
+        {
+          "label": "Extended-Abstract (autor-version PDF)",
+          "url": "https://sandrabae.github.io/materials/idc21_diy.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/diy-paper.html"
+        },
+        {
+          "label": "Video Preview",
+          "url": "https://vimeo.com/644446615?embedded=true&source=video_title&owner=45814582"
+        }
+      ]
+    },
+    {
+      "title": "Cyborg Crafts: Second SKIN (Soft Keen INteraction)",
+      "authors": [
+        "Mary Etta West*",
+        "S. Sandra Bae*"
+      ],
+      "venue": "ACM TEI (Student Design Competition)",
+      "note": "* equally contributed",
+      "award": "Craft Award",
+      "year": 2021,
+      "thumb": "./images/pubs/2021_skin.jpg",
+      "links": [
+        {
+          "label": "Abstract (ACM DL)",
+          "url": "https://doi.org/10.1145/3430524.3444705"
+        },
+        {
+          "label": "Abstract (autor-version PDF)",
+          "url": "https://sandrabae.github.io/materials/tei21-second-skin.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/second-skin.html"
+        }
+      ]
     },
     {
       "title": "A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction",
@@ -808,6 +1088,76 @@
         {
           "label": "Talk",
           "url": "https://youtu.be/hLHMiQpFFbw"
+        }
+      ]
+    },
+    {
+      "title": "MOSAIC Viewer: A Visual Analytics Approach to Debugging Cooperative, Autonomous Multi-Robot Systems' Worldviews",
+      "authors": [
+        "S. Sandra Bae",
+        "Federico Rossi",
+        "Joshua Vander Hook",
+        "Scott Davidoff",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE VIS (VAST)",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_mosaic_viewer.gif",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/VAST50239.2020.00008"
+        },
+        {
+          "label": "Paper (author-version PDF)",
+          "url": "https://sandrabae.github.io/materials/vis20_mosaic.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/mosaic.html"
+        },
+        {
+          "label": "Video Preview",
+          "url": "https://www.youtube.com/watch?v=eIQdcLde9F0&ab_channel=IEEEVisualizationConference"
+        },
+        {
+          "label": "Talk",
+          "url": "hhttps://www.youtube.com/watch?v=tETWdTikeOc&ab_channel=ACMSIGCHI"
+        }
+      ]
+    },
+    {
+      "title": "Spinneret: Aiding Creative Ideation through Non-Obvious Concept Associations",
+      "authors": [
+        "S. Sandra Bae*",
+        "Oh-Hyun Kwon*",
+        "Senthil Chandrasegaran",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "ACM CHI",
+      "note": "* equally contributed",
+      "year": 2020,
+      "thumb": "./images/pubs/2020_spinneret.jpg",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://doi.org/10.1145/3313831.3376746"
+        },
+        {
+          "label": "Paper (author-version PDF)",
+          "url": "https://sandrabae.github.io/materials/chi20_spinneret.pdf"
+        },
+        {
+          "label": "Project Page",
+          "url": "https://sandrabae.github.io/projects/spinneret.html"
+        },
+        {
+          "label": "Video Preview",
+          "url": "https://www.youtube.com/watch?v=g005rIKDl54&ab_channel=ACMSIGCHI"
+        },
+        {
+          "label": "Talk",
+          "url": "https://www.youtube.com/watch?v=h1isZznN1oI&t=4401s&ab_channel=IEEEVisualizationConference"
         }
       ]
     },
