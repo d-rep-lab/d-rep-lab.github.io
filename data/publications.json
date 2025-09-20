@@ -47,6 +47,10 @@
         {
           "label": "Video",
           "url": "https://youtu.be/at5puV1MHUo?si=asOLS72rP1dc6IvJ"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/d-rep-lab/3dp-singlewire-sensing"
         }
       ]
     },
