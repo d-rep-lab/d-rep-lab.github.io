@@ -44,7 +44,7 @@
             },
             {
               "text": "Interpretation of Representations",
-              "link": "\"Network Comparison with Interpretable Contrastive Network Representation Learning\" OR \"Visual Analytics of Multivariate Networks with Representation Learning and Composite Variable Construction\""
+              "link": "#publications?search=\"Network Comparison with Interpretable Contrastive Network Representation Learning\" OR \"Visual Analytics of Multivariate Networks with Representation Learning and Composite Variable Construction\""
             },
             {
               "text": "Network Representations for Dimensionality Reduction",
@@ -85,23 +85,23 @@
           "keywords": [
             {
               "text": "Visualizations for Neural Networks and LLMs",
-              "link": ""
+              "link": "#publications?search=\"OPRA-Vis\" OR \"Visual Analytics of Neuron Vulnerability to Adversarial Attacks on Convolutional Neural Networks\" OR \"A Visual Analytics System for Multi-model Comparison on Clinical Data Predictions\""
             },
             {
               "text": "Visualizations for Supercomputers",
-              "link": ""
+              "link": "#publications?search=\"Visual Analytics Using Tensor Unified Linear Comparative Analysis\" OR \"Visual Analytics for Multivariate Time-Series Data Using Interactive Dimensionality Reduction Methods\" OR \"Reflections on the Developments of Visual Analytics Systems for the K Computer System Log Data\" OR \"A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction\" OR \"A Visual Analytics Framework for Reviewing Streaming Performance Data\" OR \"A Visual Analytics Framework for Analyzing Parallel and Distributed Computing Applications\" OR \"A Visual Analytics System for Optimizing the Performance of Large-scale Networks in Supercomputing Systems\" OR \"A Visual Analytics System for Optimizing Communications in Massively Parallel Applications\""
             },
             {
               "text": "Organic Visualizations",
-              "link": ""
+              "link": "#publications?search=\"A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software\" OR \"Organic Visual Metaphor\" OR \"Learning About Disease Associations in Taiwan\""
             },
             {
               "text": "Multi-robot Planning",
-              "link": ""
+              "link": "#publications?search=MOSAIC Viewer"
             },
             {
               "text": "Mind Mapping for Creative Tasks",
-              "link": ""
+              "link": "#publications?search=Spinneret"
             }
           ]
         },
@@ -110,23 +110,15 @@
           "keywords": [
             {
               "text": "3D Printed Sensing Network",
-              "link": ""
+              "link": "#publications?search=A Computational Design Pipeline to Fabricate Sensing Network Physicalizations"
             },
             {
               "text": "Design Space for Physicalizations",
-              "link": ""
+              "link": "#publications?search=\"Making Data Tangible: A Cross-disciplinary Design Space for Data Physicalization\""
             },
             {
               "text": "Annotation Practices for Physicalizations",
-              "link": ""
-            },
-            {
-              "text": "Multi-robot Planning",
-              "link": ""
-            },
-            {
-              "text": "Mind Mapping for Creative Tasks",
-              "link": ""
+              "link": "#publications?search=Integrating Annotations for Sonifications and Physicalizations"
             }
           ]
         },
@@ -135,15 +127,15 @@
           "keywords": [
             {
               "text": "3D Printed Multi-point Capacitive Touch Sensor",
-              "link": ""
+              "link": "#publications?search=\"A Computational Design Pipeline to Fabricate Sensing Network Physicalizations\" OR \"Computational Design and Single-Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints\""
             },
             {
               "text": "Generative Robotic Skins",
-              "link": ""
+              "link": "#publications?search=GenTact Toolbox"
             },
             {
               "text": "Physical Computing Powered by Computer Vision",
-              "link": ""
+              "link": "#publications?search=\"Cultivating Visualization Literacy for Children Through Curiosity and Play\" OR \"Touching Information with DIY Paper Charts\""
             }
           ]
         },
@@ -152,15 +144,15 @@
           "keywords": [
             {
               "text": "Planetarium-scale 3D Visualizations",
-              "link": ""
+              "link": "#publications?search=\"A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software\""
             },
             {
               "text": "Immersive Systems for Network Visualizations",
-              "link": ""
+              "link": "#publications?search=\"A Gesture System for Graph Visualization in Virtual Reality Environments\""
             },
             {
               "text": "Storytelling with Tangible Objects",
-              "link": ""
+              "link": "#publications?search=\"InSituTale: Enhancing Augmented Data Storytelling with Physical Objects\" OR \"TangibleNet: Synchronous Network Data Storytelling through Tangible Interactions in Augmented Reality\""
             }
           ]
         }
@@ -175,11 +167,11 @@
           "keywords": [
             {
               "text": "Mapping Vision Science Principles to Visualizations",
-              "link": ""
+              "link": "#publications?search=\"Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks\""
             },
             {
               "text": "Visual Class Separation of Scatterplots",
-              "link": ""
+              "link": "#publications?search=\"Uncovering How Scatterplot Features Skew Visual Class Separation\""
             }
           ]
         },
@@ -188,7 +180,7 @@
           "keywords": [
             {
               "text": "Informal Learning Using Constructionist Approach",
-              "link": ""
+              "link": "#publications?search=\"Touching Information with DIY Paper Charts\" OR \"Cultivating Visualization Literacy for Children Through Curiosity and Play\""
             }
           ]
         }
