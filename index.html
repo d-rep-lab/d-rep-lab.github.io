@@ -85,6 +85,7 @@
     <div class="section-inner max-w-6xl mx-auto px-6">
       <h2 class="section-title text-3xl font-semibold mb-4"></h2>
       <p id="about-content" class="text-lg leading-relaxed"></p>
+      <div id="about-grid" class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"></div>
     </div>
   </section>
 
@@ -369,8 +370,110 @@
       const about = await loadJSON('./data/about.json');
       const aboutSec = document.getElementById('about');
       aboutSec.setAttribute('data-bg-color', about.bg_color || '#f8fafc');
-      aboutSec.querySelector('.section-title').textContent = about.title || 'About';
-      document.getElementById('about-content').innerHTML = about.content_html || '';
+      aboutSec.querySelector('.section-title').textContent = about.main_content.title || 'About';
+      document.getElementById('about-content').innerHTML = '';
+      for (const block of about.main_content.blocks) {
+        if (block.text) {
+          document.getElementById('about-content').append(block.text);
+        }
+        if (block.image) {
+          const img = document.createElement('img');
+          img.src = block.image;
+          img.alt = block.alt || 'About image';
+          img.className = 'w-5/6 mx-auto mt-4 mb-4 rounded-lg shadow';
+          document.getElementById('about-content').append(img);
+        }
+      }
+      // document.getElementById('about-content').innerHTML = about.main_content.text || '';
+      // if (about.main_content.image) {
+      //   const img = document.createElement('img');
+      //   img.src = about.main_content.image;
+      //   img.alt = about.main_content.title || 'About image';
+      //   img.className = 'w-5/6 mx-auto mt-4 mb-4 rounded-lg shadow';
+      //   document.getElementById('about-content').append(img);
+      // }
+
+      const grid = document.getElementById('about-grid');
+      grid.innerHTML = '';
+      for (const item of (about.subcontents || [])) {
+        const card = document.createElement('div');
+        card.className = 'space-y-3';
+        if (item.title) {
+          const h3 = document.createElement('h3');
+          h3.className = 'text-xl font-semibold';
+          h3.textContent = item.title;
+          card.appendChild(h3);
+        }
+        if (item.text) {
+          const t = document.createElement('p');
+          t.className = 'text-base text-gray-700';
+          t.textContent = item.text;
+          card.appendChild(t);
+        }
+
+        if (item.examples && Array.isArray(item.examples) && item.examples.length > 0) {
+          const exList = document.createElement('ul');
+          exList.className = 'list-disc list-inside';
+          for (const ex of item.examples) {
+            const li = document.createElement('li');
+            li.className = 'pt-3';
+            const exTitle = document.createElement('strong');
+            exTitle.textContent = ex.topic || '';
+            li.appendChild(exTitle);
+            if (ex.keywords && Array.isArray(ex.keywords) && ex.keywords.length > 0) {
+              const kwList = document.createElement('ul');
+              kwList.className = 'list-["-__"] list-inside pl-6';
+              for (const kw of ex.keywords) {
+                const kwLi = document.createElement('li');
+                kwLi.className = "list-outside";
+                const link = document.createElement('a');
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+                if (kw.link) {
+                  link.className = 'text-gray-500 hover:underline';
+                } else {
+                  link.className = 'text-gray-500';
+                }
+                link.textContent = kw.text || '';
+                link.href = kw.link || '#';
+                // link.addEventListener('click', (e) => {
+                //   if (link.href.endsWith('#')) { e.preventDefault(); return; }
+                //   if (link.href.includes('#publications')) {
+                //     e.preventDefault();
+                //     showSection('publications', kw.link || '');
+                //   }
+                // });
+                kwLi.appendChild(link);
+                kwList.appendChild(kwLi);
+              }
+              li.appendChild(kwList);
+            }
+            exList.appendChild(li);
+          }
+          card.appendChild(exList);
+        }
+
+        grid.appendChild(card);
+      }
+
+      // for (const item of (about.subcontents || [])) {
+      //   const div = document.createElement('div');
+      //   div.className = 'mb-4';
+      //   if (item.title) {
+      //     const h3 = document.createElement('h3');
+      //     h3.className = 'text-xl font-semibold mb-2';
+      //     h3.textContent = item.title;
+      //     div.appendChild(h3);
+      //   }
+      //   if (item.text) {
+      //     const p = document.createElement('p');
+      //     p.className = 'text-lg leading-relaxed';
+      //     p.innerHTML = item.text;
+      //     div.appendChild(p);
+      //   }
+      //   grid.appendChild(div);
+      // }
+
       Loaded.about = true;
     }
 
@@ -420,7 +523,13 @@
       Loaded.projects = true;
     }
 
-    async function ensurePublications() {
+    function getQueryParams(hashLink) {
+      const [section, query] = hashLink.split("?");
+      const params = new URLSearchParams(query || "");
+      return [section.replace("#", ""), params];
+    }
+
+    async function ensurePublications(params = null) {
       if (Loaded.publications) return;
       const pubs = await loadJSON('./data/publications.json');
       GLOBAL_HIGHLIGHT_AUTHORS = Array.isArray(pubs.highlight_authors) ? pubs.highlight_authors : [];
@@ -433,8 +542,24 @@
         authors: Array.isArray(p.authors) ? p.authors : (typeof p.authors === 'string' ? p.authors.split(/\s*,\s*/) : []),
         year: Number(p.year) || ''
       }));
+
+      if (params) {
+        // const params = getQueryParams(hashLink);
+        console.log(params);
+        if (params.has("search")) {
+          document.getElementById("pub-search").value = params.get("search");
+        }
+        if (params.has("year")) {
+          document.getElementById("pub-year").value = params.get("year");
+        }
+        if (params.has("venue")) {
+          document.getElementById("pub-venue").value = params.get("venue");
+        }
+      }
+
       populatePubFilters(items);
       filterAndRenderPubs(items);
+
       document.getElementById('pub-search').addEventListener('input', () => filterAndRenderPubs(items));
       document.getElementById('pub-year').addEventListener('change', () => filterAndRenderPubs(items));
       document.getElementById('pub-venue').addEventListener('change', () => filterAndRenderPubs(items));
@@ -507,7 +632,7 @@
       // const cta = document.getElementById('hero-cta'); if (cta) cta.addEventListener('click', () => showSection('about'));
     }
 
-    async function showSection(id) {
+    async function showSection(id, filters = null) {
       // load site chrome once
       await ensureSite();
 
@@ -517,7 +642,7 @@
       if (id === 'news') await ensureNews();
       if (id === 'people') await ensurePeople();
       if (id === 'projects') await ensureProjects();
-      if (id === 'publications') await ensurePublications();
+      if (id === 'publications') await ensurePublications(filters);
 
       // show/hide
       document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
@@ -692,6 +817,39 @@
       yearSel.innerHTML = '<option value=\"\">All years</option>' + years.map(y => `<option value="${y}">${y}</option>`).join('');
       venueSel.innerHTML = '<option value=\"\">All venues</option>' + venues.map(v => `<option value="${v}">${v}</option>`).join('');
     }
+
+    function parseSearchQuery(q) {
+      if (!q) return [];
+      // normalize: treat | and , as OR
+      q = q.replace(/[|,]/g, ' OR ');
+      const tokens = [];
+      const re = /"([^"]+)"|(\S+)/g;
+      let m;
+      while ((m = re.exec(q)) !== null) {
+        tokens.push((m[1] ?? m[2]).toLowerCase());
+      }
+      // build clauses: (term AND term) OR (term) ...
+      const clauses = [[]];
+      tokens.forEach(tok => {
+        if (tok === 'or') {
+          clauses.push([]);
+        } else {
+          clauses[clauses.length - 1].push(tok);
+        }
+      });
+      return clauses.filter(c => c.length); // drop empty
+    }
+
+    function matchesSearch(haystack, query) {
+      const clauses = parseSearchQuery(query);
+      if (!clauses.length) return true; // no search filter
+      // A clause matches if ALL its terms are found
+      // (AND within a clause, OR across clauses)
+      return clauses.some(clause =>
+        clause.every(term => haystack.includes(term))
+      );
+    }
+
     function filterAndRenderPubs(all) {
       const q = document.getElementById('pub-search').value.trim().toLowerCase();
       const y = document.getElementById('pub-year').value;
@@ -701,7 +859,16 @@
         const byYear = !y || String(p.year) === y;
         const byVenue = !v || (p.venue || '').toLowerCase() === v;
         const hay = [p.title, Array.isArray(p.authors) ? p.authors.join(' ') : p.authors].join(' ').toLowerCase();
-        const bySearch = !q || hay.includes(q);
+        let bySearch = true;
+        if (q) {
+          const hay = [
+            p.title || "",
+            ...(Array.isArray(p.authors) ? p.authors : []),
+            p.venue || ""
+          ].join(" ").toLowerCase();
+          bySearch = bySearch && matchesSearch(hay, q);
+        }
+        // const bySearch = !q || hay.includes(q);
         return byYear && byVenue && bySearch;
       });
       list.innerHTML = '';
@@ -796,7 +963,13 @@
       await ensureSite();
       await ensureHero();
       applySectionBackgrounds();
-      showSection('hero');
+      const hash = window.location.hash;
+      if (hash && hash != "") {
+        const [section, params] = getQueryParams(hash)
+        showSection(section, params);
+      } else {
+        showSection('hero');
+      }
     })();
   </script>
 </body>

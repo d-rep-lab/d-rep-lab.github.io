@@ -1,5 +1,198 @@
 {
-  "title": "D-REP Lab: Data Respresentation Laboratory",
   "bg_color": "#f8fafc",
-  "content_html": "(Description WIP) D-REP Lab is an interdisciplinary research group focusing on data visualization, machine learning, and human-computer interaction. Our goal is to design innovative tools that help scientists and decision-makers gain insights from complex datasets."
+  "main_content": {
+    "title": "D-REP Lab: Data Respresentation Laboratory",
+    "blocks": [
+      {
+        "text": "We are a curiosity-driven lab at the intersection of machine learning/AI, visualization, human-computer interaction, and computational design. Our research is paving towards a future where the boundary between humans and data disappears.",
+        "image": "./images/about/about1.png"
+      },
+      {
+        "text": "Data representation is the bridge between abstract data and humans. It is how raw data takes form—whether as a 2D visualization chart, a 3D model, a physical object, or an immersive environment. A well-designed representation enables a person to perceive and think about the information a dataset embodies. We push existing boundaries for data representations to be beyond the status quo of flat 2D, leveraging emerging technologies such as machine learning/AI, digital fabrication, immersive AR/VR headsets, planetarium-scale displays, advanced sensing techniques, and cognitive science principles to invent new paradigms that connect data with human experience. Our research follows a simple but powerful cycle: process, build, evaluate–transforming data, designing new representations, and studying how they shape human understanding.",
+        "image": "./images/about/about3.png"
+      }
+    ]
+  },
+  "subcontents": [
+    {
+      "title": "Process",
+      "text": "We develop new algorithms and computational methods to transform complex, high-dimensional, and often occluded datasets into a more digestible form for humans to uncover data patterns.",
+      "examples": [
+        {
+          "topic": "Dimensionality Reduction",
+          "keywords": [
+            {
+              "text": "Dimensionality Reduction for Comparative Analysis",
+              "link": "#publications?search=\"Contrastive Multiple Correspondence Analysis (cMCA)\" OR \"A Visual Analytics Approach for the Diagnosis of Heterogeneous and Multidimensional Machine Maintenance Data\" OR \"Interactive Dimensionality Reduction for Comparative Analysis\" OR \"Visual Analytics for Multivariate Time-Series Data Using Interactive Dimensionality Reduction Methods\" OR \"Supporting Analysis of Dimensionality Reduction Results with Contrastive Learning\""
+            },
+            {
+              "text": "Aesthetic Dimensionality Reduction",
+              "link": "#publications?search=\"An Incremental Dimensionality Reduction Method for Visualizing Streaming Multidimensional Data\" OR \"A Cosmic View of Life on Earth\""
+            },
+            {
+              "text": "Interpretation and Quality Assessment",
+              "link": "#publications?search=\"GhostUMAP\" OR \"High-Dimensional Backstage\" OR \"Reliable Visual Analytics with Dimensionality Reduction\" OR \"Supporting Analysis of Dimensionality Reduction Results with Contrastive Learning\""
+            }
+          ]
+        },
+        {
+          "topic": "Network Representation Learning",
+          "keywords": [
+            {
+              "text": "Contrastive Network Representations",
+              "link": "#publications?search=\"A Visual Analytics Framework for Contrastive Network Analysis\" OR \"Network Comparison with Interpretable Contrastive Network Representation Learning\""
+            },
+            {
+              "text": "Interpretation of Representations",
+              "link": "\"Network Comparison with Interpretable Contrastive Network Representation Learning\" OR \"Visual Analytics of Multivariate Networks with Representation Learning and Composite Variable Construction\""
+            },
+            {
+              "text": "Network Representations for Dimensionality Reduction",
+              "link": "#publications?search=\"Feature Learning for Nonlinear Dimensionality Reduction\""
+            }
+          ]
+        },
+        {
+          "topic": "Tensor Decomposition",
+          "keywords": [
+            {
+              "text": "Tensor Unified Linear Comparative Analysis",
+              "link": "#publications?search=Tensor Unified Linear Comparative Analysis"
+            },
+            {
+              "text": "Framework for Multivariate Time-Series Data",
+              "link": "#publications?search=\"Visual Analytics for Multivariate Time-Series Data Using Interactive Dimensionality Reduction Methods\" OR \"A Visual Analytics Framework for Reviewing Multivariate Time-Series Data with Dimensionality Reduction\" OR \"Comparative Visual Analytics for Assessing Medical Records with Sequence Embedding\" OR \"A Visual Analytics Framework for Reviewing Streaming Performance Data\" OR \"A Visual Analytics Framework for Analyzing Parallel and Distributed Computing Applications\" OR \"An Incremental Dimensionality Reduction Method for Visualizing Streaming Multidimensional Data\" OR \"A Visual Analytics System for Optimizing the Performance of Large-scale Networks in Supercomputing Systems\""
+            }
+          ]
+        },
+        {
+          "topic": "Self-supervised Learning",
+          "keywords": [
+            {
+              "text": "Self-supervised Learning Enhancement for Dimensionality Reduction",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Build",
+      "text": "We develop new representations—digital, physical, or hybrid—that embody these data transformations and open new paradigms for interaction. These interfaces bridge the gap between humans and data.",
+      "examples": [
+        {
+          "topic": "Visualization",
+          "keywords": [
+            {
+              "text": "Visualizations for Neural Networks and LLMs",
+              "link": ""
+            },
+            {
+              "text": "Visualizations for Supercomputers",
+              "link": ""
+            },
+            {
+              "text": "Organic Visualizations",
+              "link": ""
+            },
+            {
+              "text": "Multi-robot Planning",
+              "link": ""
+            },
+            {
+              "text": "Mind Mapping for Creative Tasks",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "topic": "Physicalization",
+          "keywords": [
+            {
+              "text": "3D Printed Sensing Network",
+              "link": ""
+            },
+            {
+              "text": "Design Space for Physicalizations",
+              "link": ""
+            },
+            {
+              "text": "Annotation Practices for Physicalizations",
+              "link": ""
+            },
+            {
+              "text": "Multi-robot Planning",
+              "link": ""
+            },
+            {
+              "text": "Mind Mapping for Creative Tasks",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "topic": "Sensing Techniques",
+          "keywords": [
+            {
+              "text": "3D Printed Multi-point Capacitive Touch Sensor",
+              "link": ""
+            },
+            {
+              "text": "Generative Robotic Skins",
+              "link": ""
+            },
+            {
+              "text": "Physical Computing Powered by Computer Vision",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "topic": "Immersive Environments and XR",
+          "keywords": [
+            {
+              "text": "Planetarium-scale 3D Visualizations",
+              "link": ""
+            },
+            {
+              "text": "Immersive Systems for Network Visualizations",
+              "link": ""
+            },
+            {
+              "text": "Storytelling with Tangible Objects",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evaluate",
+      "text": "We investigate how people interact with and experience data, conducting user studies and experiments to understand perception, interaction, and meaning.",
+      "examples": [
+        {
+          "topic": "Perception",
+          "keywords": [
+            {
+              "text": "Mapping Vision Science Principles to Visualizations",
+              "link": ""
+            },
+            {
+              "text": "Visual Class Separation of Scatterplots",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "topic": "Engagement",
+          "keywords": [
+            {
+              "text": "Informal Learning Using Constructionist Approach",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
