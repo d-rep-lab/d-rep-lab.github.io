@@ -17,7 +17,19 @@
       "src": "./images/top/cvol.gif",
       "alt": "Cosmic View of Life on Earth",
       "title": "Cosmic View of Life on Earth",
-      "caption": "Visualizing biological diversity in a planetarium-scale display."
+      "caption": "Visualizing biological diversity on a planetarium-scale display."
+    },
+    {
+      "src": "./images/top/single-wire.gif",
+      "alt": "3D Printed Single-Wire Sensing",
+      "title": "3D Printed Single-Wire Sensing",
+      "caption": "Supporting multiple capacitive sensing touchpoints with a single-wire connection"
+    },
+    {
+      "src": "./images/top/eager.gif",
+      "alt": "Playfully learning Data Visualization",
+      "title": "Playfully Learning Data Visualization",
+      "caption": "Exploring how children can playfully personalize visualizations made out of everyday materials"
     }
   ],
   "interval_ms": 8000,

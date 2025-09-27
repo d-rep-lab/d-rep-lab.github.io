@@ -5,6 +5,21 @@
     {
       "title": "Interactive Dimensionality Reduction",
       "description": "Developing tools for interpretable and interactive data exploration.",
+      "examples": [
+        {
+          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+        },
+        {
+          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+        }
+      ],
+      "images": [
+        "./images/pubs/2010_isvc.png",
+        "./images/pubs/2011_jov.png",
+        "./images/pubs/2017_vast.png"
+      ],
       "tags": [
         "Visualization",
         "Dimensionality Reduction",
@@ -15,10 +30,99 @@
     {
       "title": "3D Interfaces for Complex Data",
       "description": "Designing immersive environments for scientific collaboration.",
+      "examples": [
+        {
+          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+        },
+        {
+          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+        }
+      ],
+      "images": [
+        "./images/pubs/2010_isvc.png",
+        "./images/pubs/2011_jov.png",
+        "./images/pubs/2017_vast.png"
+      ],
       "tags": [
         "Physicalization",
         "3D",
         "XR",
+        "HCI"
+      ]
+    },
+    {
+      "title": "Using Mixed-Reality for STEM Education and Analytical Tasks",
+      "description": "We explore how immersive technologies such as AR/VR and mixed reality setups can transform the way scientists and students engage with data. We collaborate with domain scientists, like in material science and optics, to explore the opportunities these emergent technologies afford for data-driven discovery and analysis. We also explore how a mixed-reality setup of bridging both the physical and virtual worlds can improve STEM learning for complex topics such as AI and data science. Through these investigations, we develop tools and guidelines that maximize the potential of these technologies for educational and analytical contexts.",
+      "examples": [
+        {
+          "title": "S. S. Bae, R. Vanukuru, R. Yang, P. Gyory, R. Zhou, E. Y.-L. Do, and D. A. Szafir. “Cultivating Visualization Literacy for Children Through Curiosity and Play”. In: IEEE Transactions on Visualization and Computer Graphics (also proc. IEEE VIS 2022).",
+          "url": "#publications?search=Cultivating Visualiza- tion Literacy for Children Through Curiosity and Play"
+        },
+        {
+          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+        }
+      ],
+      "images": [
+        "./images/pubs/2022_eager.jpg",
+        "./images/pubs/2025_tangiblenet.png"
+      ],
+      "tags": [
+        "Physicalization",
+        "3D",
+        "XR",
+        "HCI"
+      ]
+    },
+    {
+      "title": "Computationally Fabricating Interactive 3D Printed Objects",
+      "description": "Our research in fabrication focuses on revolutionizing how we develop interactive data physicalizations (i.e., physical data representations). These tangible artifacts offer a new modality of interacting with data and an opportunity to bridge the digital and physical worlds. A central challenge in creating interactive physicalizations is the cross-disciplinary expertise needed in visualization, fabrication, and electronics. We combine computational design and machine learning to develop computational pipelines that automate low-level engineering traditionally needed to make interactive objects.",
+      "examples": [
+        {
+          "title": "S. S. Bae, T. Fujiwara, A. Ynnerman, E. Y.-L. Do, M. Rivera, and D. A. Szafir. “A Computational Design Pipeline to Fabricate Sensing Network Physicalizations”. In: IEEE Transactions on Visualization and Computer Graphics (also proc. IEEE VIS 2023).",
+          "url": "#publications?search=A Computational Design Pipeline to Fabricate Sensing Network Physicalizations"
+        },
+        {
+          "title": "S. S. Bae*, T. Fujiwara*, D. A. Szafir, E. Y.-L. Do, and M. L. Rivera. “Computational Design and Single- Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints”. In: Proceedings of the 10th ACM Symposium on Computational Fabrication",
+          "url": "#publications?search=Computational Design and Single- Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints"
+        },
+        {
+          "title": "C. Kohlbrenner, C. Esobedo, S. S. Bae, A. Dickhans, and A. Roncone. “GenTact Toolbox: A Computational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Large-Area Tactile Skins”. In: Proceedings of the 2025 IEEE International Conference on Robotics and Automation",
+          "url": "#publications?search=GenTact Toolbox: A Compu- tational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Large-Area Tactile Skins"
+        }
+      ],
+      "images": [
+        "./images/pubs/2023_sensing_network.png",
+        "./images/pubs/2025_freeform_interface.png",
+        "./images/pubs/2025_gentact.jpg"
+      ],
+      "tags": [
+        "Physicalization",
+        "3D",
+        "XR",
+        "HCI"
+      ]
+    },
+    {
+      "title": "Enhancing Data Representations through Cognitive Science",
+      "description": "As we introduce novel data representations, we want to ensure that they are perceptually effective. Perceptual effectiveness designs draw upon psychological insights to ensure design choices (e.g., color) carefully match how humans perceive information efficiently and accurately. While traditional visualizations (such as line charts and scatterplots) have been extensively studied, we lack comparable empirical investigations for emerging forms like immersive visualizations and data physicalizations. We conduct empirical investigations to examine the cognitive and perceptual processes involved in interpreting these novel data representations. These findings not only deepen our understanding of how people make sense of data in new mediums but also guide the design and development of more effective future systems.",
+      "examples": [
+        {
+          "title": "S. S. Bae*, T. Fujiwara*, C. Tseng*, and D. A. Szafir. “Uncovering How Scatterplot Features Skew Visual Class Separation”. In: Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.",
+          "url": "#publications?search=Uncovering How Scatterplot Features Skew Visual Class Separation"
+        },
+        {
+          "title": "S. S. Bae, K. Cave, C. Görg, P. Rosen, D. A. Szafir, and C. X. Bearfield. “Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks”. In: IEEE Transactions on Visualization and Computer Graphics (2025).",
+          "url": "#publications?search=Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks"
+        }
+      ],
+      "images": [
+        "./images/pubs/2025_vcs_perception.png",
+        "./images/pubs/2025_visual_perception.png"
+      ],
+      "tags": [
         "HCI"
       ]
     }
