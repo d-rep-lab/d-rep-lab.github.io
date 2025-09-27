@@ -21,7 +21,7 @@
     },
     {
       "src": "./images/top/single-wire.gif",
-      "alt": "3D Printed Single-Wire Sensing",
+      "alt": "3D Printed Single-Wire Capacitive Sensing",
       "title": "3D Printed Single-Wire Sensing",
       "caption": "Supporting multiple capacitive sensing touchpoints with a single-wire connection",
       "title_color": "#ffffff",
