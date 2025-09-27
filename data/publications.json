@@ -551,6 +551,25 @@
       ]
     },
     {
+      "title": "Marking Material Interactions with Computer Vision",
+      "authors": [
+        "Peter Gyory",
+        "S. Sandra Bae",
+        "Ruhan Yang",
+        "Ellen Yi-Luen Do",
+        "Clement Zheng"
+      ],
+      "venue": "ACM CHI",
+      "year": 2023,
+      "thumb": "./images/pubs/2023_marking.jpg",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://dl.acm.org/doi/10.1145/3544548.3580643"
+        }
+      ]
+    },
+    {
       "title": "Contrastive Multiple Correspondence Analysis (cMCA): Using Contrastive Learning to Identify Latent Subgroups in Political Parties",
       "authors": [
         "Takanori Fujiwara*",
@@ -778,6 +797,23 @@
         {
           "label": "Web Gallery",
           "url": "https://sandrabae.github.io/dataphys-gallery/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Exploring the Benefits and Challenges of Data Physicalization",
+      "authors": [
+        "S. Sandra Bae",
+        "Ellen Yi-Luen Do",
+        "Danielle Albers Szafir"
+      ],
+      "venue": "ETIS",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_exploring.jpg",
+      "links": [
+        {
+          "label": "Paper (CEUR-WS, open access)",
+          "url": "https://ceur-ws.org/Vol-3328/paper3.pdf"
         }
       ]
     },

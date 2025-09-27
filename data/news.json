@@ -3,12 +3,16 @@
   "bg_color": "#f9fafb",
   "items": [
     {
+      "title": "One paper will be presented at ACM SCF 2025.",
+      "date": "Sep 2025"
+    },
+    {
       "title": "Our five papers will be presented at IEEE VIS 2025.",
       "date": "Sep 2025"
     },
     {
       "title": "Starting D-REP Lab!",
-      "date": "Sep 2025"
+      "date": "Aug 2025"
     }
   ]
 }

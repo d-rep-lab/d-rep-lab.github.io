@@ -5,11 +5,14 @@
     "blocks": [
       {
         "text": "We are a curiosity-driven lab at the intersection of machine learning/AI, visualization, human-computer interaction, and computational design. Our research is paving towards a future where the boundary between humans and data disappears.",
-        "image": "./images/about/about1.png"
+        "image": "./images/about/vision.png"
       },
       {
-        "text": "Data representation is the bridge between abstract data and humans. It is how raw data takes form—whether as a 2D visualization chart, a 3D model, a physical object, or an immersive environment. A well-designed representation enables a person to perceive and think about the information a dataset embodies. We push existing boundaries for data representations to be beyond the status quo of flat 2D, leveraging emerging technologies such as machine learning/AI, digital fabrication, immersive AR/VR headsets, planetarium-scale displays, advanced sensing techniques, and cognitive science principles to invent new paradigms that connect data with human experience. Our research follows a simple but powerful cycle: process, build, evaluate–transforming data, designing new representations, and studying how they shape human understanding.",
-        "image": "./images/about/about3.png"
+        "text": "Data representation is the bridge between abstract data and humans. It is how raw data takes form—whether as a 2D visualization chart, a 3D model, a physical object, or an immersive environment. A well-designed representation enables a person to perceive and think about the information a dataset embodies. We push existing boundaries for data representations to be beyond the status quo of flat 2D visualizations, leveraging emerging technologies such as machine learning/AI, digital fabrication, immersive AR/VR headsets, planetarium-scale displays, advanced sensing techniques, and cognitive science principles to invent new paradigms that connect data with human experience."
+      },
+      {
+        "text": "<br>Our research follows a simple but powerful cycle: <b>process, build, evaluate</b>—extracting data features, designing digital or physical artifacts, and studying how they shape human understanding.",
+        "image": "./images/about/about2.jpg"
       }
     ]
   },
@@ -114,11 +117,7 @@
             },
             {
               "text": "Design Space for Physicalizations",
-              "link": "#publications?search=\"Making Data Tangible: A Cross-disciplinary Design Space for Data Physicalization\""
-            },
-            {
-              "text": "Annotation Practices for Physicalizations",
-              "link": "#publications?search=Integrating Annotations for Sonifications and Physicalizations"
+              "link": "#publications?search=\"Making Data Tangible: A Cross-disciplinary Design Space for Data Physicalization\"  OR \"Integrating Annotations for Sonifications and Physicalizations\" OR \"Exploring the Benefits and Challenges of Data Physicalization\""
             }
           ]
         },
@@ -135,7 +134,7 @@
             },
             {
               "text": "Physical Computing Powered by Computer Vision",
-              "link": "#publications?search=\"Cultivating Visualization Literacy for Children Through Curiosity and Play\" OR \"Touching Information with DIY Paper Charts\""
+              "link": "#publications?search=\"Cultivating Visualization Literacy for Children Through Curiosity and Play\" OR \"Touching Information with DIY Paper Charts\" OR \"Marking Material Interactions with Computer Vision\""
             }
           ]
         },

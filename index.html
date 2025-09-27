@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D-REP Lab</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./css/about.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50 text-gray-900 w-full m-0 p-0">
@@ -81,7 +82,7 @@
   </section>
 
   <!-- About (solid color) -->
-  <section id="about" class="page-section w-full relative overflow-hidden py-12" data-bg-color="#f8fafc">
+  <section id="about" class="page-section w-full relative overflow-hidden py-12" data-bg-color="#ffffff">
     <div class="section-inner max-w-6xl mx-auto px-6">
       <h2 class="section-title text-3xl font-semibold mb-4"></h2>
       <p id="about-content" class="text-lg leading-relaxed"></p>
@@ -102,6 +103,7 @@
     <div class="section-inner max-w-6xl mx-auto px-6">
       <h2 class="section-title text-3xl font-semibold mb-4"></h2>
       <div id="people-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+      <div></div>
     </div>
   </section>
 
@@ -382,13 +384,15 @@
       document.getElementById('about-content').innerHTML = '';
       for (const block of about.main_content.blocks) {
         if (block.text) {
-          document.getElementById('about-content').append(block.text);
+          const textElement = document.createElement('div')
+          textElement.innerHTML = block.text;
+          document.getElementById('about-content').append(textElement);
         }
         if (block.image) {
           const img = document.createElement('img');
           img.src = block.image;
           img.alt = block.alt || 'About image';
-          img.className = 'w-5/6 mx-auto mt-4 mb-4 rounded-lg shadow';
+          img.className = 'w-5/6 mx-auto mt-4 mb-4';
           document.getElementById('about-content').append(img);
         }
       }
