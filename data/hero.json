@@ -23,13 +23,17 @@
       "src": "./images/top/single-wire.gif",
       "alt": "3D Printed Single-Wire Sensing",
       "title": "3D Printed Single-Wire Sensing",
-      "caption": "Supporting multiple capacitive sensing touchpoints with a single-wire connection"
+      "caption": "Supporting multiple capacitive sensing touchpoints with a single-wire connection",
+      "title_color": "#ffffff",
+      "caption_color": "#dddddd"
     },
     {
       "src": "./images/top/eager.gif",
       "alt": "Playfully learning Data Visualization",
       "title": "Playfully Learning Data Visualization",
-      "caption": "Exploring how children can playfully personalize visualizations made out of everyday materials"
+      "caption": "Exploring how children can playfully personalize visualizations made out of everyday materials",
+      "title_color": "#ffffff",
+      "caption_color": "#ffffff"
     }
   ],
   "interval_ms": 8000,
