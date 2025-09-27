@@ -8,11 +8,11 @@
       "examples": [
         {
           "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
         },
         {
           "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
         }
       ],
       "images": [],
@@ -29,11 +29,11 @@
       "examples": [
         {
           "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
         },
         {
           "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
         }
       ],
       "images": [],
@@ -50,15 +50,15 @@
       "examples": [
         {
           "title": "S. S. Bae, R. Vanukuru, R. Yang, P. Gyory, R. Zhou, E. Y.-L. Do, and D. A. Szafir. “Cultivating Visualization Literacy for Children Through Curiosity and Play”. In: IEEE Transactions on Visualization and Computer Graphics (also proc. IEEE VIS 2022).",
-          "url": "#publications?search=Cultivating Visualiza- tion Literacy for Children Through Curiosity and Play"
+          "url": "#publications?search=\"Cultivating Visualization Literacy for Children Through Curiosity and Play\""
         },
         {
           "title": "K. Takahira, Y. Yu, T. Fujiwara, R. Suzuki, and H. Qu. “InSituTale: Enhancing Augmented Data Storytelling with Physical Objects.” In Proc. ACM UIST",
-          "url": "#publications?search=InSituTale: Enhancing Augmented Data Storytelling with Physical Objects"
+          "url": "#publications?search=\"InSituTale: Enhancing Augmented Data Storytelling with Physical Objects\""
         },
         {
-          "title": "K. Takahira, K.-K. Wong, L. Yang, X. Xu, T. Fujiwara, and H. Qu. “TangibleNet: Synchronous Network Data Storytelling with Tangible User Interfaces in Mixed Reality.” In Proc. ACM CHI, Article No. 233, 18 pages, 2025. ",
-          "url": "#publications?search=“TangibleNet"
+          "title": "K. Takahira, K.-K. Wong, L. Yang, X. Xu, T. Fujiwara, and H. Qu. “TangibleNet: Synchronous Network Data Storytelling with Tangible User Interfaces in Mixed Reality.” In Proc. ACM CHI, Article No. 233, 18 pages, 2025.",
+          "url": "#publications?search=\"TangibleNet\""
         }
       ],
       "images": [
@@ -74,19 +74,19 @@
     },
     {
       "title": "Computationally Fabricating Interactive 3D Printed Objects",
-      "description": "Our research in fabrication focuses on revolutionizing how we develop interactive data physicalizations (i.e., physical data representations). These tangible artifacts offer a new modality of interacting with data and an opportunity to bridge the digital and physical worlds. A central challenge in creating interactive physicalizations is the cross-disciplinary expertise needed in visualization, fabrication, and electronics. We combine computational design and machine learning to develop computational pipelines that automate low-level engineering traditionally needed to make interactive objects.",
+      "description": "Our research in fabrication focuses on revolutionizing how we develop interactive data physicalizations (i.e., physical data representations). These tangible artifacts offer a new modality of interacting with data and an opportunity to bridge the digital and physical worlds. A central challenge in creating interactive physicalizations is the cross-disciplinary expertise needed in visualization, fabrication, and electronics. We combine computational design and machine learning to develop computational pipelines that automate low-level engineering traditionally needed to make interactive objects. The interdisciplinarity of these works lends itself to addressing needs in other fields, such as robotics and computational fabrication.",
       "examples": [
         {
           "title": "S. S. Bae, T. Fujiwara, A. Ynnerman, E. Y.-L. Do, M. Rivera, and D. A. Szafir. “A Computational Design Pipeline to Fabricate Sensing Network Physicalizations”. In: IEEE Transactions on Visualization and Computer Graphics (also proc. IEEE VIS 2023).",
-          "url": "#publications?search=A Computational Design Pipeline to Fabricate Sensing Network Physicalizations"
+          "url": "#publications?search=\"A Computational Design Pipeline to Fabricate Sensing Network Physicalizations\""
         },
         {
           "title": "S. S. Bae*, T. Fujiwara*, D. A. Szafir, E. Y.-L. Do, and M. L. Rivera. “Computational Design and Single- Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints”. In: Proceedings of the 10th ACM Symposium on Computational Fabrication",
-          "url": "#publications?search=Computational Design and Single- Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints"
+          "url": "#publications?search=\"Computational Design and Single- Wire Sensing of 3D Printed Objects with Integrated Capacitive Touchpoints\""
         },
         {
           "title": "C. Kohlbrenner, C. Esobedo, S. S. Bae, A. Dickhans, and A. Roncone. “GenTact Toolbox: A Computational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Large-Area Tactile Skins”. In: Proceedings of the 2025 IEEE International Conference on Robotics and Automation",
-          "url": "#publications?search=GenTact Toolbox: A Compu- tational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Large-Area Tactile Skins"
+          "url": "#publications?search=\"GenTact Toolbox: A Computational Design Pipeline to Procedurally Generate Context-Driven 3D Printed Large-Area Tactile Skins\""
         }
       ],
       "images": [
@@ -107,11 +107,11 @@
       "examples": [
         {
           "title": "S. S. Bae*, T. Fujiwara*, C. Tseng*, and D. A. Szafir. “Uncovering How Scatterplot Features Skew Visual Class Separation”. In: Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.",
-          "url": "#publications?search=Uncovering How Scatterplot Features Skew Visual Class Separation"
+          "url": "#publications?search=\"Uncovering How Scatterplot Features Skew Visual Class Separation\""
         },
         {
           "title": "S. S. Bae, K. Cave, C. Görg, P. Rosen, D. A. Szafir, and C. X. Bearfield. “Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks”. In: IEEE Transactions on Visualization and Computer Graphics (2025).",
-          "url": "#publications?search=Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks"
+          "url": "#publications?search=\"Bridging Network Science and Vision Science: Mapping Perceptual Mechanisms to Network Visualization Tasks\""
         }
       ],
       "images": [

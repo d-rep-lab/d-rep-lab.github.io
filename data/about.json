@@ -60,7 +60,7 @@
           "keywords": [
             {
               "text": "Tensor Unified Linear Comparative Analysis",
-              "link": "#publications?search=Tensor Unified Linear Comparative Analysis"
+              "link": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
             },
             {
               "text": "Framework for Multivariate Time-Series Data",
@@ -100,11 +100,11 @@
             },
             {
               "text": "Multi-robot Planning",
-              "link": "#publications?search=MOSAIC Viewer"
+              "link": "#publications?search=\"MOSAIC Viewer\""
             },
             {
               "text": "Mind Mapping for Creative Tasks",
-              "link": "#publications?search=Spinneret"
+              "link": "#publications?search=\"Spinneret\""
             }
           ]
         },
@@ -113,7 +113,7 @@
           "keywords": [
             {
               "text": "3D Printed Sensing Network",
-              "link": "#publications?search=A Computational Design Pipeline to Fabricate Sensing Network Physicalizations"
+              "link": "#publications?search=\"A Computational Design Pipeline to Fabricate Sensing Network Physicalizations\""
             },
             {
               "text": "Design Space for Physicalizations",
@@ -130,7 +130,7 @@
             },
             {
               "text": "Generative Robotic Skins",
-              "link": "#publications?search=GenTact Toolbox"
+              "link": "#publications?search=\"GenTact Toolbox\""
             },
             {
               "text": "Physical Computing Powered by Computer Vision",
