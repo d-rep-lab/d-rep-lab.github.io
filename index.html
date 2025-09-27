@@ -133,6 +133,14 @@
     </div>
   </section>
 
+  <!-- Opportunities (solid color) -->
+  <section id="opportunities" class="page-section w-full relative overflow-hidden py-12" data-bg-color="#f8fafc">
+    <div class="section-inner max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-3xl font-semibold mb-4"></h2>
+      <p id="opportunities-content" class="text-lg leading-relaxed"></p>
+    </div>
+  </section>
+
   <footer class="bg-gray-800 text-gray-200 py-6 w-full">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm px-6">
       <p id="footer-copy">© 2025 D-REP Lab. All rights reserved.</p>
@@ -340,7 +348,7 @@
     }
 
     // Lazy loaders
-    const Loaded = { site: false, hero: false, about: false, news: false, people: false, projects: false, publications: false };
+    const Loaded = { site: false, hero: false, about: false, news: false, people: false, projects: false, publications: false, opportunities: false };
 
     async function ensureSite() {
       if (Loaded.site) return;
@@ -384,14 +392,6 @@
           document.getElementById('about-content').append(img);
         }
       }
-      // document.getElementById('about-content').innerHTML = about.main_content.text || '';
-      // if (about.main_content.image) {
-      //   const img = document.createElement('img');
-      //   img.src = about.main_content.image;
-      //   img.alt = about.main_content.title || 'About image';
-      //   img.className = 'w-5/6 mx-auto mt-4 mb-4 rounded-lg shadow';
-      //   document.getElementById('about-content').append(img);
-      // }
 
       const grid = document.getElementById('about-grid');
       grid.innerHTML = '';
@@ -436,13 +436,6 @@
                 }
                 link.textContent = kw.text || '';
                 link.href = kw.link || '#';
-                // link.addEventListener('click', (e) => {
-                //   if (link.href.endsWith('#')) { e.preventDefault(); return; }
-                //   if (link.href.includes('#publications')) {
-                //     e.preventDefault();
-                //     showSection('publications', kw.link || '');
-                //   }
-                // });
                 kwLi.appendChild(link);
                 kwList.appendChild(kwLi);
               }
@@ -456,24 +449,6 @@
         grid.appendChild(card);
       }
 
-      // for (const item of (about.subcontents || [])) {
-      //   const div = document.createElement('div');
-      //   div.className = 'mb-4';
-      //   if (item.title) {
-      //     const h3 = document.createElement('h3');
-      //     h3.className = 'text-xl font-semibold mb-2';
-      //     h3.textContent = item.title;
-      //     div.appendChild(h3);
-      //   }
-      //   if (item.text) {
-      //     const p = document.createElement('p');
-      //     p.className = 'text-lg leading-relaxed';
-      //     p.innerHTML = item.text;
-      //     div.appendChild(p);
-      //   }
-      //   grid.appendChild(div);
-      // }
-
       Loaded.about = true;
     }
 
@@ -483,7 +458,8 @@
       const newsSec = document.getElementById('news');
       newsSec.setAttribute('data-bg-color', news.bg_color || '#f9fafb');
       newsSec.querySelector('.section-title').textContent = news.title || 'News';
-      const list = document.getElementById('news-list'); list.innerHTML = '';
+      const list = document.getElementById('news-list');
+      list.innerHTML = '';
       (news.items || []).forEach(n => {
         const li = document.createElement('li'); li.className = 'p-6 bg-white rounded-2xl shadow';
         li.innerHTML = `<h3 class="text-xl font-medium">${n.title}</h3><p class="text-sm text-gray-600">${n.date || ''}</p>`;
@@ -572,6 +548,110 @@
       Loaded.publications = true;
     }
 
+
+    async function ensureOpportunities() {
+      if (Loaded.opportunities) return;
+      const opportunities = await loadJSON('./data/opportunities.json');
+      const opportunitiesSec = document.getElementById('opportunities');
+      opportunitiesSec.setAttribute('data-bg-color', opportunities.bg_color || '#f8fafc');
+      opportunitiesSec.querySelector('.section-title').textContent = opportunities.title || 'Opportunities';
+      const content = document.getElementById('opportunities-content');
+      if (opportunities.heading) content.innerHTML = opportunities.heading;
+      if (opportunities.subheading) {
+        const subhead = document.createElement('div');
+        subhead.className = "mt-10"
+
+        const subheadTitle = document.createElement('strong');
+        subheadTitle.textContent = opportunities.subheading.title || '';
+        subhead.appendChild(subheadTitle);
+
+        const subheadText = document.createElement('div');
+        subheadText.textContent = opportunities.subheading.text || '';
+        subhead.appendChild(subheadText);
+
+        if (opportunities.subheading.why) {
+          const why = document.createElement('div');
+          why.textContent = opportunities.subheading.why.title || '';
+          why.className = "ml-5 font-medium text-gray-700"
+
+          const reasons = document.createElement('ul')
+          reasons.className = 'list-disc list-outside ml-7';
+          for (const reason of opportunities.subheading.why.reasons) {
+            const r = document.createElement('li')
+            r.textContent = reason;
+            reasons.appendChild(r)
+          }
+          why.appendChild(reasons)
+
+          subhead.appendChild(why);
+        }
+        content.appendChild(subhead);
+
+        if (opportunities.positions) {
+          const positions = document.createElement('div');
+          positions.className = 'mt-10'
+
+          for (const pos of opportunities.positions) {
+            const posCard = document.createElement('div');
+            posCard.className = 'px-5 py-4 rounded-xl border border-gray-300 mb-5';
+            const posTitle = document.createElement('strong');
+            posTitle.className = 'text-indigo-800';
+            posTitle.textContent = pos.title || '';
+            posCard.appendChild(posTitle);
+
+            for (const c of pos.content) {
+              if (c.text) {
+                const posText = document.createElement('div');
+                posText.innerHTML = c.text || '';
+                posCard.appendChild(posText);
+              } else if (c.listing) {
+                const posListing = document.createElement('div');
+
+                const posListingTitle = document.createElement('div');
+                posListingTitle.className = 'mt-3 font-semibold';
+                posListingTitle.textContent = c.listing.title || '';
+                posListing.appendChild(posListingTitle);
+
+                if (c.listing.text) {
+                  const posListingText = document.createElement('div');
+                  posListingText.textContent = c.listing.text;
+                  posListing.appendChild(posListingText);
+                }
+
+                const items = document.createElement('ul')
+                items.className = 'list-disc list-outside ml-10';
+                for (const item of c.listing.items) {
+                  const li = document.createElement('li')
+                  li.textContent = item;
+                  items.appendChild(li)
+                }
+                posListing.appendChild(items)
+
+                posCard.appendChild(posListing);
+              }
+            }
+            positions.appendChild(posCard);
+          }
+          content.append(positions);
+        }
+      }
+
+      // "why": {
+      // "title": "Why Join Us",
+      // "reasons": [
+      //   "Work on cutting-edge problems at the convergence of ML/AI, mixed reality, physical interaction, and cognition",
+      //   "Collaborate across disciplines—computational design, engineering, science, psychology",
+      //   "Gain experience in prototyping, user studies, fabrication, design, and visualization",
+      //   "Opportunities to publish and present in top-tier venues in HCI, visualization, AR/VR, cognitive science, and beyond",
+      //   "Be part of an interdisciplinary team of deep thinkers and brilliant makers",
+      //   "Foster a supportive, curiosity-driven environment"
+      // ]
+      // }
+
+
+      Loaded.opportunities = true;
+    }
+
     // ---------- Helpers ----------
     function initialsFromName(name) { return (name || '').trim().split(/\s+/).filter(Boolean).slice(0, 2).map(s => s[0].toUpperCase()).join('') || '?'; }
 
@@ -624,7 +704,7 @@
 
     function setupNav() {
       const nav = document.getElementById('main-nav'); const mobile = document.getElementById('mobile-nav'); nav.innerHTML = ''; mobile.innerHTML = '';
-      const items = ['hero', 'about', 'news', 'people', 'projects', 'publications'];
+      const items = ['hero', 'about', 'news', 'people', 'projects', 'publications', 'opportunities'];
       const makeBtn = (id) => { const b = document.createElement('button'); b.className = 'px-3 py-2 rounded-xl border border-transparent hover:border-gray-300'; b.textContent = id.charAt(0).toUpperCase() + id.slice(1); b.addEventListener('click', () => { showSection(id); if (!mobile.classList.contains('hidden')) mobile.classList.add('hidden'); }); return b; };
       items.slice(1).forEach(id => { nav.appendChild(makeBtn(id)); const mb = makeBtn(id); mb.className += ' block w-full text-left mt-2'; mobile.appendChild(mb); });
       document.getElementById('menu-btn').addEventListener('click', () => { mobile.classList.toggle('hidden'); });
@@ -643,6 +723,7 @@
       if (id === 'people') await ensurePeople();
       if (id === 'projects') await ensureProjects();
       if (id === 'publications') await ensurePublications(filters);
+      if (id === 'opportunities') await ensureOpportunities();
 
       // show/hide
       document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));

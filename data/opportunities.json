@@ -1,0 +1,195 @@
+{
+  "title": "Join D-REP",
+  "bg_color": "#ffffff",
+  "heading": "<p>We are growing a world-class team of designers, engineers, scientists, and makers inventing the future, specifically exploring how data representations and interactions can be more than the current status quo (i.e., flat 2D desktop visualizations). This positioning presents itself as a creative opportunity to innovate the future while addressing current limitations.</p><p class='mt-2'>Our innovations and “out-of-the-box” thinking enable us to situate data into mediums and contexts that have never been considered (e.g., dome-scale visualizations; 3D-printed network visualizations). Through this stance, we present new data representation paradigms that are unique to our technical strengths.</p>",
+  "subheading": {
+    "title": "OPEN POSITIONS AND OPPORTUNITIES",
+    "text": "We welcome curious, motivated individuals who are excited about bridging technology, science, and human experience. We embrace diverse perspectives, experiences, and backgrounds. Our lab thrives at the intersection of machine learning/AI, human-computer interaction, data visualization, and computational design. Whether you are a graduate student, postdoc, undergrad, or visiting researcher, there are many ways to get involved. Below is an overview of open roles, expected qualifications, and how to apply.",
+    "why": {
+      "title": "Why Join Us",
+      "reasons": [
+        "Work on cutting-edge problems at the convergence of ML/AI, mixed reality, physical interaction, and cognition",
+        "Collaborate across disciplines—computational design, engineering, science, psychology",
+        "Gain experience in prototyping, user studies, fabrication, design, and visualization",
+        "Opportunities to publish and present in top-tier venues in HCI, visualization, AR/VR, cognitive science, and beyond",
+        "Be part of an interdisciplinary team of deep thinkers and brilliant makers",
+        "Foster a supportive, curiosity-driven environment"
+      ]
+    }
+  },
+  "positions": [
+    {
+      "title": "Postdoctoral Researcher 1: XR, Physicalization, Perceptual-Cognitive Studies (1 funded position)",
+      "content": [
+        {
+          "text": "We seek a postdoc to lead hands-on work in areas including mixed-reality interfaces for scientific domains, interactive data physicalization, or perceptual-cognitive studies of novel visualizations."
+        },
+        {
+          "listing": {
+            "title": "In general, we are interested in researchers in these directions:",
+            "items": [
+              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
+              "Using computational fabrication and geometry to expand the multifunctionality of data physicalizations for sensing, output modalites, mechanical behavior, computational, and actuation",
+              "Developing hardware and/or computational design tools for interactive data representations",
+              "Develop and refine advanced reinforcement learning to generate, explore, and optimize 3D printed physicalizations",
+              "A wild card: If you believe your expertise is not listed above but could spark a radical synergy with the D-REP lab, we encourage you to reach out and pitch ideas. For example, you might be an expert in neuroscience, soft robotics, or architecture and are curious about exploring novel intersections with data physicalization, mixed-reality, or computational fabrication."
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Strong track record of independent research (publications, demos, prototypes)",
+              "Excellent project management skills, independence, self-motivation, organizational skills, and attention to detail",
+              "Strong technical and programming skills in languages such as Python, C++, or similar, with experience in frameworks to build interactive systems (e.g. AR/VR), computational fabrication pipelines",
+              "Proficiency in handling and analyzing large, heterogeneous datasets (environmental, climate, remote sensing) using Python, C++, or similar languages",
+              "Create and implement physical or digital prototypes by using computational methods",
+              "Experience conducting human-subject studies",
+              "Background in computer science, HCI, cognitive science, or computational design",
+              "Ability to write and publish across interdisciplinary venues",
+              "Aptitude to work in collaborative teamwork across disciplines"
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "How to Apply",
+            "text": "Send following materials to the D-REP co-directors (Sandra and Takanori):",
+            "items": [
+              "CV",
+              "representative publications or portfolio",
+              "short research statement (2 pages max)",
+              "two or three ideas you are excited to explore in our lab"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Postdoctoral Researcher 2: Machine learning/AI for visualization and physicalization, large-scale 3D visualization (1 funded position)",
+      "content": [
+        {
+          "text": "We seek a postdoc to lead hands-on work in areas including machine learning/AI for visualization and physicalization, or effective rendering and design of large-scale 3D data representations."
+        },
+        {
+          "listing": {
+            "title": "In general, we are interested in researchers in these directions:",
+            "items": [
+              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
+              "Developing machine learning and AI techniques to extract critical shapes/structures from high-dimensional data and networks",
+              "Developing 3D rendering techniques suitable to visualize large-scale high-dimensional and network data in an immersive environment",
+              "Studying data patterns that can be better captured by 3D data representations than 2D visualizations",
+              "A wild card: If you believe your expertise is not listed above but could spark a radical synergy with the D-REP lab, we encourage you to reach out and pitch ideas. For example, you might be an expert in bioinformatics, astronomy, mathematics, or architecture and are curious about exploring novel intersections with machine learning, data visualization, mixed-reality, or computational fabrication."
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "Preferred Qualifications",
+            "items": [
+              "Strong track record of independent research (publications, demos, prototypes)",
+              "Excellent project management skills, independence, self-motivation, organizational skills, and attention to detail",
+              "Strong mathematical, statistical, and/or computational background to solve complex problems (e.g., dimensionality reduction, manifolds, network analysis)",
+              "Strong technical and programming skills in languages such as Python, C++, JavaScript, or similar, with experience in frameworks to build interactive systems in AR/VR environments or Web UI",
+              "Proficiency in handling and analyzing large, heterogeneous datasets using Python, C++, or similar languages, with machine learning/AI models",
+              "Background in computer science, HCI, cognitive science, or computational design",
+              "Ability to write and publish across interdisciplinary venues",
+              "Aptitude to work in collaborative teamwork across disciplines"
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "How to Apply",
+            "text": "Send following materials to the D-REP co-directors (Sandra and Takanori):",
+            "items": [
+              "CV",
+              "representative publications or portfolio",
+              "short research statement (2 pages max)",
+              "two or three ideas you are excited to explore in our lab"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Ph.D. Students (multiple open positions)",
+      "content": [
+        {
+          "text": "We are seeking 2-4 Ph.D. students for the upcoming admissions cycle (Fall 2026 incoming class), through the University of Arizona's Computer Science Department. In addition to applying through the <a href='https://www.cs.arizona.edu/graduate/prospective-students' class='underline'>official application portals</a>, you are encouraged to contact the D-REP co-directors (Sandra and Takanori) with listed items below. We seek students who combine strong technical foundations with creativity and interdisciplinary thinking."
+        },
+        {
+          "listing": {
+            "title": "Areas of Emphasis",
+            "items": [
+              "Machine learning/AI technologies for visualization and physicalization (e.g., dimensionality reduction)",
+              "3D large-scale visualizations for network and high-dimensional data",
+              "AR/VR applications for data-driven discovery and analysis in STEM domains (e.g. optics, material science)",
+              "Interactive computing applications to improve engagement and learning in AI and data science",
+              "Computational design pipelines using machine learning and data-driven design optimization to fabricate interactive 3D printed data objects for network physicalizations",
+              "Empirical studies on investigating the perceptual effectiveness of data physicalizations"
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "More broadly, we are looking for students in one or multiple of these directions.",
+            "items": [
+              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
+              "Using computational fabrication and geometry to expand the multifunctionality of data physicalizations for sensing capabilities, output modalites, mechanical behavior, and actuation",
+              "Develop and refine advanced reinforcement learning to generate, explore, and optimize 3D printed physicalizations",
+              "Developing hardware and/or computational design tools for interactive data representations"
+            ]
+          }
+        },
+        {
+          "listing": {
+            "title": "What to Include When You Apply",
+            "text": "To help us understand your potential fit, please submit following materials to the D-REP co-directors (Sandra and Takanori). Please note in your email whether you have external fellowships and share both concrete ideas and a broader vision for Ph.D. projects that connect with D-REP’s research scope.",
+            "items": [
+              "CV",
+              "portfolio or representative sample work (projects, prototypes, publications, demos)",
+              "research statement (please include: 1. Your research interests and motivations, 2. skills/technical expertise, 3. what you hope to gain from working at D-REP, 4. potential project ideas or directions)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Research Associates & Interns (general opportunities)",
+      "content": [
+        {
+          "text": "We welcome research associates, visiting scholars, and interns (undergraduate or graduate) from diverse backgrounds, both domestically and internationally. Projects can be short- or mid-term, and may be paid or volunteer depending on funding and role."
+        },
+        {
+          "listing": {
+            "title": "Expectations & Duration",
+            "items": [
+              "Commitment of at least 6 months is preferred (for productivity and training)",
+              "Prior experience in programming, prototyping, or user studies is a plus",
+              "Working closely with lab members across domains"
+            ]
+          }
+        },
+        {
+          "text": "Please contact the D-REP co-directors (Sandra and Takanori) to apply."
+        }
+      ]
+    },
+    {
+      "title": "Undergraduate Students (general opportunities)",
+      "content": [
+        {
+          "text": "We welcome both University of Arizona undergraduates and undergraduates from other universities, who are interested in gaining research experience in the areas of machine learning, visualization, digital fabrication, user-centered research inquiry, and experimental characterization. We discourage one-semester-only involvement, as many components of our research (computational design, fabrication, user studies, prototyping) require onboarding.<br /><br />"
+        },
+        {
+          "text": "Students interested in long-term (one year or more) intensive research projects are encouraged to contact the D-REP co-directors (Sandra and Takanori).<br /><br />"
+        },
+        {
+          "text": "Undergraduates may participate in research voluntarily in the lab. However, to seek funding or course credits, UArizona undergraduates can check out <a href='https://ur.arizona.edu/' class='underline'>here</a> for funding opportunities. Including, <a href='https://uavip.arizona.edu/about/overview' class='underline'>Vertically Integrated Projects</a>, <a href='https://ur.arizona.edu/course-based-research-undergraduate-experiences-cures' class='underline'>Course-Based Research Undergraduate Experiences</a> (CUREs) for course cre dits, <a href='https://gradcenter.arizona.edu/pathways-grad-school/uroc/uroc-programs-overview/summer-only-programs/summer-research-institute' class='underline'>Summer Research Institute</a> (SRI) and <a href='https://science.arizona.edu/academics/scholarships?_gl=1*i1hsnd*_gcl_au*MTI5ODkxNTczLjE3NTg2Mzk0NTU.*_ga*MTA2NTM1MTYxNC4xNzU4NjM5NDU2*_ga_7PV3540XS3*czE3NTg5MTg0MjAkbzkkZzEkdDE3NTg5MTg0OTQkajU5JGwwJGgxNDI4NzcwMDg1' class='underline'>College of Science Research Scholarship<a/> for funded opportunities.<br />For undergraduates outside of UArizona, you may seek funding opportunities from your home school."
+        }
+      ]
+    }
+  ]
+}
