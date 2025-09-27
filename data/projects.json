@@ -1,5 +1,5 @@
 {
-  "title": "Projects (WIP)",
+  "title": "Ongoing Projects",
   "bg_color": "#f8fafc",
   "items": [
     {
@@ -15,11 +15,7 @@
           "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
         }
       ],
-      "images": [
-        "./images/pubs/2010_isvc.png",
-        "./images/pubs/2011_jov.png",
-        "./images/pubs/2017_vast.png"
-      ],
+      "images": [],
       "tags": [
         "Visualization",
         "Dimensionality Reduction",
@@ -40,11 +36,7 @@
           "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
         }
       ],
-      "images": [
-        "./images/pubs/2010_isvc.png",
-        "./images/pubs/2011_jov.png",
-        "./images/pubs/2017_vast.png"
-      ],
+      "images": [],
       "tags": [
         "Physicalization",
         "3D",
@@ -61,8 +53,12 @@
           "url": "#publications?search=Cultivating Visualiza- tion Literacy for Children Through Curiosity and Play"
         },
         {
-          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=Tensor Unified Linear Comparative Analysis"
+          "title": "K. Takahira, Y. Yu, T. Fujiwara, R. Suzuki, and H. Qu. “InSituTale: Enhancing Augmented Data Storytelling with Physical Objects.” In Proc. ACM UIST",
+          "url": "#publications?search=InSituTale: Enhancing Augmented Data Storytelling with Physical Objects"
+        },
+        {
+          "title": "K. Takahira, K.-K. Wong, L. Yang, X. Xu, T. Fujiwara, and H. Qu. “TangibleNet: Synchronous Network Data Storytelling with Tangible User Interfaces in Mixed Reality.” In Proc. ACM CHI, Article No. 233, 18 pages, 2025. ",
+          "url": "#publications?search=“TangibleNet"
         }
       ],
       "images": [

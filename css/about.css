@@ -26,13 +26,18 @@ header #logo-area button {
   float: right;
 }
 
-html, a {
+html,
+a {
   color: #000 !important;
   line-height: 1.3;
 }
 
- a {
+a {
   text-decoration: underline;
+}
+
+.links {
+  color: #2962ff !important;
 }
 
 p {
@@ -268,7 +273,8 @@ div .input-title {
   float: right;
 }
 
-#form-modal-title, #locomotion-modal-title {
+#form-modal-title,
+#locomotion-modal-title {
   font-size: 20px;
 }
 
@@ -281,7 +287,8 @@ div .input-title {
   background-color: #f7f7f7;
 }
 
-.noUi-connect, .noUi-target {
+.noUi-connect,
+.noUi-target {
   height: 10px;
 }
 
@@ -305,12 +312,15 @@ div .input-title {
   top: -2px;
 }
 
-.noUi-handle:before, .noUi-handle:after {
+.noUi-handle:before,
+.noUi-handle:after {
   content: "";
   display: none;
 }
 
-.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
   min-height: 10px !important;
 }
 
