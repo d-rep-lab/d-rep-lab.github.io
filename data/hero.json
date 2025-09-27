@@ -20,12 +20,28 @@
       "caption": "Visualizing biological diversity on a planetarium-scale display."
     },
     {
+      "src": "./images/top/networkcv.gif",
+      "alt": "Multivariate Network Analysis with Visualization and Machine Learning",
+      "title": "Multivariate Network Analysis with Visualization and Machine Learning",
+      "caption": "Utilizing neural networks to understand multivariate networks.",
+      "title_color": "#333333",
+      "caption_color": "#555555"
+    },
+    {
       "src": "./images/top/single-wire.gif",
       "alt": "3D Printed Single-Wire Capacitive Sensing",
       "title": "3D Printed Single-Wire Capacitive Sensing",
       "caption": "Supporting multiple capacitive sensing touchpoints with a single-wire connection",
       "title_color": "#ffffff",
       "caption_color": "#dddddd"
+    },
+    {
+      "src": "./images/top/ulca.gif",
+      "alt": "Interactive Dimensionality Reduction for Comparative Analysis",
+      "title": "Interactive Dimensionality Reduction for Comparative Analysis",
+      "caption": "Unifiying dimensionality reduction schemes for flexible darta comparison",
+      "title_color": "#333333",
+      "caption_color": "#555555"
     },
     {
       "src": "./images/top/eager.gif",
