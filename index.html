@@ -113,9 +113,9 @@
       <h2 class="section-title text-3xl font-semibold mb-6"></h2>
       <p id="projects-content" class="text-lg leading-relaxed"></p>
       <div class="mb-6 grid gap-3 md:grid-cols-4">
-        <input id="proj-search" type="text" placeholder="Search projects"
-          class="w-full rounded-xl border border-gray-300 px-3 py-2" />
-        <div id="proj-tags" class="md:col-span-3 flex flex-wrap gap-2"></div>
+        <!-- <input id="proj-search" type="text" placeholder="Search projects"
+          class="w-full rounded-xl border border-gray-300 px-3 py-2" /> -->
+        <div id="proj-tags" class="md:col-span-4 flex flex-wrap gap-2"></div>
       </div>
       <div id="projects-grid" class="grid md:grid-cols-1 gap-6"></div>
     </div>
@@ -1124,8 +1124,8 @@
         wrap.appendChild(pill);
       });
 
-      const search = document.getElementById('proj-search');
-      search.addEventListener('input', () => filterAndRenderProjects(all, selected));
+      // const search = document.getElementById('proj-search');
+      // search.addEventListener('input', () => filterAndRenderProjects(all, selected));
 
       function attachTagClicks() {
         document.querySelectorAll('.project-tag').forEach(el => {
@@ -1134,7 +1134,8 @@
       }
 
       function filterAndRenderProjects(allItems, sel) {
-        const q = document.getElementById('proj-search').value.trim().toLowerCase();
+        // const q = document.getElementById('proj-search').value.trim().toLowerCase();
+        const q = null;
         const grid = document.getElementById('projects-grid');
         const active = Array.from(sel || []);
         const filtered = allItems.filter(p => {

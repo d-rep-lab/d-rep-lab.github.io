@@ -3,8 +3,8 @@
   "bg_color": "#f8fafc",
   "items": [
     {
-      "title": "Interactive Dimensionality Reduction and Tensor Decomposition",
-      "description": "Developing tools for interpretable and interactive data exploration.",
+      "title": "Representation Learning for Visual Analysis",
+      "description": "Developing dimensionality reduction, tensor decomposition, and graph embedding methods for exploratory data analysis.",
       "examples": [
         {
           "title": "N. Okami, K. Miyake, N. Sakamoto, J. Nonaka, and T. Fujiwara. “Visual Analytics Using Tensor Unified Linear Comparative Analysis.” IEEE Transactions on Visualization and Computer Graphics (Special Issue: IEEE VIS 2025), forthcoming.",
@@ -19,7 +19,11 @@
           "url": "#publications?search=\"Feature Learning for Nonlinear Dimensionality Reduction\""
         }
       ],
-      "images": [],
+      "images": [
+        "./images/projects/ccpca.png",
+        "./images/projects/networkcv.png",
+        "./images/projects/multidr.png"
+      ],
       "tags": [
         "Visualization",
         "Dimensionality Reduction",
