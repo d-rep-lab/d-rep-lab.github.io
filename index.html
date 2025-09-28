@@ -502,7 +502,7 @@
       const all = (projects.items || []).map(p => ({ title: p.title || '', description: p.description || '', examples: p.examples || '', images: p.images || '', tags: Array.isArray(p.tags) ? p.tags : [] }));
       setupProjectFilters(all);
       const content = document.getElementById('projects-content');
-      content.innerHTML = "At D-REP we’re innovating data representations that people dream of or have never imagined. Our cross-disciplinary research spans across machine learning/AI, visualization, human-computer interaction, and computational design. We couple rigorous technical work with creative and interdisciplinary thinking. Below is a sample of ongoing projects in D-REP.  For more information about these projects or others, please contact Drs. Sandra Bae or Takanori Fujiwara."
+      content.innerHTML = projects.heading || "";
       content.style = "margin-bottom: 20px;"
       Loaded.projects = true;
     }
@@ -1077,6 +1077,8 @@
         for (const ex of p.examples) {
           const li = document.createElement('li');
           const a = document.createElement('a')
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
           a.href = ex.url
           a.innerHTML = ex.title || '';
           a.className = "text-blue-600 hover:text-[tomato] underline";

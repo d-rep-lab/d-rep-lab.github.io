@@ -1,5 +1,6 @@
 {
   "title": "Ongoing Projects",
+  "heading": "At D-REP we are innovating data representations that people dream of or have never imagined. Our cross-disciplinary research spans across machine learning/AI, visualization, human-computer interaction, and computational design. We couple rigorous technical work with creative and interdisciplinary thinking. Below is a sample of ongoing projects in D-REP.  For more information about these projects or others, please contact Drs. Sandra Bae or Takanori Fujiwara.",
   "bg_color": "#f8fafc",
   "items": [
     {
@@ -23,12 +24,6 @@
         "./images/projects/ccpca.png",
         "./images/projects/networkcv.png",
         "./images/projects/multidr.png"
-      ],
-      "tags": [
-        "Visualization",
-        "Dimensionality Reduction",
-        "Machine Learning",
-        "Visual Analytics"
       ]
     },
     {
@@ -52,12 +47,6 @@
         "./images/projects/cvol.png",
         "./images/projects/protein_network.png",
         "./images/projects/brain_network.png"
-      ],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
       ]
     },
     {
@@ -80,12 +69,6 @@
       "images": [
         "./images/pubs/2022_eager.jpg",
         "./images/pubs/2025_tangiblenet.png"
-      ],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
       ]
     },
     {
@@ -109,12 +92,6 @@
         "./images/pubs/2023_sensing_network.png",
         "./images/pubs/2025_freeform_interface.png",
         "./images/pubs/2025_gentact.jpg"
-      ],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
       ]
     },
     {
@@ -133,9 +110,6 @@
       "images": [
         "./images/pubs/2025_vcs_perception.png",
         "./images/pubs/2025_visual_perception.png"
-      ],
-      "tags": [
-        "HCI"
       ]
     }
   ]
