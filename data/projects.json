@@ -3,16 +3,20 @@
   "bg_color": "#f8fafc",
   "items": [
     {
-      "title": "Interactive Dimensionality Reduction",
+      "title": "Interactive Dimensionality Reduction and Tensor Decomposition",
       "description": "Developing tools for interpretable and interactive data exploration.",
       "examples": [
         {
-          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
+          "title": "N. Okami, K. Miyake, N. Sakamoto, J. Nonaka, and T. Fujiwara. “Visual Analytics Using Tensor Unified Linear Comparative Analysis.” IEEE Transactions on Visualization and Computer Graphics (Special Issue: IEEE VIS 2025), forthcoming.",
           "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
         },
         {
-          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
+          "title": "T. Fujiwara, X. Wei, J. Zhao, and K.-L. Ma. “Interactive Dimensionality Reduction for Comparative Analysis.” IEEE Transactions on Visualization and Computer Graphics (Special Issue: IEEE VIS 2021), 2022.",
+          "url": "#publications?search=\"Interactive Dimensionality Reduction for Comparative Analysis\""
+        },
+        {
+          "title": "T. Fujiwara, Y.-H. Kuo, A. Ynnerman, K.-L. Ma. “Feature Learning for Nonlinear Dimensionality Reduction toward Maximal Extraction of Hidden Patterns.” Proc. PacificVis, 2023.",
+          "url": "#publications?search=\"Feature Learning for Nonlinear Dimensionality Reduction\""
         }
       ],
       "images": [],
@@ -24,16 +28,20 @@
       ]
     },
     {
-      "title": "3D Interfaces for Complex Data",
-      "description": "Designing immersive environments for scientific collaboration.",
+      "title": "3D Visualizations for Large-Scale, High-dimensional, and Complex Data",
+      "description": "Designing new 3D representations and rendering techniques to identify and present patterns that cannot be captured in 2D.",
       "examples": [
         {
-          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
+          "title": "W. Duchemin*, T. Fujiwara*, H. W. Herhold, E. Elmquist, D. S. Thaler, W. Harcourt-Smith, E. Broman, A. Bock, B. P. Abbott, J. K. Faherty (*equally contributed). “A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software.” IEEE Computer Graphics and Applications, 2025",
+          "url": "#publications?search=\"Cosmic View of Life on Earth\""
         },
         {
-          "title": "R. Sorenson-Graff, S. S. Bae, and J. Wirfs-Brock. “Integrating Annotations for Sonifications and Physicalizations”. In: Proceedings of the IEEE VIS 2024. St. Pete Beach, Florida",
-          "url": "#publications?search=\"Tensor Unified Linear Comparative Analysis\""
+          "title": "S. S. Bae, T. Fujiwara, A. Ynnerman, E. Y.-L. Do, M. L. Rivera, and D. A. Szafir. “A Computational Design Pipeline to Fabricate Sensing Network Physicalizations.” IEEE Transactions on Visualization and Computer Graphics (Special Issue: IEEE VIS 2023), 2025",
+          "url": "#publications?search=\"A Computational Design Pipeline to Fabricate Sensing Network Physicalizations\""
+        },
+        {
+          "title": "Y.-J. Huang, T. Fujiwara, Y.-X. Lin, W.-C. Lin, and K.-L. Ma. “A Gesture System for Graph Visualization in Virtual Reality Environments.” Proc. IEEE PacificVis (short paper), 2017",
+          "url": "#publications?search=\"Gesture System for Graph Visualization\""
         }
       ],
       "images": [],
