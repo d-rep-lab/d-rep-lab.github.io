@@ -28,7 +28,7 @@
       ]
     },
     {
-      "title": "3D Visualizations for Large-Scale, High-dimensional, and Complex Data",
+      "title": "3D Representations for Large-Scale, High-dimensional, and Complex Data",
       "description": "Designing new 3D representations and rendering techniques to identify and present patterns that cannot be captured in 2D.",
       "examples": [
         {
@@ -44,7 +44,11 @@
           "url": "#publications?search=\"Gesture System for Graph Visualization\""
         }
       ],
-      "images": [],
+      "images": [
+        "./images/projects/cvol.png",
+        "./images/projects/protein_network.png",
+        "./images/projects/brain_network.png"
+      ],
       "tags": [
         "Physicalization",
         "3D",
