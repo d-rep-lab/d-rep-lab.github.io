@@ -1,10 +1,11 @@
 {
   "title": "Ongoing Projects",
+  "heading": "At D-REP we are innovating data representations that people dream of or have never imagined. Our cross-disciplinary research spans across machine learning/AI, visualization, human-computer interaction, and computational design. We couple rigorous technical work with creative and interdisciplinary thinking. Below is a sample of ongoing projects in D-REP.  For more information about these projects or others, please contact Drs. Sandra Bae or Takanori Fujiwara.",
   "bg_color": "#f8fafc",
   "items": [
     {
-      "title": "Interactive Dimensionality Reduction and Tensor Decomposition",
-      "description": "Developing tools for interpretable and interactive data exploration.",
+      "title": "Representation Learning for Visual Analysis",
+      "description": "Effective data processing and feature extraction are crucial for gaining insights into target phenomena captured in complex datasets. We develop representation learning methods such as dimensionality reduction, tensor decomposition, graph embedding, and neural network–based encoders. Our approaches are designed with visual and multimodal analytics in mind, addressing factors such as computational latency, visual consistency, interpretability, and interactive usability. These representation learning methods provide a fundamental foundation for building effective visualizations and physicalizations.",
       "examples": [
         {
           "title": "N. Okami, K. Miyake, N. Sakamoto, J. Nonaka, and T. Fujiwara. “Visual Analytics Using Tensor Unified Linear Comparative Analysis.” IEEE Transactions on Visualization and Computer Graphics (Special Issue: IEEE VIS 2025), forthcoming.",
@@ -19,17 +20,15 @@
           "url": "#publications?search=\"Feature Learning for Nonlinear Dimensionality Reduction\""
         }
       ],
-      "images": [],
-      "tags": [
-        "Visualization",
-        "Dimensionality Reduction",
-        "Machine Learning",
-        "Visual Analytics"
+      "images": [
+        "./images/projects/ccpca.png",
+        "./images/projects/networkcv.png",
+        "./images/projects/multidr.png"
       ]
     },
     {
-      "title": "3D Visualizations for Large-Scale, High-dimensional, and Complex Data",
-      "description": "Designing new 3D representations and rendering techniques to identify and present patterns that cannot be captured in 2D.",
+      "title": "3D Representations for Large-Scale, High-dimensional, and Complex Data",
+      "description": "A 3D space provides an expressive visual and physical medium for analyzing large-scale, high-dimensional, and complex data. We design 3D visualizations and physicalizations beyond traditional 2D approaches to reveal and present data patterns and structures that cannot be adequately captured in 2D spaces. Our work holistically addresses the challenges of 3D representations, including computational algorithms for extracting 3D patterns, rendering techniques optimized for 3D spaces, and analysis/presentation environments, such as XR, VR, and planetariums.",
       "examples": [
         {
           "title": "W. Duchemin*, T. Fujiwara*, H. W. Herhold, E. Elmquist, D. S. Thaler, W. Harcourt-Smith, E. Broman, A. Bock, B. P. Abbott, J. K. Faherty (*equally contributed). “A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software.” IEEE Computer Graphics and Applications, 2025",
@@ -44,12 +43,10 @@
           "url": "#publications?search=\"Gesture System for Graph Visualization\""
         }
       ],
-      "images": [],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
+      "images": [
+        "./images/projects/cvol.png",
+        "./images/projects/protein_network.png",
+        "./images/projects/brain_network.png"
       ]
     },
     {
@@ -72,12 +69,6 @@
       "images": [
         "./images/pubs/2022_eager.jpg",
         "./images/pubs/2025_tangiblenet.png"
-      ],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
       ]
     },
     {
@@ -101,12 +92,6 @@
         "./images/pubs/2023_sensing_network.png",
         "./images/pubs/2025_freeform_interface.png",
         "./images/pubs/2025_gentact.jpg"
-      ],
-      "tags": [
-        "Physicalization",
-        "3D",
-        "XR",
-        "HCI"
       ]
     },
     {
@@ -125,9 +110,6 @@
       "images": [
         "./images/pubs/2025_vcs_perception.png",
         "./images/pubs/2025_visual_perception.png"
-      ],
-      "tags": [
-        "HCI"
       ]
     }
   ]
