@@ -45,6 +45,10 @@
       "thumb": "./images/pubs/2025_freeform_interface.png",
       "links": [
         {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2509.25387"
+        },
+        {
           "label": "Video",
           "url": "https://youtu.be/at5puV1MHUo?si=asOLS72rP1dc6IvJ"
         },
