@@ -28,7 +28,7 @@
     },
     {
       "title": "3D Representations for Large-Scale, High-dimensional, and Complex Data",
-      "description": "A 3D space provides an expressive visual and physical medium for analyzing large-scale, high-dimensional, and complex data. We design 3D visualizations and physicalizations beyond traditional 2D approaches to reveal and present data patterns and structures that cannot be adequately captured in 2D spaces. Our work holistically addresses the challenges of 3D representations, including computational algorithms for extracting 3D patterns, rendering techniques optimized for 3D spaces, and analysis/presentation environments, such as XR, VR, and planetariums.",
+      "description": "A 3D space provides an expressive visual and physical medium for analyzing large-scale, high-dimensional, and complex data. We design 3D visualizations and physicalizations beyond traditional 2D approaches to reveal and present data patterns and structures that cannot be adequately captured in 2D spaces. Our work holistically addresses the challenges of 3D representations, including computational algorithms for extracting 3D patterns, rendering techniques optimized for 3D spaces, and analysis/presentation environments, such as physicalizations, XR, VR, and planetariums.",
       "examples": [
         {
           "title": "W. Duchemin*, T. Fujiwara*, H. W. Herhold, E. Elmquist, D. S. Thaler, W. Harcourt-Smith, E. Broman, A. Bock, B. P. Abbott, J. K. Faherty (*equally contributed). “A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data Using Astronomical Software.” IEEE Computer Graphics and Applications, 2025",

@@ -675,7 +675,7 @@
     // ---------- Helpers ----------
     function initialsFromName(name) { return (name || '').trim().split(/\s+/).filter(Boolean).slice(0, 2).map(s => s[0].toUpperCase()).join('') || '?'; }
 
-    function buildPersonCard({ name, role, photo, link }) {
+    function buildPersonCard({ name, role, photo, link, interests }) {
       const outer = document.createElement('div');
       outer.className = 'p-6 bg-gray-50 rounded-2xl shadow text-center';
 
@@ -710,13 +710,21 @@
         nameEl.textContent = name || 'Unknown';
       }
 
-      const p = document.createElement('p');
-      p.className = 'text-sm text-gray-600';
-      p.textContent = role || '';
+      const labRole = document.createElement('p');
+      labRole.className = 'text-sm text-gray-600';
+      labRole.textContent = role || '';
 
       outer.appendChild(imgWrap);
       outer.appendChild(nameEl);
-      outer.appendChild(p);
+      outer.appendChild(labRole);
+
+
+      if (interests) {
+        const researchInterests = document.createElement('p');
+        researchInterests.className = 'text-sm text-gray-600';
+        researchInterests.textContent = interests || '';
+        outer.appendChild(researchInterests);
+      }
 
       return outer;
     }
