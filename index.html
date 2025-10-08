@@ -869,7 +869,7 @@
       li.className = 'p-4 bg-white rounded-xl shadow hover:shadow-md transition';
 
       const row = document.createElement('div');
-      row.className = 'flex items-start gap-4';
+      row.className = 'flex flex-col md:flex-row items-start gap-4';
 
       if (p.thumb) {
         const img = document.createElement('img');
@@ -877,8 +877,7 @@
         img.alt = p.thumb_alt || p.title || 'Publication thumbnail';
         img.loading = 'lazy';
         img.decoding = 'async';
-        // uniform width; proportional height
-        img.className = 'w-48 h-auto object-contain rounded-md flex-shrink-0';
+        img.className = 'w-full md:w-48 h-auto object-contain rounded-md flex-shrink-0';
         img.onerror = () => { img.remove(); };
         row.appendChild(img);
       }
