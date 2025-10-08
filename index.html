@@ -1166,7 +1166,12 @@
       applySectionBackgrounds();
       const hash = window.location.hash;
       if (hash && hash != "") {
-        const [section, params] = getQueryParams(hash)
+        const [section, params] = getQueryParams(hash);
+        if (section.includes("_embed")) {
+          document.querySelector('header').style.display = 'none';
+          document.querySelector('footer').style.display = 'none';
+          showSection(section.replace("_embed", ""), params)
+        }
         showSection(section, params);
       } else {
         showSection('hero');
