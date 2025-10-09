@@ -27,6 +27,14 @@
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2509.03164"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=oXUGtWGxAUw"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/DVL-Sejong/OPRA-Vis"
         }
       ]
     },
