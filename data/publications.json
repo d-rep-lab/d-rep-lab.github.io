@@ -821,6 +821,66 @@
       ]
     },
     {
+      "title": "A Visual Analytics Approach for Hardware System Monitoring with Streaming Functional Data Analysis",
+      "authors": [
+        "Shilpika",
+        "Takanori Fujiwara",
+        "Naohisa Sakamoto",
+        "Jorji Nonaka",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "award": "Best Paper Honorable Mention",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_msplot.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2022.3165348"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2011.13079"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/sshilpika/streaming-ms-plot"
+        },
+        {
+          "label": "Video",
+          "url": "https://drive.google.com/file/d/1BfHGgDBEkXKLxqvBuNNxehm48-XOWgjM"
+        }
+      ]
+    },
+    {
+      "title": "A Machine-Learning-Aided Visual Analysis Workflow for Investigating Air Pollution Data",
+      "authors": [
+        "Yun-Hsin Kuo",
+        "Takanori Fujiwara",
+        "Charles C. K. Chou",
+        "Chun-houh Chen",
+        "Kwan-Liu Ma"
+      ],
+      "venue": "IEEE PacificVis",
+      "year": 2022,
+      "thumb": "./images/pubs/2022_ml_air.png",
+      "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/PacificVis53943.2022.00018"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2202.05413"
+        },
+        {
+          "label": "Video",
+          "url": "https://drive.google.com/file/d/1jhvmV68ImBYUMxczV9ieK5dr3akb4fLW/view?usp=sharing"
+        }
+      ]
+    },
+    {
       "title": "Exploring the Benefits and Challenges of Data Physicalization",
       "authors": [
         "S. Sandra Bae",
@@ -849,7 +909,7 @@
         "Joshua Vander Hook"
       ],
       "venue": "The Journal of the Astronautical Sciences",
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
+      "note": "",
       "year": 2022,
       "thumb": "./images/pubs/2022_dust_devil.jpg",
       "links": [
@@ -895,6 +955,26 @@
         {
           "label": "Code",
           "url": "https://github.com/takanori-fujiwara/cnrl"
+        }
+      ]
+    },
+    {
+      "title": "A Visual Analytics Method for Time-Series Log Data Using Multiple Dimensionality Reduction",
+      "authors": [
+        "Keijiro Fujita",
+        "Naohisa Sakamoto",
+        "Takanori Fujiwara",
+        "Toshiyuki Tsukamoto",
+        "Jorji Nonaka"
+      ],
+      "venue": "Journal of Advanced Simulation in Science and Engineering",
+      "year": 2022,
+      "note": "Extended version from the one for Asia Simulation Conference",
+      "thumb": "./images/pubs/2022_multiple_dr.png",
+      "links": [
+        {
+          "label": "Paper (open access)",
+          "url": "https://doi.org/10.15748/jasse.9.206"
         }
       ]
     },
