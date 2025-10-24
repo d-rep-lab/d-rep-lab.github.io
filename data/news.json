@@ -3,6 +3,10 @@
   "bg_color": "#f9fafb",
   "items": [
     {
+      "title": "Incoming seminar talks: UA AI Club (Takanori: Oct 22, Sandra: Nov 12); <a href='https://www.asiagraphics.org/webinar/'>Asiagraphics</a> (Takanori: Oct 28); <a href='https://www.cg.tuwien.ac.at/courses/konversatorium/2025-10-31-0'>Seminar at TU Wien</a> (Sandra, Takanori: Oct 31).",
+      "date": "Oct 2025"
+    },
+    {
       "title": "One paper will be presented at ACM SCF 2025.",
       "date": "Sep 2025"
     },
