@@ -242,9 +242,12 @@
       ],
       "venue": "ACM UIST",
       "year": 2025,
-      "note": "Forthcoming",
       "thumb": "./images/pubs/2025_insitutale.png",
       "links": [
+        {
+          "label": "Paper (ACM DL)",
+          "url": "https://doi.org/10.1145/3746059.3747678"
+        },
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2507.21411"
