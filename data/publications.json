@@ -53,12 +53,16 @@
       "thumb": "./images/pubs/2025_freeform_interface.png",
       "links": [
         {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://dl.acm.org/doi/full/10.1145/3745778.3766650"
+        },
+        {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2509.25387"
         },
         {
           "label": "Video",
-          "url": "https://youtu.be/at5puV1MHUo?si=asOLS72rP1dc6IvJ"
+          "url": "https://youtu.be/leWiqnmo2pU?si=zNbxJNWV-cGlKRtF"
         },
         {
           "label": "Code",
