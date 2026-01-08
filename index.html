@@ -13,7 +13,8 @@
   <!-- Header -->
   <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50 w-full">
     <div class="max-w-6xl mx-auto py-4 flex justify-between items-center px-6">
-      <button id="site-title" class="text-2xl font-bold cursor-pointer select-none" title="Go to top">D-REP Lab</button>
+      <button id="site-title" class="text-2xl font-bold cursor-pointer select-none" title="Go to top"><img
+          src="./images/D-REP Lab Primary Lockup.png" alt="D-REP Lab Logo" class="h-16 w-auto inline-block"></button>
       <nav id="main-nav" class="space-x-2 hidden sm:flex"></nav>
       <div class="flex items-center gap-3">
         <button id="menu-btn"
@@ -357,7 +358,7 @@
       if (Loaded.site) return;
       const site = await loadJSON('./data/site.json');
       const titleBtn = document.getElementById('site-title');
-      titleBtn.textContent = site.title || 'D-REP Lab';
+      // titleBtn.textContent = site.title || 'D-REP Lab';
       document.title = site.title || 'D-REP Lab';
       document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ${site.title || 'D-REP Lab'}. All rights reserved.`;
       document.getElementById('contact-link').href = site.contact_email ? `mailto:${site.contact_email}` : '#';
