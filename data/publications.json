@@ -8,6 +8,25 @@
   ],
   "items": [
     {
+      "title": "MAPLE: Self-supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
+      "authors": [
+        "Zeyang Huang",
+        "Takanori Fujiwara",
+        "Angelos Chatzimparmpas",
+        "Wandrille Duchemin",
+        "Andreas Kerren"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_maple.png",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2601.20173"
+        }
+      ]
+    },
+    {
       "title": "OPRA-Vis: Visual Analytics System to Assist Organization-Public Relationship Assessment with Large Language Models",
       "authors": [
         "Sangbong Yoo*",
