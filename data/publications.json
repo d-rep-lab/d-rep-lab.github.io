@@ -68,7 +68,7 @@
       ],
       "venue": "ACM SCF",
       "year": 2025,
-      "note": "* equally contributed. Forthcoming.",
+      "note": "* equally contributed",
       "thumb": "./images/pubs/2025_freeform_interface.png",
       "links": [
         {
@@ -105,7 +105,7 @@
       ],
       "venue": "IEEE Computer Graphics and Applications",
       "year": 2025,
-      "note": "* equally contributed. Early Access.",
+      "note": "* equally contributed",
       "thumb": "./images/pubs/2025_cvol.png",
       "links": [
         {
@@ -141,9 +141,13 @@
       ],
       "venue": "IEEE VIS",
       "year": 2025,
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
       "thumb": "./images/pubs/2025_tulca.png",
       "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2025.3633912"
+        },
         {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2507.19988"
@@ -166,10 +170,14 @@
         "Jaemin Jo"
       ],
       "venue": "IEEE VIS",
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
       "year": 2025,
       "thumb": "./images/pubs/2025_ghostumap2.png",
       "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2025.3633894"
+        },
         {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2507.17174"
@@ -192,13 +200,21 @@
         "Katerina Vrotsou"
       ],
       "venue": "IEEE VIS",
-      "note": "Will be published in IEEE Transactions on Visualization and Computer Graphics. Forthcoming.",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
       "year": 2025,
       "thumb": "./images/pubs/2025_revisid.png",
       "links": [
         {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2025.3634837"
+        },
+        {
           "label": "OSF Preprint",
           "url": "https://osf.io/preprints/osf/n5dxe_v1"
+        },
+        {
+          "label": "Video",
+          "url": "https://mfr.de-1.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Fsncq6%2F%3Fdirect%26mode%3Drender"
         }
       ]
     },
