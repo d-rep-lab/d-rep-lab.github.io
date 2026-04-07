@@ -4,9 +4,28 @@
   "highlight_authors": [
     "Takanori Fujiwara",
     "S. Sandra Bae",
-    "Sandra Bae"
+    "Sandra Bae",
+    "Zeyang Huang"
   ],
-  "items": [
+    "items": [
+    {
+      "title": "A Spectral Framework for Multi-Scale Nonlinear Dimensionality Reduction",
+      "authors": [
+        "Zeyang Huang",
+        "Angelos Chatzimparmpas",
+        "Thomas Höllt",
+        "Takanori Fujiwara"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_spectral.png",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2604.02535"
+        }
+      ]
+    },
     {
       "title": "MAPLE: Self-supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
       "authors": [
