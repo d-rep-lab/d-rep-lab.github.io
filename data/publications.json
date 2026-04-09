@@ -7,7 +7,27 @@
     "Sandra Bae",
     "Zeyang Huang"
   ],
-    "items": [
+  "items": [
+    {
+      "title": "Why (Not) ReacTIVision: Emerging Challenges and Opportunities for Building Tangible User Interfaces with Computer Vision Toolkits",
+      "authors": [
+        "Krithik Ranjan",
+        "S. Sandra Bae",
+        "Peter Gyory",
+        "Ellen Yi-Luen Do",
+        "Clement Zheng",
+        "Rong-Hao Liang"
+      ],
+      "venue": "ACM TEI",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_reactivision.png",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://doi.org/10.1145/3731459.3773326"
+        }
+      ]
+    },
     {
       "title": "A Spectral Framework for Multi-Scale Nonlinear Dimensionality Reduction",
       "authors": [
