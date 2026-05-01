@@ -2,6 +2,10 @@
   "title": "News",
   "bg_color": "#f9fafb",
   "items": [
+     {
+      "title": "Takanori received the <a href='https://science.arizona.edu/news/dr-takanori-fujiwara-computer-science-receives-ieee-pacificvis-early-career-award'>2026 IEEE PacificVis Early Career Award</a>.",
+      "date": "April 2026"
+    },
     {
       "title": "Takanori will give a talk at <a href='https://ucatt.arizona.edu/events/xr-summit'>University of Arizona XR Summit</a> (November 14, 2025): A Cosmic View of Life on Earth: Planetarium-Scale Visualization of Biological Data Using Astronomical Software.",
       "date": "Nov 2025"
