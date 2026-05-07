@@ -8,6 +8,26 @@
     "Zeyang Huang"
   ],
   "items": [
+      {
+      "title": "MAPLE: Self-supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
+      "authors": [
+        "Zeyang Huang",
+        "Takanori Fujiwara",
+        "Angelos Chatzimparmpas",
+        "Wandrille Duchemin",
+        "Andreas Kerren"
+      ],
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "note": "accepted, forthcoming",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_maple.png",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2601.20173"
+        }
+      ]
+    },
     {
       "title": "Why (Not) ReacTIVision: Emerging Challenges and Opportunities for Building Tangible User Interfaces with Computer Vision Toolkits",
       "authors": [
@@ -43,25 +63,6 @@
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2604.02535"
-        }
-      ]
-    },
-    {
-      "title": "MAPLE: Self-supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
-      "authors": [
-        "Zeyang Huang",
-        "Takanori Fujiwara",
-        "Angelos Chatzimparmpas",
-        "Wandrille Duchemin",
-        "Andreas Kerren"
-      ],
-      "venue": "arXiv",
-      "year": 2026,
-      "thumb": "./images/pubs/2026_maple.png",
-      "links": [
-        {
-          "label": "arXiv",
-          "url": "https://doi.org/10.48550/arXiv.2601.20173"
         }
       ]
     },
@@ -180,7 +181,7 @@
       ],
       "venue": "IEEE VIS",
       "year": 2025,
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "thumb": "./images/pubs/2025_tulca.png",
       "links": [
         {
@@ -209,7 +210,7 @@
         "Jaemin Jo"
       ],
       "venue": "IEEE VIS",
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "year": 2025,
       "thumb": "./images/pubs/2025_ghostumap2.png",
       "links": [
@@ -239,7 +240,7 @@
         "Katerina Vrotsou"
       ],
       "venue": "IEEE VIS",
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics (Early Access)",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "year": 2025,
       "thumb": "./images/pubs/2025_revisid.png",
       "links": [
@@ -629,7 +630,7 @@
       ],
       "venue": "IEEE VIS",
       "year": 2023,
-      "note": "Published in IEEE Transactions on Visualization and Computer Graphics.",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "award": "Best Paper Honorable Mention",
       "thumb": "./images/pubs/2023_sensing_network.png",
       "links": [
@@ -809,7 +810,7 @@
         "Ronghua Liang",
         "Kwan-Liu Ma"
       ],
-      "venue": "IEEE Transactions on Visualization and Computer Graphics,",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics",
       "year": 2023,
       "thumb": "./images/pubs/2022_brain_fiber.png",
       "links": [
@@ -1516,7 +1517,8 @@
         "Oh-Hyun Kwon",
         "Kwan-Liu Ma"
       ],
-      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "venue": "IEEE VIS",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "year": 2019,
       "thumb": "./images/pubs/2019_cpca.png",
       "award": "Best Paper Honorable Mention",
@@ -1553,7 +1555,8 @@
         "Liu Ren",
         "Kwan-Liu Ma"
       ],
-      "venue": "IEEE Transactions on Visualization and Computer Graphics",
+      "venue": "IEEE VIS",
+      "note": "Published in IEEE Transactions on Visualization and Computer Graphics",
       "year": 2019,
       "thumb": "./images/pubs/2019_ipca.png",
       "links": [
