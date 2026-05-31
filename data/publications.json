@@ -18,10 +18,14 @@
         "Andreas Kerren"
       ],
       "venue": "IEEE Transactions on Visualization and Computer Graphics",
-      "note": "accepted, forthcoming",
+      "note": "Early Access",
       "year": 2026,
       "thumb": "./images/pubs/2026_maple.png",
       "links": [
+        {
+          "label": "Paper (IEEE Xplore)",
+          "url": "https://doi.org/10.1109/TVCG.2026.3694000"
+        },
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2601.20173"
