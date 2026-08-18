@@ -8,6 +8,25 @@
     "Zeyang Huang"
   ],
   "items": [
+    {
+      "title": "Surrounded by Friends: Design and Evaluation of Immersive Layouts of Egocentric Network for Visual Analytics",
+      "authors": [
+        "Kentaro Takahira",
+        "Takanori Fujiwara",
+        "Wong Kam-Kwai",
+        "Kento Shigyo",
+        "Leni Yang",
+        "Hiroaki Natsukawa",
+        "Yalong Yang",
+        "Huamin Qu"
+      ],
+      "venue": "ACM SUI",
+      "note": "Forthcoming",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_surrounded.png",
+      "links": [
+      ]
+    },
       {
       "title": "MAPLE: Self-Supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
       "authors": [
