@@ -25,9 +25,13 @@
       "year": 2026,
       "thumb": "./images/pubs/2026_surrounded.png",
       "links": [
+        {
+          "label": "arXiv",
+          "url": "https://doi.org/10.48550/arXiv.2608.27194"
+        }
       ]
     },
-      {
+    {
       "title": "MAPLE: Self-Supervised Learning-Enhanced Nonlinear Dimensionality Reduction for Visual Analysis",
       "authors": [
         "Zeyang Huang",
