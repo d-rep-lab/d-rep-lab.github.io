@@ -9,6 +9,23 @@
   ],
   "items": [
     {
+      "title": "TULCA-based Visual Analytics of HPC Operational Data: A Case Study of Fugaku Rack's Power Data",
+      "authors": [
+        "Kazuki Miyake",
+        "Naohisa Sakamoto",
+        "Jorji Nonaka",
+        "Masaaki Terai",
+        "Yuji Iguchi",
+        "Takanori Fujiwara"
+      ],
+      "venue": "SC Workshop (HPC Operational Data Analytics)",
+      "note": "Forthcoming",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_tulca_hpcoda.png",
+      "links": [
+      ]
+    },
+    {
       "title": "Surrounded by Friends: Design and Evaluation of Immersive Layouts of Egocentric Network for Visual Analytics",
       "authors": [
         "Kentaro Takahira",
