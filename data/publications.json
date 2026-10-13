@@ -38,10 +38,13 @@
         "Huamin Qu"
       ],
       "venue": "ACM SUI",
-      "note": "Forthcoming",
       "year": 2026,
       "thumb": "./images/pubs/2026_surrounded.png",
       "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https://doi.org/10.1145/3822518.3830041"
+        },
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2608.27194"
@@ -58,7 +61,6 @@
         "Andreas Kerren"
       ],
       "venue": "IEEE Transactions on Visualization and Computer Graphics",
-      "note": "Early Access",
       "year": 2026,
       "thumb": "./images/pubs/2026_maple.png",
       "links": [
@@ -69,6 +71,9 @@
         {
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2601.20173"
+        },
+        {"label": "Code",
+          "url": "https://github.com/zeyh/MAPLE"
         }
       ]
     },
