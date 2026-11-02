@@ -1,10 +1,10 @@
 {
   "title": "Join D-REP",
   "bg_color": "#ffffff",
-  "heading": "<p>We are growing a world-class team of designers, engineers, scientists, and makers inventing the future, specifically exploring how data representations and interactions can be more than the current status quo (i.e., flat 2D desktop visualizations). This positioning presents itself as a creative opportunity to innovate the future while addressing current limitations.</p><p class='mt-2' style='margin-top:10px !important;'>Our innovations and “out-of-the-box” thinking enable us to situate data into mediums and contexts that have never been considered (e.g., dome-scale visualizations; 3D-printed network visualizations). Through this stance, we present new data representation paradigms that are unique to our technical strengths.</p>",
+  "heading": "<p> At the Data Representation Lab (D-REP), we investigate how representations shape the ways people perceive, understand, and interact with information. This positioning presents itself as a creative opportunity to innovate the future while addressing current limitations (i.e., flat 2D desktop visualizations).</p><p class='mt-2' style='margin-top:10px !important;' Our research brings together human-computer interaction, data visualization, machine learning, cognitive science, and computational design. We develop new computational methods and interactive systems, explore representations beyond conventional screens, and study how different representations influence human perception, reasoning, and learning.</p> <p class='mt-2' style='margin-top:10px !important;'>Our innovations and “out-of-the-box” thinking enable us to situate data into mediums and contexts that have never been considered (e.g., dome-scale visualizations; 3D-printed network visualizations). Through this stance, we present new data representation paradigms that are unique to our technical strengths.</p>",
   "subheading": {
     "title": "OPEN POSITIONS AND OPPORTUNITIES",
-    "text": "We welcome curious, motivated individuals who are excited about bridging technology, science, and human experience. We embrace diverse perspectives, experiences, and backgrounds. Our lab thrives at the intersection of machine learning/AI, human-computer interaction, data visualization, and computational design. Whether you are a graduate student, postdoc, undergrad, or visiting researcher, there are many ways to get involved. Below is an overview of open roles, expected qualifications, and how to apply.",
+    "text": "We welcome curious, motivated individuals who are excited about bridging technology, science, and human experience. We embrace diverse perspectives, experiences, and backgrounds. Our lab thrives at the intersection of machine learning/AI, human-computer interaction, data visualization, and computational design. Whether you are a graduate student, postdoc, undergrad, or visiting researcher, there. Whether you are a graduate student, postdoc, undergrad, or visiting researcher, there are many ways to get involved. Below is an overview of open roles, expected qualifications, and how to apply.",
     "why": {
       "title": "Why Join Us",
       "reasons": [
@@ -19,138 +19,60 @@
   },
   "positions": [
     {
-      "title": "Postdoctoral Researcher 1: XR, Physicalization, Perceptual-Cognitive Studies (1 funded position)",
+      "title": "Ph.D. Students (1–2 open positions)",
       "content": [
         {
-          "text": "We seek a postdoc to lead hands-on work in areas including mixed-reality interfaces for scientific domains, interactive data physicalization, or perceptual-cognitive studies of novel visualizations."
+          "text": "We are seeking 1–2 Ph.D. students for the Fall 2027 incoming class through the University of Arizona's Department of Computer Science. D-REP is co-directed by Profs. Sandra Bae and Takanori Fujiwara, whose research spans human-computer interaction, data visualization, computational methods, and interactive physical systems.<br><br> We welcome students with strong technical foundations, intellectual curiosity, and an interest in interdisciplinary research. In addition to applying through the <a href='https://www.cs.arizona.edu/graduate/prospective-students' class='underline, links'>official application portal</a>, prospective students are encouraged to contact the D-REP co-directors with the materials listed below."
         },
         {
           "listing": {
-            "title": "In general, we are interested in researchers in these directions:",
+            "title": "Research Focus: Prof. Sandra Bae — Human Perception, Cognition, and Learning",
+            "text": "Prof. Bae is particularly interested in recruiting a Ph.D. student at the intersection of cognitive science, human perception, and computer science. A central question motivating her research is how the design of external representations shapes what people perceive, learn, remember, and reason about. She seeks students interested in combining computational approaches with rigorous behavioral experiments to understand how people acquire and use knowledge from different representations.",
             "items": [
-              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
-              "Using computational fabrication and geometry to expand the multifunctionality of data physicalizations for sensing, output modalites, mechanical behavior, computational, and actuation",
-              "Developing hardware and/or computational design tools for interactive data representations",
-              "Develop and refine advanced reinforcement learning to generate, explore, and optimize 3D printed physicalizations",
-              "A wild card: If you believe your expertise is not listed above but could spark a radical synergy with the D-REP lab, we encourage you to reach out and pitch ideas. For example, you might be an expert in neuroscience, soft robotics, or architecture and are curious about exploring novel intersections with data physicalization, mixed-reality, or computational fabrication."
+              "Human perception, cognition, and learning: investigating how visual, spatial, interactive, and physical representations influence understanding, memory, and reasoning",
+              "Computational modeling of human cognition: developing and testing models of how people learn and build internal representations of complex information, including networks and relational structures",
+              "Behavioral experimentation: designing controlled experiments to investigate the cognitive effects of different representations and identify underlying mechanisms",
+              "Representation design: using insights from cognitive models and empirical studies to develop principles for designing more effective data representations"
             ]
           }
         },
         {
-          "listing": {
-            "title": "Preferred Qualifications",
-            "items": [
-              "Strong track record of independent research (publications, demos, prototypes)",
-              "Excellent project management skills, independence, self-motivation, organizational skills, and attention to detail",
-              "Strong technical and programming skills in languages such as Python, C++, or similar, with experience in frameworks to build interactive systems (e.g. AR/VR), computational fabrication pipelines",
-              "Proficiency in handling and analyzing large, heterogeneous datasets (environmental, climate, remote sensing) using Python, C++, or similar languages",
-              "Create and implement physical or digital prototypes by using computational methods",
-              "Experience conducting human-subject studies",
-              "Background in computer science, HCI, cognitive science, or computational design",
-              "Ability to write and publish across interdisciplinary venues",
-              "Aptitude to work in collaborative teamwork across disciplines"
-            ]
-          }
+          "text": "Applicants interested in Prof. Bae's research are especially encouraged to apply if they have experience or interests in cognitive science, computational modeling, experimental psychology, HCI, or visualization. Skills in programming, experimental design, statistical analysis, or computational modeling are valuable, but expertise in all these areas is not required. We value rigorous thinking, research curiosity, and a willingness to learn across disciplines."
         },
         {
           "listing": {
-            "title": "How to Apply",
-            "text": "Send following materials to the D-REP co-directors (Profs. Sandra Bae and Takanori Fujiwara):",
+            "title": "Additional Research Directions at D-REP",
+            "text": "Beyond the research focus described above, D-REP welcomes prospective Ph.D. students interested in the broader research directions pursued by Profs. Bae and Fujiwara, including:",
             "items": [
-              "CV",
-              "representative publications or portfolio",
-              "short research statement (2 pages max)",
-              "two or three ideas you are excited to explore in our lab"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "Postdoctoral Researcher 2: Machine learning/AI for visualization and physicalization, large-scale 3D visualization (1 funded position)",
-      "content": [
-        {
-          "text": "We seek a postdoc to lead hands-on work in areas including machine learning/AI for visualization and physicalization, or effective rendering and design of large-scale 3D data representations."
-        },
-        {
-          "listing": {
-            "title": "In general, we are interested in researchers in these directions:",
-            "items": [
-              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
-              "Developing machine learning and AI techniques to extract critical shapes/structures from high-dimensional data and networks",
-              "Developing 3D rendering techniques suitable to visualize large-scale high-dimensional and network data in an immersive environment",
-              "Studying data patterns that can be better captured by 3D data representations than 2D visualizations",
-              "A wild card: If you believe your expertise is not listed above but could spark a radical synergy with the D-REP lab, we encourage you to reach out and pitch ideas. For example, you might be an expert in bioinformatics, astronomy, mathematics, or architecture and are curious about exploring novel intersections with machine learning, data visualization, mixed-reality, or computational fabrication."
-            ]
-          }
-        },
-        {
-          "listing": {
-            "title": "Preferred Qualifications",
-            "items": [
-              "Strong track record of independent research (publications, demos, prototypes)",
-              "Excellent project management skills, independence, self-motivation, organizational skills, and attention to detail",
-              "Strong mathematical, statistical, and/or computational background to solve complex problems (e.g., dimensionality reduction, manifolds, network analysis)",
-              "Strong technical and programming skills in languages such as Python, C++, JavaScript, or similar, with experience in frameworks to build interactive systems in AR/VR environments or Web UI",
-              "Proficiency in handling and analyzing large, heterogeneous datasets using Python, C++, or similar languages, with machine learning/AI models",
-              "Background in computer science, HCI, cognitive science, or computational design",
-              "Ability to write and publish across interdisciplinary venues",
-              "Aptitude to work in collaborative teamwork across disciplines"
-            ]
-          }
-        },
-        {
-          "listing": {
-            "title": "How to Apply",
-            "text": "Send following materials to the D-REP co-directors (Sandra and Takanori):",
-            "items": [
-              "CV",
-              "representative publications or portfolio",
-              "short research statement (2 pages max)",
-              "two or three ideas you are excited to explore in our lab"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "Ph.D. Students (multiple open positions)",
-      "content": [
-        {
-          "text": "We are seeking 2-4 Ph.D. students for the upcoming admissions cycle (Fall 2026 incoming class), through the University of Arizona's Computer Science Department. In addition to applying through the <a href='https://www.cs.arizona.edu/graduate/prospective-students' class='underline, links'>official application portals</a>, you are encouraged to contact the D-REP co-directors (Profs. Bae and Fujiwara) with listed items below. We seek students who combine strong technical foundations with creative, interdisciplinary thinking."
-        },
-        {
-          "listing": {
-            "title": "Areas of Emphasis",
-            "items": [
-              "Machine learning/AI technologies for visualization and physicalization (e.g., dimensionality reduction)",
+              "Machine learning and AI technologies for visualization and physicalization (e.g., dimensionality reduction)",
               "3D large-scale visualizations for network and high-dimensional data",
-              "AR/VR applications for data-driven discovery and analysis in STEM domains (e.g. optics, material science)",
+              "AR/VR applications for data-driven discovery and analysis in STEM domains (e.g., optics, materials science)",
               "Interactive computing applications to improve engagement and learning in AI and data science",
-              "Computational design pipelines using machine learning and data-driven design optimization to fabricate interactive 3D printed data objects for network physicalizations",
-              "Empirical studies on investigating the perceptual effectiveness of data physicalizations"
+              "Computational design pipelines using machine learning and data-driven optimization to fabricate interactive 3D-printed data objects and network physicalizations",
+              "Empirical studies investigating the perceptual effectiveness of data physicalizations"
             ]
           }
         },
         {
           "listing": {
-            "title": "More broadly, we are looking for students in one or multiple of these directions.",
+            "title": "Broader Research Opportunities",
+            "text": "We also welcome students interested in exploring one or more of the following directions:",
             "items": [
-              "Leveraging math and computation to advance the fundamental science and understanding of interactive data representations",
-              "Using computational fabrication and geometry to expand the multifunctionality of data physicalizations for sensing capabilities, output modalites, mechanical behavior, and actuation",
-              "Develop and refine advanced reinforcement learning to generate, explore, and optimize 3D printed physicalizations",
-              "Developing hardware and/or computational design tools for interactive data representations"
+              "Leveraging mathematics and computation to advance the fundamental science and understanding of interactive data representations",
+              "Using computational fabrication and geometry to expand the functionality of data physicalizations, including sensing, output modalities, mechanical behavior, and actuation",
+              "Developing and refining reinforcement learning methods to generate, explore, and optimize 3D-printed physicalizations",
+              "Developing hardware and computational design tools for interactive data representations"
             ]
           }
         },
         {
           "listing": {
             "title": "What to Include When You Apply",
-            "text": "To help us understand your potential fit, please submit following materials to the D-REP co-directors (Sandra and Takanori). Please note in your email whether you have external fellowships and share both concrete ideas and a broader vision for Ph.D. projects that connect with D-REP’s research scope.",
+            "text": "Prospective students should apply through the University of Arizona Computer Science Ph.D. program. You are also encouraged to contact the D-REP co-directors (Sandra Bae and Takanori Fujiwara) with the materials below. Please indicate whether you are primarily interested in working with Prof. Bae, Prof. Fujiwara, or both, and briefly explain how your interests align with their research. If you have external fellowship funding or plan to apply for fellowships, please mention this in your email.",
             "items": [
-              "CV",
-              "portfolio or representative sample work (projects, prototypes, publications, demos)",
-              "research statement (please include: 1. Your research interests and motivations, 2. skills/technical expertise, 3. what you hope to gain from working at D-REP, 4. potential project ideas or directions)"
+              "CV or résumé",
+              "Portfolio or representative work (e.g., research projects, prototypes, publications, or demos)",
+              "Research statement describing: (1) your research interests and motivations, (2) relevant skills and technical expertise, (3) why you are interested in working with D-REP and your preferred faculty advisor, and (4) potential research questions or project directions you would like to explore"
             ]
           }
         }
