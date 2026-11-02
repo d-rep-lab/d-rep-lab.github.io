@@ -9,6 +9,25 @@
   ],
   "items": [
     {
+      "title": "PaperBlox: Reducing Equipment Barriers in TUI Prototyping via Paper Templates and Computer Vision",
+      "authors": [
+        "Hannah van Iterson",
+        "Tianqin Lu",
+        "S. Sandra Bae",
+        "Steven Houben",
+        "Rong-Hao Liang"
+      ],
+      "venue": "Nordic Conference on Human-Computer Interaction (NordiCHI) 2026",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_paperblox.png",
+      "links": [
+        {
+          "label": "Paper (ACM DL, open access)",
+          "url": "https: //dl.acm.org/doi/10.1145/3829807.3829824"
+        }
+      ]
+    },
+    {
       "title": "TULCA-based Visual Analytics of HPC Operational Data: A Case Study of Fugaku Rack's Power Data",
       "authors": [
         "Kazuki Miyake",
@@ -22,8 +41,7 @@
       "note": "Forthcoming",
       "year": 2026,
       "thumb": "./images/pubs/2026_tulca_hpcoda.png",
-      "links": [
-      ]
+      "links": []
     },
     {
       "title": "Surrounded by Friends: Design and Evaluation of Immersive Layouts of Egocentric Network for Visual Analytics",
@@ -72,7 +90,8 @@
           "label": "arXiv",
           "url": "https://doi.org/10.48550/arXiv.2601.20173"
         },
-        {"label": "Code",
+        {
+          "label": "Code",
           "url": "https://github.com/zeyh/MAPLE"
         }
       ]
