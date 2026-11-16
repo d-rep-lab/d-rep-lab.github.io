@@ -38,10 +38,12 @@
         "Takanori Fujiwara"
       ],
       "venue": "SC Workshop (HPC Operational Data Analytics)",
-      "note": "Forthcoming",
       "year": 2026,
       "thumb": "./images/pubs/2026_tulca_hpcoda.png",
-      "links": []
+      "links": [{
+        "label": "Paper (IEEE Digital Library)",
+        "url": "https://doi.ieeecomputersociety.org/10.1109/SCW72768.2026.00395"}
+      ]
     },
     {
       "title": "Surrounded by Friends: Design and Evaluation of Immersive Layouts of Egocentric Network for Visual Analytics",
@@ -81,6 +83,7 @@
       "venue": "IEEE Transactions on Visualization and Computer Graphics",
       "year": 2026,
       "thumb": "./images/pubs/2026_maple.png",
+      "note": "Presented at VIS 2026",
       "links": [
         {
           "label": "Paper (IEEE Xplore)",
