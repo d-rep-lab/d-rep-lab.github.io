@@ -5,9 +5,27 @@
     "Takanori Fujiwara",
     "S. Sandra Bae",
     "Sandra Bae",
-    "Zeyang Huang"
+    "Zeyang Huang",
+    "Md Afridi Hasan" 
   ],
   "items": [
+    {
+      "title": "A Perturbation-Driven Framework for Sensitivity Analysis of Dimensionality Reduction",
+      "authors": [
+        "Md Afridi Hasan",
+        "Jaemin Jo",
+        "Takanori Fujiwara"
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "thumb": "./images/pubs/2026_dr_sensitivity.png",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.33523"
+        }
+      ]
+    },
     {
       "title": "PaperBlox: Reducing Equipment Barriers in TUI Prototyping via Paper Templates and Computer Vision",
       "authors": [
@@ -120,7 +138,7 @@
       ]
     },
     {
-      "title": "A Spectral Framework for Multi-Scale Nonlinear Dimensionality Reduction",
+      "title": "A Spectral Decomposition Framework for Multiscale Nonlinear Dimensionality Reduction",
       "authors": [
         "Zeyang Huang",
         "Angelos Chatzimparmpas",
